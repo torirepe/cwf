@@ -16,7 +16,7 @@
         left: 0;
         padding: 0 70px;
         width: 100%;
-        transform: translate(0,-50%);
+        transform: translate(0, -50%);
         text-align: right;
         &.is-red {
           text-align: left;
@@ -107,7 +107,7 @@
       .concept-image {
         position: relative;
         margin: 20px 40px 0 38px;
-        
+
         img {
           position: relative;
           z-index: 2;
@@ -136,7 +136,7 @@
           content: '';
           display: inline-block;
           vertical-align: middle;
-          margin-right: .4em  ;
+          margin-right: .4em;
           width: .8em;
           height: 1em;
           background: url(images/index/concept_arrow.svg) no-repeat left center / 100% auto;
@@ -172,8 +172,68 @@
 }
 
 #about {
-  .intro {
-    
+  .intro {}
+}
+
+#company {
+  margin-top: 300px;
+  .profile {
+    background: #eee;
+    .profile-list {
+      width: 1000px;
+      margin: 0 auto;
+      font-size: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      @include media(sp) {
+        width: 90%;
+      }
+      .profile-list__term,
+      .profile-list__description {
+        font-size: 15px;
+      }
+      .profile-list__term {
+        width: 15%;
+        display: inline-block;
+        border-top: 2px solid $color-red;
+        color: $color-red;
+        font-weight: bold;
+        padding: 17px 0 0;
+        margin-right: 5%;
+        @include media(sp) {
+          width: 100%;
+        }
+      }
+      .profile-list__description {
+        width: 80%;
+        display: inline-block;
+        border-bottom: 1px solid #777;
+        padding: 20px 0;
+        line-height: 1.6;
+        @include media(sp) {
+          width: 100%;
+        }
+        .heading {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+        .list {
+          line-height: 1.8;
+          margiLn-bottom: 40px;
+        }
+      }
+    }
+  }
+  .history {
+    .history-heading {
+      .history-block {
+        .heaading {}
+        .date {}
+        .text {}
+      }
+    }
   }
 }
 

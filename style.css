@@ -723,42 +723,98 @@ a:hover {
     bottom: 0;
     left: 0; }
 
-/* line 182, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+/* line 178, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#company {
+  margin-top: 300px; }
+  /* line 180, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #company .profile {
+    background: #eee; }
+    /* line 182, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #company .profile .profile-list {
+      width: 1000px;
+      margin: 0 auto;
+      font-size: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: stretch; }
+      @media screen and (max-width: 640px) {
+        /* line 182, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #company .profile .profile-list {
+          width: 90%; } }
+      /* line 193, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__term,
+      #company .profile .profile-list .profile-list__description {
+        font-size: 15px; }
+      /* line 197, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__term {
+        width: 15%;
+        display: inline-block;
+        border-top: 2px solid #a42629;
+        color: #a42629;
+        font-weight: bold;
+        padding: 17px 0 0;
+        margin-right: 5%; }
+        @media screen and (max-width: 640px) {
+          /* line 197, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #company .profile .profile-list .profile-list__term {
+            width: 100%; } }
+      /* line 209, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__description {
+        width: 80%;
+        display: inline-block;
+        border-bottom: 1px solid #777;
+        padding: 20px 0;
+        line-height: 1.6; }
+        @media screen and (max-width: 640px) {
+          /* line 209, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #company .profile .profile-list .profile-list__description {
+            width: 100%; } }
+        /* line 218, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #company .profile .profile-list .profile-list__description .heading {
+          font-weight: bold;
+          margin-bottom: 5px; }
+        /* line 222, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #company .profile .profile-list .profile-list__description .list {
+          line-height: 1.8;
+          margiLn-bottom: 40px; }
+
+/* line 242, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #privacy .detail .detail-block {
   max-width: 1230px;
   margin: 0 auto 100px; }
-  /* line 185, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 245, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block_heading {
     margin-bottom: 50px;
     border: 1px solid #000;
     padding: 20px 40px;
     font-size: 24px;
     font-weight: bold; }
-  /* line 193, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 253, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .text {
     font-size: 16px;
     line-height: 1.6;
     margin-bottom: 50px; }
-    /* line 197, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 257, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #privacy .detail .detail-block .detail-block__content .text a {
       color: #a42629;
       display: inline-block; }
-  /* line 202, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 262, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .heading {
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 20px; }
-  /* line 207, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 267, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .heading_small {
     font-size: 14px;
     font-weight: bold;
     margin-bottom: 10px; }
-  /* line 212, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 272, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .list {
     font-size: 14px;
     line-height: 1.8;
     margin-bottom: 60px; }
-    /* line 216, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 276, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #privacy .detail .detail-block .detail-block__content .list a {
       color: #a42629;
       margin-top: 10px; }
