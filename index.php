@@ -45,16 +45,18 @@
                 </div>
                 <div class="concept-image"><img src="images/index/concept_image.jpg" alt="image"></div>
               </div>
+              <div class="concept-text">
+                <div class="concept-text__arrow">多様な人材が活躍し企業としても成長する、これからの“はたらき方”を考える</div>
+                <div class="concept-text__arrow">変化する“はたらき方”を受容するワークプレイスを計画する</div>
               </div>
               <div class="concept-list">
-                <div class="concept-list__heading">多様な人材が活躍し企業としても成長する、これからの“はたらき方”を考える<br>変化する“はたらき方”を受容するワークプレイスを計画する</div>
                 <ul class="concept-list__items">
                   <li class="concept-list__item">01.企業としての方向性とワーカーの“はたらき方”をフィットさせる</li>
                   <li class="concept-list__item">02.多様な選択肢からワークプレイスづくりの実行シナリオを考える</li>
                   <li class="concept-list__item">03.専門家としてクライアントの目的の実現に寄り添うプロジェクトサポート</li>
                 </ul>
-                <div class="concept-list__btn morebtn"><a href="">READ MORE</a></div>
               </div>
+              <div class="concept-btn c-morebtn"><a href="">READ MORE</a></div>
             </div>
           </section>
           <!-- /concept -->

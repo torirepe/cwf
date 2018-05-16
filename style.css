@@ -538,6 +538,24 @@ a:hover {
     letter-spacing: .2em;
     color: #a42629; }
 
+/* line 15, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+.c-morebtn {
+  display: inline-block; }
+  /* line 17, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+  .c-morebtn a {
+    background-color: #a42629;
+    padding: .4em;
+    font-size: 14px;
+    color: #FFFFFF;
+    letter-spacing: .2em; }
+    /* line 23, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+    .c-morebtn a:after {
+      content: '';
+      display: inline-block;
+      width: 1em;
+      height: 1em;
+      background: url(images/layout/arrow.svg) no-repeat center center/100% auto; }
+
 /* line 2, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 #index .hero {
   position: relative;
@@ -551,23 +569,50 @@ a:hover {
   #index .hero .hero-copy {
     position: relative;
     z-index: 1; }
-    /* line 14, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
-    #index .hero .hero-copy .hero-copy_text .en {
-      display: block;
-      font-weight: bold;
-      font-family: "Roboto Condensed", sans-serif;
-      font-size: 75px;
-      letter-spacing: .2em;
-      color: #a42629; }
-    /* line 22, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
-    #index .hero .hero-copy .hero-copy_text .jp {
-      display: block;
-      margin-top: 1em;
-      font-weight: bold;
-      font-family: "Roboto Condensed", sans-serif;
-      font-size: 24px;
-      letter-spacing: .3em; }
-  /* line 32, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    /* line 13, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    #index .hero .hero-copy .hero-copy_text {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      padding: 0 70px;
+      width: 100%;
+      transform: translate(0, -50%);
+      text-align: right; }
+      /* line 21, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      #index .hero .hero-copy .hero-copy_text.is-red {
+        text-align: left; }
+        /* line 23, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+        #index .hero .hero-copy .hero-copy_text.is-red .en {
+          display: block;
+          font-weight: bold;
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 75px;
+          letter-spacing: .2em;
+          color: #a42629; }
+        /* line 31, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+        #index .hero .hero-copy .hero-copy_text.is-red .jp {
+          display: block;
+          margin-top: 1em;
+          font-weight: bold;
+          font-family: "Roboto Condensed", sans-serif;
+          font-size: 24px;
+          letter-spacing: .3em; }
+      /* line 40, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      #index .hero .hero-copy .hero-copy_text .strong {
+        display: block;
+        font-weight: bold;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 75px;
+        letter-spacing: .2em;
+        color: #FFFFFF; }
+      /* line 48, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      #index .hero .hero-copy .hero-copy_text .small {
+        display: block;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 75px;
+        letter-spacing: .2em;
+        color: #FFFFFF; }
+  /* line 57, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
   #index .hero .hero-video {
     position: absolute;
     top: 50%;
@@ -575,28 +620,31 @@ a:hover {
     z-index: 0;
     transform: translate(-50%, -50%); }
 
-/* line 40, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+/* line 65, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 #index .concept {
+  position: relative;
   min-width: 1230px;
+  padding-bottom: 70px;
   background: url(images/index/concept_bg.svg) no-repeat center center; }
-  /* line 43, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  /* line 70, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
   #index .concept .concept-block {
-    margin-top: 90px;
+    margin: 90px auto 0;
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-    align-items: flex-start; }
-    /* line 49, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    align-items: flex-start;
+    width: 1100px; }
+    /* line 77, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #index .concept .concept-block .concept-copy {
       width: 490px; }
-      /* line 52, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      /* line 80, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .concept .concept-block .concept-copy .concept-copy__heading .jp {
         display: block;
         font-weight: bold;
         font-size: 44px;
         line-height: 1.6;
         letter-spacing: .1em; }
-      /* line 59, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      /* line 87, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .concept .concept-block .concept-copy .concept-copy__heading .en {
         margin-top: .5em;
         display: block;
@@ -605,24 +653,24 @@ a:hover {
         font-size: 39px;
         color: #a42629;
         letter-spacing: .076em; }
-        /* line 67, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+        /* line 95, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #index .concept .concept-block .concept-copy .concept-copy__heading .en strong {
           font-size: 44px; }
-      /* line 72, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      /* line 100, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .concept .concept-block .concept-copy .concept-copy__text {
         margin-top: 2em;
         font-size: 18px;
         line-height: 2.1;
         letter-spacing: .03em; }
-    /* line 79, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    /* line 107, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #index .concept .concept-block .concept-image {
       position: relative;
-      margin: 20px 0 0 26px; }
-      /* line 82, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      margin: 20px 40px 0 38px; }
+      /* line 111, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .concept .concept-block .concept-image img {
         position: relative;
         z-index: 2; }
-      /* line 86, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      /* line 115, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .concept .concept-block .concept-image:after {
         content: '';
         display: block;
@@ -633,5 +681,46 @@ a:hover {
         width: 100%;
         height: 100%;
         background-color: #a42629; }
+  /* line 128, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  #index .concept .concept-text {
+    margin: 20px auto 0;
+    width: 1100px; }
+    /* line 131, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    #index .concept .concept-text .concept-text__arrow {
+      font-size: 26px;
+      line-height: 2;
+      font-weight: bold; }
+      /* line 135, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      #index .concept .concept-text .concept-text__arrow:before {
+        content: '';
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: .4em;
+        width: .8em;
+        height: 1em;
+        background: url(images/index/concept_arrow.svg) no-repeat left center/100% auto; }
+  /* line 146, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  #index .concept .concept-list {
+    background-color: #a42629;
+    mix-blend-mode: multiply;
+    margin-top: 42px;
+    padding: 28px 0;
+    padding-left: calc( (100vw - 1100px) / 2);
+    width: 750px;
+    box-sizing: content-box; }
+    /* line 155, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    #index .concept .concept-list .concept-list__items .concept-list__item {
+      color: #FFFFFF;
+      font-size: 17px;
+      font-weight: bold;
+      letter-spacing: .1em; }
+      /* line 160, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      #index .concept .concept-list .concept-list__items .concept-list__item:nth-child(n+2) {
+        margin-top: 1.1em; }
+  /* line 166, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  #index .concept .concept-btn {
+    position: absolute;
+    bottom: 0;
+    left: 0; }
 
 /*# sourceMappingURL=style.css.map */
