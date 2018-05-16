@@ -1,4 +1,4 @@
-<?php $root = "http://localhost/"  ?>
+<?php $root = "http://localhost/" ?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
