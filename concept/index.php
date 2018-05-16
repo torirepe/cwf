@@ -1,5 +1,6 @@
 
-<main id="concept">
+<?php require("../inc/_header.php");?>
+  <main id="concept">
 
   <!-- hero -->
   <div class="visual">
@@ -93,3 +94,5 @@
     </div>
   </section>
   <!-- office -->
+
+<?php require("../inc/_footer.php");?>
