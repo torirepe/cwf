@@ -1,0 +1,155 @@
+// header
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 30px;
+  width: 100%;
+  background-color: rgba(255,255,255,.6);
+  @include media(sp) {
+    padding-left: 4.6%;
+  }
+  .sitename {
+    width: 278px;
+    @include media(sp) {
+      width: 2.75rem;
+    }
+  }
+  .gnav {
+    @include media(sp) {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      pointer-events: none;
+    }
+    @include media(tb) {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      opacity: 0;
+      pointer-events: none;
+    }
+    @include media(pc) {
+      max-width: 900px;
+      width: 68%;
+    }
+    .list {
+      display: flex;
+      justify-content: space-between;
+      @include media(tb) {
+        flex-flow: column wrap;
+      }
+      @include media(pc) {
+        flex-flow: row wrap;
+      }
+      .item {
+        &.is-red {
+          width: 28%;
+          background-color: $color-red;
+          a {
+            position: relative;
+            padding-left: 46px;
+            text-align: left;
+            color: $color-white;
+            &:after {
+              content: '';
+              position: absolute;
+              top: 0;
+              right: 30px;
+              width: 18px;
+              height: 100%;
+              background: url(images/layout/arrow.svg) no-repeat center center / 100% auto;
+            }
+          }
+        }
+        a {
+          padding-top: 30px;
+          height: 92px;
+          text-align: center;
+          &:hover {
+            color: $color-red;
+          }
+          .en {
+            display: block;
+            font-family: $fontfamily-roboto;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: .2em;
+            @media screen and (max-width: 1200px) and (min-width: 1025px) {
+              font-size: 16px;
+              letter-spacing: .1em;
+            }
+          }
+          .jp {
+            display: block;
+            margin-top: .6em;
+            font-size: 13px;
+            letter-spacing: .4em;
+            @media screen and (max-width: 1200px) and (min-width: 1025px) {
+              font-size: 12px;
+              letter-spacing: .2em;
+            }
+          }
+        }
+      }
+    }
+  }
+  .contact {
+    margin-left: auto;
+    background-color: $color-red;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      @include media(sp) {
+        width: .82rem;
+        height: .82rem;
+      }
+      @include media(tb) {
+        width: 92px;
+        height: 92px;
+      }
+      img {
+        width: 50%;
+      }
+    }
+  }
+  .menu {
+    a {
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      @include media(sp) {
+        width: .82rem;
+        height: .82rem;
+      }
+      @include media(tb) {
+        width: 92px;
+        height: 92px;
+      }
+      div {
+        width: 50%;
+        background-color: $color-red;
+        @include media(sp) {
+          height: .04rem;
+        }
+        @include media(tb) {
+          height: 6px;
+        }
+        &:nth-child(n+2) {
+          margin-top: 10%;
+        }
+      }
+    }
+  }
+}
+// /header

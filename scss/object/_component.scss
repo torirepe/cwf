@@ -1,0 +1,13 @@
+.c-sectiontitle {
+  padding-top: 70px;
+  text-align: center;
+  span {
+    display: inline-block;
+    border-bottom: 4px solid $color-red;
+    padding-bottom: .1em;
+    font-family: $fontfamily-roboto;
+    font-size: 29px;
+    letter-spacing: .2em;
+    color: $color-red;
+  }
+}
