@@ -1,3 +1,4 @@
+<?php $root = "http://localhost/"  ?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -7,13 +8,13 @@
     <script src="js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="<?php echo $root ?>style.css">
   </head>
   <body>
     <div id="wrap">
       <header id="header">
         <div class="sitename">
-          <img src="images/layout/header_logo.svg" alt="CW Facility Solution Inc.">
+          <img src="<?php echo $root ?>images/layout/header_logo.svg" alt="CW Facility Solution Inc.">
         </div>
         <nav class="gnav">
           <ul class="list">
@@ -56,7 +57,7 @@
           </ul>
         </nav>
         <div class="contact is-st">
-          <a href="/contact/"><img src="images/layout/icon_mail.svg" alt="contact"></a>
+          <a href="/contact/"><img src="<?php echo $root ?>images/layout/icon_mail.svg" alt="contact"></a>
         </div>
         <div class="menu is-st">
           <a href="">
