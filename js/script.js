@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(window).load(function(){
   if ($('#index').length) {
     casestudySlider();
     heroVideo();
@@ -24,7 +24,6 @@ function casestudySlider() {
   function setup() {
     ww = $(window).innerWidth();
     if (tbBreak <= ww) {
-      now = "pc";
       options = {
         auto: false,
         infiniteLoop: true,
@@ -49,30 +48,48 @@ function casestudySlider() {
         }
       };
     } else if (tbBreak > ww && spBreak < ww ) {
-      now = "tb";
       options = {
         auto: false,
-        infiniteLoop: false,
-        minSlides: 6,
-        maxSlides: 6,
-        moveSlides: 6,
+        infiniteLoop: true,
+        minSlides: 1,
+        maxSlides: 1,
+        moveSlides: 1,
         slideWidth: '100px',
         controls: true,
-        pager: true,
-        touchEnabled: false
+        pager: false,
+        oneToOneTouch: true,
+        hideControlOnEnd: false,
+        onSliderLoad: function(n) {
+          n++;
+          $('#casestudySlider').children('li[data-num="' + n + '"]').addClass('active');
+        },
+        onSlideBefore: function($slideElement, oldIndex, newIndex) {
+          newIndex++;
+          $('#casestudySlider').children('li').removeClass("active");
+          $('#casestudySlider').children('li[data-num="' + newIndex + '"]').addClass('active');
+        }
       };
-    } else if (tbBreak >= ww) {
-      now = "sp";
+    } else {
       options = {
         auto: false,
-        infiniteLoop: false,
-        minSlides: 6,
-        maxSlides: 6,
-        moveSlides: 6,
+        infiniteLoop: true,
+        minSlides: 1,
+        maxSlides: 1,
+        moveSlides: 1,
         slideWidth: '100px',
         controls: true,
-        pager: true,
-        touchEnabled: false
+        pager: false,
+        oneToOneTouch: true,
+        hideControlOnEnd: false,
+        onSliderLoad: function(n) {
+          n++;
+          $('#casestudySlider').children('li[data-num="' + n + '"]').addClass('active');
+        },
+        onSlideBefore: function($slideElement, oldIndex, newIndex) {
+          newIndex++;
+          $('#casestudySlider').children('li').removeClass("active");
+          $('#casestudySlider').children('li[data-num="' + newIndex + '"]').addClass('active');
+        }
       };
     }
   };
@@ -80,7 +97,6 @@ function casestudySlider() {
 
   setup();
   slider = $('#casestudySlider').bxSlider(options);
-  log = now;
 
   var timer = false;
   $(window).resize(function () {
@@ -89,10 +105,7 @@ function casestudySlider() {
     }
     timer = setTimeout(function () {
       setup();
-      if (now == log) {
-        slider.reloadSlider(options);
-        log = now;
-      };
+      slider.reloadSlider(options);
     }, 200);
   });
 };

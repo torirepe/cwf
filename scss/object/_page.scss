@@ -7,6 +7,9 @@
     width: 100%;
     height: 834px;
     overflow: hidden;
+    @include media(pc) {
+      min-width: 1230px;
+    }
     .hero-copy {
       position: relative;
       z-index: 1;
@@ -120,15 +123,28 @@
     position: relative;
     padding-bottom: 70px;
     background: url(images/index/concept_bg.svg) no-repeat center center;
+    @include media(tb) {
+      padding: 0 60px;
+    }
+    @include media(pc) {
+      min-width: 1230px;
+    }
     .concept-block {
-      margin: 90px auto 0;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: flex-start;
-      width: 1100px;
+      @include media(tb) {
+        margin-top: 68px;
+      }
+      @include media(pc) {
+        margin: 90px auto 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 1100px;
+      }
       .concept-copy {
-        width: 490px;
+        @include media(pc) {
+          width: 490px;
+        }
         .concept-copy__heading {
           .jp {
             display: block;
@@ -136,6 +152,15 @@
             font-size: 44px;
             line-height: 1.6;
             letter-spacing: .1em;
+            @include media(sp) {
+              font-size: .35rem;
+            }
+            @include media(tb) {
+              font-size: 35px;
+            }
+            @include media(pc) {
+              font-size: 44px;
+            }
           }
           .en {
             margin-top: .5em;
@@ -145,8 +170,25 @@
             font-size: 39px;
             color: $color-red;
             letter-spacing: .076em;
+            @include media(sp) {
+              font-size: .35rem;
+            }
+            @include media(tb) {
+              font-size: 35px;
+            }
+            @include media(pc) {
+              font-size: 39px;
+            }
             strong {
-              font-size: 44px;
+              @include media(sp) {
+                font-size: .4rem;
+              }
+              @include media(tb) {
+                font-size: 40px;
+              }
+              @include media(pc) {
+                font-size: 44px;
+              }
             }
           }
         }
@@ -155,12 +197,19 @@
           font-size: 18px;
           line-height: 2.1;
           letter-spacing: .03em;
+          @include media(sp) {
+            font-size: .18rem;
+          }
         }
       }
       .concept-image {
         position: relative;
-        margin: 20px 40px 0 38px;
-
+        @include media(tb) {
+          margin-top: 74px;
+        }
+        @include media(pc) {
+          margin: 20px 40px 0 38px;
+        }
         img {
           position: relative;
           z-index: 2;
@@ -182,9 +231,20 @@
       margin: 20px auto 0;
       width: 1100px;
       .concept-text__arrow {
+        margin-left: 1.2em;
+        text-indent: -1.2em;
         font-size: 26px;
         line-height: 2;
         font-weight: bold;
+        @include media(sp) {
+          font-size: .21rem;
+        }
+        @include media(tb) {
+          font-size: 21px;
+        }
+        @include media(pc) {
+          font-size: 26px;
+        }
         &:before {
           content: '';
           display: inline-block;
@@ -199,13 +259,21 @@
     .concept-list {
       background-color: $color-red;
       mix-blend-mode: multiply;
-      margin-top: 42px;
-      padding: 28px 0 28px 65px;
-      width: 750px;
+      @include media(tb) {
+        margin: 42px 0 0 -60px;
+        padding: 28px 65px 28px 65px;
+        width: 90vw;
+        line-height: 1.4;
+      }
+      @include media(pc) {
+        margin-top: 42px;
+        padding: 28px 0 28px 65px;
+        width: 750px;
+        box-sizing: content-box;
+      }
       @media screen and (min-width: 1230px) {
         padding-left: calc( (100vw - 1100px) / 2);
       }
-      box-sizing: content-box;
       .concept-list__items {
         .concept-list__item {
           color: $color-white;
@@ -215,62 +283,121 @@
           &:nth-child(n+2) {
             margin-top: 1.1em;
           }
+          @include media(sp) {
+            font-size: .19rem;
+          }
+          @include media(tb) {
+            font-size: 19px;
+          }
+          @include media(pc) {
+            font-size: 17px;
+          }
         }
       }
     }
     .concept-btn {
-      position: absolute;
-      bottom: 84px;
-      left: 50%;
-      margin-left: 372px;
+      @include media(tb) {
+        margin: 54px 0 84px;
+        display: block;
+        text-align: center;
+      }
+      @include media(pc) {
+        position: absolute;
+        bottom: 84px;
+        left: 50%;
+        margin-left: 372px;
+      }
     }
   }
   .casestudy {
     position: relative;
-    min-width: 1230px;
-    background-color: $color-gray-ultralight;
+    @include media(pc) {
+      background-color: $color-gray-ultralight;
+      min-width: 1230px;
+    }
     .casestudy-block {
       margin: 0 auto;
-      width: 1230px;
       background-color: $color-gray-light;
+      @include media(pc) {
+        width: 1230px;
+      }
+    }
+    .casestudy-copy {
+      @include media(sp) {
+        margin-top: .58rem;
+        padding-bottom: .76rem;
+      }
+      @include media(tb) {
+        margin-top: 58px;
+        padding-bottom: 76px;
+      }
+      @include media(pc) {
+        margin-top: 72px;
+        padding-bottom: 56px;
+      }
     }
     .casestudy-slider {
       position: relative;
-      height: 578px;
-      &:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 50%;
-        z-index: 0;
-        width: 4000px;
-        height: 100%;
+      @include media(sp) {
         background-color: rgba(255,255,255,.72);
-        transform: translate(-50% , 0);
+      }
+      @include media(tb) {
+        background-color: rgba(255,255,255,.72);
+      }
+      @include media(pc) {
+        height: 578px;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          z-index: 0;
+          width: 4000px;
+          height: 100%;
+          background-color: rgba(255,255,255,.72);
+          transform: translate(-50% , 0);
+        }
       }
       .bx-wrapper {
         position: relative;
         z-index: 2;
         margin: 0  auto;
         max-width: inherit !important;
-        width: 1080px;
+        width: 84.6vw;
         height: 100%;
+        @include media(pc) {
+          width: 1080px;
+        }
         .bx-viewport {
           position: relative;
           z-index: 1;
           max-width: inherit !important;
           width: 100% !important;
-          height: 100% !important;
+          height: auto !important;
           overflow: visible !important;
           .casestudy-slider__items {
-            padding: 42px 0 72px;
-            height: 100% !important;
+            display: flex;
+            flex-flow: row wrap;
+            @include media(sp) {
+              padding: .44rem 0 .64rem;
+            }
+            @include media(tb) {
+              padding: 44px 0 64px;
+            }
+            @include media(pc) {
+              padding: 42px 0 72px;
+            }
             .casestudy-slider__item {
+              float: none;
               opacity: .4;
-              padding: 0 25px;
-              width: 540px !important;
+              padding: 0 4.2vw;
+              width: 84.6vw !important;
               transition: all .48s ease;
+              @include media(pc) {
+                padding: 0 25px;
+                width: 540px !important;
+              }
               &.active {
                 opacity: 1;
               }
@@ -278,11 +405,17 @@
                 margin-top: 1.4em;
                 font-size: 18px;
                 font-weight: bold;
+                @include media(sp) {
+                  font-size: .18rem;
+                }
               }
               .text {
                 margin-top: 1em;
                 font-size: 15px;
                 line-height: 2;
+                @include media(sp) {
+                  font-size: .15rem;
+                }
               }
             }
           }
@@ -291,21 +424,33 @@
           .bx-prev,
           .bx-next {
             position: absolute;
-            top: 185px;
+            top: 32vw;
             z-index: 9;
-            width: 42px;
-            height: 42px;
+            width: 6.5vw;
+            height:  6.5vw;
             background: url(images/index/casestudySlider_arrow.svg) no-repeat center center / cover;
             font-size: 0;
+            transform: translate(0, -50%);
+            @include media(pc) {
+              width: 42px;
+              height: 42px;
+              top: 206px;
+            }
           }
           .bx-prev {
             position: absolute;
-            left: -50px;
+            left: -3.4vw;
+            @include media(pc) {
+              left: -50px;
+            }
           }
           .bx-next {
-            position: absolute;;
-            right: -50px;
-            transform: rotate(180deg);
+            position: absolute;
+            right: -3.4vw;
+            transform: translate(0, -50%) rotate(180deg);
+            @include media(pc) {
+              right: -50px;
+            }
           }
         }
       }
@@ -319,36 +464,91 @@
   .service {
     width: 100%;
     background-color: $color-gray-ultralight;
+    @include media(pc) {
+      min-width: 1230px;
+    }
+    .service-lead {
+      @include media(sp) {
+        margin-top: .58rem;
+        padding-bottom: .58rem;
+      }
+      @include media(tb) {
+        margin-top: 58px;
+        padding-bottom: 58px;
+      }
+      @include media(pc) {
+        margin-top: 72px;
+        padding-bottom: 56px;
+      }
+    }
     .service-block {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-items: stretch;
-      margin: 0 auto;
-      width: 1230px;
+      @include media(sp) {
+        padding: 0 .6rem;
+      }
+      @include media(tb) {
+        margin: 0 auto;
+        padding-bottom: 0;
+        width: 520px;
+      }
+      @include media(pc) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 0 auto;
+        width: 1230px;
+      }
       .service-content__item {
-        padding: 24px 35px 30px;
-        width: 362px;
         box-sizing: content-box;
-        &:nth-child(1) {
-          padding-left: 0;
+        @include media(sp) {
+          border-top: 1px solid $color-gray-light;
+          padding: .58rem 0 .5rem;
         }
-        &:nth-child(3) {
-          padding-right: 0;
+        @include media(tb) {
+          border-top: 1px solid $color-gray-light;
+          padding: 58px 0 50px;
         }
-        &:nth-child(n+2) {
-          border-left: 1px solid $color-gray-light;
+        @include media(pc) {
+          padding: 24px 35px 30px;
+          width: 362px;
+          &:nth-child(1) {
+            padding-left: 0;
+          }
+          &:nth-child(3) {
+            padding-right: 0;
+          }
+          &:nth-child(n+2) {
+            border-left: 1px solid $color-gray-light;
+          }
         }
         .title {
-          font-size: 20px;
           font-weight: bold;
           color: $color-red;
-          letter-spacing: -.04em;
+          letter-spacing: .05em;
+          @include media(sp) {
+            font-size: .25rem;
+          }
+          @include media(tb) {
+            font-size: 25px;
+          }
+          @include media(pc) {
+            letter-spacing: -.04em;
+            font-size: 20px;
+          }
         }
         .lead {
           margin-top: 1.8em;
-          font-size: 15px;
-          line-height: 1.9;
+          line-height: 2.2;
+          @include media(sp) {
+            font-size: .18rem;
+          }
+          @include media(tb) {
+            font-size: 18px;
+          }
+          @include media(pc) {
+            line-height: 1.9;
+            font-size: 15px;
+          }
         }
         .list {
           margin-top: 20px;
@@ -360,13 +560,32 @@
             line-height: 1.8;
             font-size: 14px;
             color: $color-red;
+            @include media(sp) {
+              font-size: .18rem;
+            }
+            @include media(tb) {
+              font-size: 18px;
+            }
+            @include media(pc) {
+              font-size: 14px;
+            }
           }
         }
         .image {
           margin-top: 34px;
         }
         .btn {
-          margin-top: 34px;
+          text-align: center;
+          @include media(sp) {
+            margin-top: .35rem;
+          }
+          @include media(tb) {
+            margin-top: 35px;
+          }
+          @include media(pc) {
+            text-align: left;
+            margin-top: 34px;
+          }
         }
       }
     }
@@ -374,22 +593,49 @@
   
   .company {
     margin: 0 auto;
-    padding-bottom: 90px;
-    width: 1230px;
+    @include media(sp) {
+      padding: 0 .6rem;
+    }
+    @include media(tb) {
+      padding: 0 60px;
+    }
+    @include media(pc) {
+      padding-bottom: 90px;
+      width: 1230px;
+    }
     .company-list {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
-      margin: 72px auto 0;
-      width: 780px;
-      font-size: 15px;
+      align-items: flex-start;
+      line-height: 1.8;
+      @include media(sp) {
+        margin: .62rem auto 0;
+        font-size: .17rem;
+      }
+      @include media(tb) {
+        margin: 62px auto 0;
+        font-size: 17px;
+      }
+      @include media(pc) {
+        margin: 72px auto 0;
+        width: 780px;
+        font-size: 15px;
+        line-height: 1;
+      }
       .company-list_term {
-        width: 154px;
         border-right: 1px solid $color-red;
+        width: 8.2em;
+        @include media(pc) {
+          width: 154px;
+        }
       }
       .company-list_description {
         padding-left: 1.2em;
-        width: calc(100% - 154px);
+        width: calc(100% - 8.2em);
+        @include media(pc) {
+          width: calc(100% - 154px);
+        }
       }
       *:nth-child(n+3) {
         margin-top: 24px;
@@ -397,8 +643,18 @@
     }
     .company-btn {
       margin: 20px auto 0;
-      width: 780px;
       text-align: right;
+      @include media(sp) {
+        text-align: center;
+        margin-top: .68rem;
+      }
+      @include media(tb) {
+        margin-top: 68px;
+      }
+      @include media(pc) {
+        margin: 20px auto 0;
+        width: 780px;
+      }
     }
   }
 }
