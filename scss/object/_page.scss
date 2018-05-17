@@ -18,7 +18,7 @@
         top: 50%;
         left: 0;
         width: 100%;
-        transform: translate(0,-50%);
+        transform: translate(0, -50%);
         text-align: center;
         @include media(sp) {
           padding: 0 .094rem;
@@ -339,10 +339,10 @@
     .casestudy-slider {
       position: relative;
       @include media(sp) {
-        background-color: rgba(255,255,255,.72);
+        background-color: rgba(255, 255, 255, .72);
       }
       @include media(tb) {
-        background-color: rgba(255,255,255,.72);
+        background-color: rgba(255, 255, 255, .72);
       }
       @include media(pc) {
         height: 578px;
@@ -355,14 +355,14 @@
           z-index: 0;
           width: 4000px;
           height: 100%;
-          background-color: rgba(255,255,255,.72);
-          transform: translate(-50% , 0);
+          background-color: rgba(255, 255, 255, .72);
+          transform: translate(-50%, 0);
         }
       }
       .bx-wrapper {
         position: relative;
         z-index: 2;
-        margin: 0  auto;
+        margin: 0 auto;
         max-width: inherit !important;
         width: 84.6vw;
         height: 100%;
@@ -427,7 +427,7 @@
             top: 32vw;
             z-index: 9;
             width: 6.5vw;
-            height:  6.5vw;
+            height: 6.5vw;
             background: url(images/index/casestudySlider_arrow.svg) no-repeat center center / cover;
             font-size: 0;
             transform: translate(0, -50%);
@@ -460,7 +460,7 @@
       padding: 76px 0 62px;
     }
   }
-  
+
   .service {
     width: 100%;
     background-color: $color-gray-ultralight;
@@ -590,7 +590,7 @@
       }
     }
   }
-  
+
   .company {
     margin: 0 auto;
     @include media(sp) {
@@ -680,7 +680,7 @@
       left: 50%;
       bottom: 0;
       width: 115px;
-      transform: translate(-50%,50%) rotate(45deg);
+      transform: translate(-50%, 50%) rotate(45deg);
       background-color: #fff;
       @include media(sp) {
         width: 1.15rem;
@@ -774,14 +774,41 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        &.order{
-          flex-flow: row-reverse wrap;
+        @include media(sp) {
+          flex-flow: column wrap;
+        }
+        @include media(tb) {
+          flex-flow: column wrap;
+        }
+        &.order {
+          @include media(pc) {
+            flex-flow: row-reverse wrap;
+          }
         }
         &:nth-child(n+2) {
           margin-top: 80px;
+          @include media(sp) {
+            margin-top: .54rem;
+          }
+          @include media(tb) {
+            margin-top: 54px;
+          }
+          @include media(pc) {
+            margin-top: 80px;
+          }
         }
         .detail-block__textbox {
-          width: 594px;
+          @include media(sp) {
+            order: 2;
+            margin-top: .78rem;
+          }
+          @include media(tb) {
+            order: 2;
+            margin-top: 78px;
+          }
+          @include media(pc) {
+            width: 594px;
+          }
         }
         .heading {
           line-height: 1.7;
@@ -797,22 +824,71 @@
           }
         }
         .text {
-          margin-top: 1.2em;
           line-height: 2.2;
           @include media(sp) {
+            margin-top: 1em;
             font-size: .18rem;
           }
           @include media(tb) {
+            margin-top: 1em;
             font-size: 18px;
           }
           @include media(pc) {
+            margin-top: 1.2em;
             font-size: 14px;
           }
         }
         .detail-block__picture {
-          width: 476px;
-        }
-        img {
+          position: relative;
+          @include media(sp) {
+            width: calc(100% + .6rem);
+            order: 1;
+          }
+          @include media(tb) {
+            width: calc(100% + 60px);
+            order: 1;
+          }
+          @include media(pc) {
+            order: 1;
+            width: 476px;
+          }
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: $color-red;
+          }
+          &.is-shadowleft {
+            @include media(sp) {
+              margin-right: -.6rem;
+            }
+            @include media(tb) {
+              margin-right: -60px;
+            }
+            &:after {
+              margin: 3.5% 0 0 -3.5%;
+            }
+          }
+          &.is-shadowright {
+            @include media(sp) {
+              margin-right: .6rem;
+            }
+            @include media(tb) {
+              margin-right: 60px;
+            }
+            &:after {
+              margin: 3.5% 0 0 3.5%;
+            }
+          }
+          img {
+            position: relative;
+            z-index: 2;
+          }
         }
       }
     }
@@ -821,8 +897,10 @@
     padding: 130px 0 90px;
     background-color: $color-gray-light;
     @include media(sp) {
-      padding: 1.3rem 0 1.24rem;
-      font-size: 14px;
+      padding: 1.3rem .6rem 1.24rem;
+    }
+    @include media(tb) {
+      padding: 130px 60px;
     }
     @include media(pc) {
       min-width: 1230px;
@@ -836,7 +914,6 @@
       text-align: center;
       color: $color-white;
       @include media(sp) {
-        margin: 0 .6rem;
         width: auto;
         font-size: .35rem;
       }
@@ -859,10 +936,13 @@
         width: 900px;
       }
       .approach-list_item {
+        position: relative;
         margin-top: 50px;
-
         @include media(sp) {
           margin-top: .5rem;
+        }
+        @include media(pc) {
+          
         }
         @include media(pc) {
           display: flex;
@@ -872,35 +952,70 @@
           width: 100%;
         }
         .image {
-          width: 228px;
+          @include media(sp) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-left: -18%;
+            width: 38.4%;
+          }
+          @include media(tb) {
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 190px;
+          }
+          @include media(pc) {
+            width: 228px;
+          }
         }
         .textbox {
-          width: 604px;
+          @include media(pc) {
+            width: 604px;
+          }
           .title {
-            display: flex;
-            flex-flow: row wrap;
-            align-items: center;
+            @include media(sp) {
+              margin-left: 25%;
+            }
+            @include media(tb) {
+              margin-left: 200px;
+            }
+            @include media(pc) {
+              display: flex;
+              flex-flow: row wrap;
+              align-items: center;
+            }
             color: $color-red;
             font-weight: bold;
             .num {
-              border-right: 3px solid $color-red;
               width: 1.4em;
               font-family: $fontfamily-roboto-condensed;
               font-size: 60px;
               line-height: .8;
               letter-spacing: .05em;
+              @include media(sp) {
+                border-right: none;
+                font-size: .6rem;
+              }
+              @include media(pc) {
+                border-right: 3px solid $color-red;
+              }
             }
             .text {
               font-weight: bold;
-              margin-left: .8em;
               line-height: 1.2;
               @include media(sp) {
+                margin-top: .4em;
                 font-size: .28rem;
+                line-height: 1.6;
               }
               @include media(tb) {
+                margin-top: .2em;
                 font-size: 28px;
+                line-height: 1.6;
               }
               @include media(pc) {
+                margin-left: .8em;
                 font-size: 22px;
               }
             }
