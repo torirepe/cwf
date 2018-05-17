@@ -21,6 +21,8 @@ $breakpoints: (
     'pc': 'screen and (min-width: 1025px)',
     'tb': 'screen and (max-width: 1024px) and (min-width: 641px)',
     'sp': 'screen and (max-width: 640px)',
+    'st': 'screen and (max-width: 1024px)',
+    'tp': 'screen and (min-width: 641px)',
 ) !default;
 @mixin media($breakpoint) {
     @if map-has-key($breakpoints, $breakpoint) {
