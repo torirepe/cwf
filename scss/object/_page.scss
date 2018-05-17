@@ -695,6 +695,9 @@
 }
 
 #concept {
+  .c-visual {
+    background: url(images/concept/visual.jpg) no-repeat center center / cover;
+  }
   .workplace {
     position: relative;
     @include media(sp) {
@@ -977,7 +980,7 @@
           margin-top: .5rem;
         }
         @include media(pc) {
-          
+
         }
         @include media(pc) {
           display: flex;
@@ -1103,6 +1106,9 @@
 }
 
 #company {
+  .c-visual {
+    background: url(images/company/visual.jpg) no-repeat center center / cover;
+  }
   .profile {
     background: #eee;
     .profile-list {
@@ -1110,6 +1116,7 @@
       flex-flow: row wrap;
       justify-content: space-between;
       align-items: stretch;
+      padding: 100px 0;
       max-width: 800px;
       margin: 0 auto;
       font-size: 0;
@@ -1197,10 +1204,158 @@
   }
 }
 
+#casestudy {
+  .c-visual {
+    background: url(images/casestudy/visual.jpg) no-repeat center center / cover;
+  }
+  .project {
+    max-width: 1230px;
+    margin: 0 auto;
+    @include media(sp) {
+      width: 90%;
+    }
+    .project-lists {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      margin-top: 60px;
+      &:after {
+        content: '';
+        display: block;
+        width: 30%;
+      }
+      .project-lists__items {
+        width: 30%;
+        margin-bottom: 50px;
+        transition: .24s ease all;
+        @include media(sp) {
+          width: 48%;
+          margin-bottom: .5rem;
+        }
+        &:hover {
+          opacity: .7;
+        }
+        .thumb {
+        }
+        .heading {
+          margin-top: 20px;
+          font-size: 18px;
+          line-height: 1.4;
+          font-weight: bold;
+          @include media(sp) {
+            font-size: .26rem;
+            margin-top: .2rem;
+          }
+        }
+        .text {
+          margin: 15px 0;
+          font-size: 15px;
+          @include media(sp) {
+            font-size: .2rem;
+          }
+          span {
+            margin-right: 10px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 13px;
+            color: $color-red;
+            background: #dbdbdb;
+            @include media(sp) {
+              font-size: .2rem;
+              padding: .1rem .1rem;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .projectDetail {
+    max-width: 1230px;
+    margin: 0 auto;
+    @include media(sp) {
+      width: 90%;
+    }
+    .projectDetail_heading {
+      margin-bottom: 60px;
+      span {
+        color: #000;
+        border-color: #000;
+      }
+    }
+    .projectDetail-lists {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      &:after {
+        content: '';
+        display: block;
+        width: 30%;
+      }
+      .projectDetail-lists__item {
+        width: 30%;
+        margin-bottom: 50px;
+        transition: .24s ease all;
+        @include media(sp) {
+          width: 48%;
+          margin-bottom: .5rem;
+        }
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+    .projectDetail_details {
+      max-width: 580px;
+      margin: 0 auto;
+      border-top: 2px solid #dbdbdb;
+      margin-top: 30px;
+      padding-top: 60px;
+      .text {
+        font-size: 14px;
+        line-height: 2;
+      }
+      .list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-top: 40px;
+        dt,dd {
+          
+        }
+        dt {
+          width: 80px;
+          margin-bottom: 22px;
+          padding: 3px 10px;
+          border-radius: 20px;
+          background: #dbdbdb;
+          color: $color-red;
+          text-align: center;
+          font-size: 13px;
+        }
+        dd {
+          width: calc(100% - 100px);
+          margin-left: 20px;
+          font-size: 15px;
+          line-height: 1.8;
+        }
+      }
+    }
+    .projectDetail_btnArea {
+      margin-top: 60px;
+      text-align: center;
+      .projectDetail_btnArea__btn {
+        width: 300px;
+      }
+    }
+  }
+}
+
 #privacy {
   .detail {
     .detail-block {
-      max-width: 1230px;
+      min-width: 1230px;
       margin: 0 auto 100px;
       .detail-block_heading {
         margin-bottom: 50px;
@@ -1244,9 +1399,12 @@
 }
 
 #contact {
+  .c-visual {
+    background: url(images/contact/visual.jpg) no-repeat center center / cover;
+  }
   .form {
     width: 800px;
-    margin: 0 auto;
+    margin: 100px auto 0;
     @include media(sp) {
       width: 90%;
     }
@@ -1299,7 +1457,7 @@
           margin: 0 10px;
           width: 34px;
           height: 34px;
-          background: #dcdcdc;
+          background: #f6f6f6;
           outline: none;
           -webkit-appearance: none;
           -moz-appearance: none;
@@ -1380,26 +1538,30 @@
     }
     .form-btn {
       .form-btn__confirm {
-        width: 300px;
         margin: 50px auto 0;
+        input {
+          width: 300px;
+        }
       }
-      input {
-        width: 100%;
-        padding: 15px 0;
-        border: 3px solid $color-red;
-        font-size: 16px;
-        color: $color-red;
-        font-weight: bold;
-        background: none;
-        border-radius: 0;
-        outline: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        transition: .24s ease all;
-        &:hover {
-          background: $color-red;
-          color: #fff;
+      .form-btn__parts {
+        text-align: center;
+        input {
+          padding: 15px 0;
+          border: 3px solid $color-red;
+          font-size: 16px;
+          color: $color-red;
+          font-weight: bold;
+          background: none;
+          border-radius: 0;
+          outline: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          transition: .24s ease all;
+          &:hover {
+            background: $color-red;
+            color: #fff;
+          }
         }
       }
     }

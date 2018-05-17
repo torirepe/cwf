@@ -1,67 +1,67 @@
 @charset "UTF-8";
-/* line 1, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 1, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 body, div, pre, p, blockquote, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, form, fieldset, th, td, figure, figcaption {
   margin: 0;
   padding: 0; }
 
-/* line 3, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 3, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 input, textarea {
   margin: 0;
   font-size: 100%; }
 
-/* line 5, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 5, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 label {
   cursor: pointer; }
 
-/* line 7, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 7, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
   font-size: 100%; }
 
-/* line 9, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 9, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 fieldset, img {
   border: 0; }
 
-/* line 11, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 11, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 img {
   max-width: 100%;
   width: 100%;
   height: auto;
   vertical-align: top; }
 
-/* line 13, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 13, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 address, caption, cite, code, dfn, em, th, var {
   font-style: normal;
   font-weight: normal; }
 
-/* line 15, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 15, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 ol, ul {
   list-style: none; }
 
-/* line 17, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 17, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 caption, th {
   text-align: left; }
 
-/* line 19, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 19, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 h1, h2, h3, h4, h5, h6 {
   font-size: 100%;
   font-weight: bold; }
 
-/* line 21, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 21, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 q:after, q:before {
   content: ''; }
 
-/* line 23, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 23, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 a, input {
   outline: none; }
 
-/* line 25, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 25, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 input, textarea {
   border-radius: 0;
   font-family: 游ゴシック体, 'Yu Gothic', YuGothic, 'ヒラギノ角ゴシック Pro', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif; }
 
-/* line 27, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 27, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 input[type="button"], input[type="submit"] {
   -webkit-appearance: none;
   background: none;
@@ -69,39 +69,39 @@ input[type="button"], input[type="submit"] {
   padding: 0;
   cursor: pointer; }
 
-/* line 29, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 29, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 abbr, acronym {
   border: 0; }
 
-/* line 31, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 31, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 33, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_reset.scss */
+/* line 33, /Applications/MAMP/htdocs/CWF/scss/foundation/_reset.scss */
 a {
   display: block; }
 
-/* line 1, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+/* line 1, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%; }
   @media screen and (max-width: 640px) {
-    /* line 1, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+    /* line 1, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
     html {
       font-size: 15.625vw; } }
   @media screen and (max-width: 1024px) and (min-width: 641px) {
-    /* line 1, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+    /* line 1, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
     html {
       font-size: 10px; } }
   @media screen and (min-width: 1025px) {
-    /* line 1, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+    /* line 1, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
     html {
       font-size: 10px; } }
 
-/* line 14, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+/* line 14, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -115,28 +115,28 @@ body {
   line-height: 1;
   word-wrap: break-word; }
 
-/* line 27, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+/* line 27, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 a {
   color: #212121;
   text-decoration: none; }
 
-/* line 31, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+/* line 31, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 a:hover {
   transition: all 0.3s; }
 
-/* line 34, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+/* line 34, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 ::selection {
   background: #e3e3e3;
   color: #212121;
   text-shadow: none; }
 
-/* line 39, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+/* line 39, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 ::-moz-selection {
   background: #e3e3e3;
   color: #212121;
   text-shadow: none; }
 
-/* line 44, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+/* line 44, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 .legacy-ie {
   background: #eee;
   width: 100%;
@@ -147,12 +147,12 @@ a:hover {
   text-align: center;
   z-index: 10000; }
 
-/* line 54, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+/* line 54, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 .legacy-ie a {
   color: #0066b3;
   text-decoration: none; }
 
-/* line 58, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+/* line 58, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 .noscript {
   background: #e3e3e3;
   width: 100%;
@@ -164,46 +164,46 @@ a:hover {
   z-index: 10000; }
 
 @media screen and (max-width: 1024px) and (min-width: 641px) {
-  /* line 69, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+  /* line 69, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
   .is-sp {
     display: none !important; } }
 
 @media screen and (min-width: 1025px) {
-  /* line 69, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+  /* line 69, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
   .is-sp {
     display: none !important; } }
 
 @media screen and (max-width: 640px) {
-  /* line 77, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+  /* line 77, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
   .is-tb {
     display: none !important; } }
 
 @media screen and (min-width: 1025px) {
-  /* line 77, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+  /* line 77, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
   .is-tb {
     display: none !important; } }
 
 @media screen and (max-width: 640px) {
-  /* line 85, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+  /* line 85, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
   .is-pc {
     display: none !important; } }
 
 @media screen and (max-width: 1024px) and (min-width: 641px) {
-  /* line 85, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+  /* line 85, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
   .is-pc {
     display: none !important; } }
 
 @media screen and (min-width: 1025px) {
-  /* line 93, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+  /* line 93, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
   .is-st {
     display: none !important; } }
 
 @media screen and (max-width: 640px) {
-  /* line 98, /Users/motoetatsunori/works/CWF/cwf/scss/foundation/_base.scss */
+  /* line 98, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
   .is-tp {
     display: none !important; } }
 
-/* line 2, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+/* line 2, /Applications/MAMP/htdocs/CWF/scss/layout/_header.scss */
 #header {
   position: fixed;
   top: 0;
@@ -217,22 +217,24 @@ a:hover {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.6); }
   @media screen and (max-width: 640px) {
-    /* line 2, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+    /* line 2, /Applications/MAMP/htdocs/CWF/scss/layout/_header.scss */
     #header {
       padding-left: 4.6%; } }
   @media screen and (min-width: 1025px) {
-    /* line 2, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+    /* line 2, /Applications/MAMP/htdocs/CWF/scss/layout/_header.scss */
     #header {
       min-width: 1230px; } }
-  /* line 20, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+  /* line 20, /Applications/MAMP/htdocs/CWF/scss/layout/_header.scss */
   #header .sitename {
     width: 278px; }
     @media screen and (max-width: 640px) {
-      /* line 20, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+      /* line 20, /Applications/MAMP/htdocs/CWF/scss/layout/_header.scss */
       #header .sitename {
         width: 2.75rem; } }
+
   @media screen and (max-width: 1024px) {
     /* line 26, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+
     #header .gnav {
       position: absolute;
       top: 100%;
@@ -242,15 +244,18 @@ a:hover {
       pointer-events: none;
       background-color: rgba(255, 255, 255, 0.6); } }
   @media screen and (min-width: 1025px) {
-    /* line 26, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+    /* line 26, /Applications/MAMP/htdocs/CWF/scss/layout/_header.scss */
     #header .gnav {
       max-width: 900px;
       width: 68%; } }
+
   /* line 40, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+
   #header .gnav .list {
     display: flex;
     justify-content: space-between; }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
+
       /* line 40, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
       #header .gnav .list {
         flex-flow: column wrap; } }
@@ -263,12 +268,15 @@ a:hover {
       width: 28%;
       background-color: #a42629; }
       /* line 53, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+
       #header .gnav .list .item.is-red a {
         position: relative;
         padding-left: 46px;
         text-align: left;
         color: #FFFFFF; }
+
         /* line 58, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+
         #header .gnav .list .item.is-red a:after {
           content: '';
           position: absolute;
@@ -277,42 +285,53 @@ a:hover {
           width: 18px;
           height: 100%;
           background: url(images/layout/arrow.svg) no-repeat center center/100% auto; }
+
     /* line 69, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+
     #header .gnav .list .item a {
       padding-top: 30px;
       height: 92px;
       text-align: center; }
+
       /* line 73, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
       #header .gnav .list .item a:hover {
         color: #a42629; }
       /* line 76, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+
       #header .gnav .list .item a .en {
         display: block;
         font-family: "Roboto", sans-serif;
         font-weight: bold;
         font-size: 18px;
         letter-spacing: .2em; }
+
       /* line 87, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+
       #header .gnav .list .item a .jp {
         display: block;
         margin-top: .6em;
         font-size: 13px;
         letter-spacing: .4em; }
+
   /* line 101, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
   #header .contact {
     margin-left: auto;
     background-color: #a42629; }
     /* line 104, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+
     #header .contact a {
       display: flex;
       justify-content: center;
       align-items: center; }
       @media screen and (max-width: 640px) {
+
         /* line 104, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
+
         #header .contact a {
           width: .82rem;
           height: .82rem; } }
       @media screen and (max-width: 1024px) and (min-width: 641px) {
+
         /* line 104, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
         #header .contact a {
           width: 92px;
@@ -322,6 +341,7 @@ a:hover {
         width: 50%; }
   /* line 121, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
   #header .menu {
+
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -329,6 +349,7 @@ a:hover {
     pointer-events: all;
     cursor: pointer; }
     @media screen and (max-width: 640px) {
+
       /* line 121, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_header.scss */
       #header .menu {
         width: .82rem;
@@ -385,26 +406,27 @@ a:hover {
     #header.active #menu div:nth-child(3) {
       transform: translate(12%, 0) rotate(-45deg); } }
 
-/* line 2, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+
+/* line 2, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
 #footer {
   margin-top: 88px;
   padding-bottom: 52px;
   width: 100%;
   background-color: #f0f0f0; }
   @media screen and (max-width: 640px) {
-    /* line 2, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+    /* line 2, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
     #footer {
       padding-bottom: .78rem; } }
   @media screen and (min-width: 1025px) {
-    /* line 2, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+    /* line 2, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
     #footer {
       min-width: 1260px; } }
-  /* line 13, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+  /* line 13, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
   #footer .redarea {
     padding: 22px 0;
     background-color: #a42629;
     color: #FFFFFF; }
-    /* line 17, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+    /* line 17, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
     #footer .redarea a {
       display: block;
       display: flex;
@@ -412,14 +434,14 @@ a:hover {
       justify-content: center;
       align-items: center;
       width: 100%; }
-      /* line 24, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+      /* line 24, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
       #footer .redarea a .icon {
         width: 56px; }
         @media screen and (max-width: 640px) {
-          /* line 24, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+          /* line 24, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
           #footer .redarea a .icon {
             width: .54rem; } }
-      /* line 30, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+      /* line 30, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
       #footer .redarea a .text {
         position: relative;
         margin-left: 12px;
@@ -428,10 +450,10 @@ a:hover {
         color: #FFFFFF;
         box-sizing: content-box; }
         @media screen and (max-width: 640px) {
-          /* line 30, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+          /* line 30, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
           #footer .redarea a .text {
             padding-right: .76rem; } }
-        /* line 40, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+        /* line 40, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
         #footer .redarea a .text:after {
           content: '';
           position: absolute;
@@ -441,10 +463,10 @@ a:hover {
           height: 100%;
           background: url(images/layout/arrow.svg) no-repeat center center/100% auto; }
           @media screen and (max-width: 640px) {
-            /* line 40, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+            /* line 40, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
             #footer .redarea a .text:after {
               width: .24rem; } }
-        /* line 52, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+        /* line 52, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
         #footer .redarea a .text .en {
           display: block;
           font-family: "Roboto Condensed", sans-serif;
@@ -452,82 +474,82 @@ a:hover {
           font-weight: bold;
           letter-spacing: .2em; }
           @media screen and (max-width: 640px) {
-            /* line 52, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+            /* line 52, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
             #footer .redarea a .text .en {
               font-size: .25rem; } }
-        /* line 62, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+        /* line 62, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
         #footer .redarea a .text .jp {
           display: block;
           margin-top: .2em;
           font-size: 14px;
           letter-spacing: .35em; }
           @media screen and (max-width: 640px) {
-            /* line 62, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+            /* line 62, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
             #footer .redarea a .text .jp {
               font-size: .15rem; } }
-  /* line 74, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+  /* line 74, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
   #footer .gnav {
     margin: 86px auto 0;
     width: 812px; }
     @media screen and (max-width: 640px) {
-      /* line 74, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+      /* line 74, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
       #footer .gnav {
         margin-top: .9rem;
         padding: 0 .094rem;
         width: 100%; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
-      /* line 74, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+      /* line 74, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
       #footer .gnav {
         width: 600px; } }
-    /* line 85, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+    /* line 85, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
     #footer .gnav ul {
       display: flex;
       flex-flow: row wrap;
       justify-content: center;
       align-items: center; }
       @media screen and (min-width: 1025px) {
-        /* line 85, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+        /* line 85, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
         #footer .gnav ul {
           justify-content: space-between; } }
       @media screen and (max-width: 640px) {
-        /* line 93, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+        /* line 93, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
         #footer .gnav ul li {
           margin-left: .5rem; }
-          /* line 96, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+          /* line 96, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
           #footer .gnav ul li:nth-child(4n+1) {
             margin-left: 0; }
-          /* line 99, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+          /* line 99, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
           #footer .gnav ul li:nth-child(n+5) {
             margin-top: .3rem; } }
       @media screen and (max-width: 1024px) and (min-width: 641px) {
-        /* line 93, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+        /* line 93, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
         #footer .gnav ul li {
           margin-left: 80px; }
-          /* line 105, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+          /* line 105, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
           #footer .gnav ul li:nth-child(4n+1) {
             margin-left: 0; }
-          /* line 108, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+          /* line 108, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
           #footer .gnav ul li:nth-child(n+5) {
             margin-top: 30px; } }
-      /* line 112, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+      /* line 112, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
       #footer .gnav ul li a {
         font-size: 12px;
         color: #a42629;
         letter-spacing: .35em; }
         @media screen and (max-width: 640px) {
-          /* line 112, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+          /* line 112, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
           #footer .gnav ul li a {
             font-size: .15rem; } }
-  /* line 123, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+  /* line 123, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
   #footer .logo {
     margin: 90px auto 0;
     width: 160px; }
     @media screen and (max-width: 640px) {
-      /* line 123, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+      /* line 123, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
       #footer .logo {
         margin-top: .68rem;
         width: 1.62rem; } }
-  /* line 131, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+  /* line 131, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
   #footer address {
     margin-top: 24px;
     text-align: center;
@@ -536,18 +558,18 @@ a:hover {
     letter-spacing: .2em;
     color: #353535; }
     @media screen and (max-width: 640px) {
-      /* line 131, /Users/motoetatsunori/works/CWF/cwf/scss/layout/_footer.scss */
+      /* line 131, /Applications/MAMP/htdocs/CWF/scss/layout/_footer.scss */
       #footer address {
         margin-top: .26rem;
         font-size: .14rem; } }
 
 /* main
    ----------------------------------------------------------------- */
-/* line 1, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+/* line 1, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
 .c-sectionheading {
   padding-top: 70px;
   text-align: center; }
-  /* line 4, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+  /* line 4, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
   .c-sectionheading span {
     display: inline-block;
     border-bottom: 4px solid #a42629;
@@ -556,40 +578,49 @@ a:hover {
     font-size: 29px;
     letter-spacing: .2em;
     color: #a42629; }
+  /* line 13, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
+  .c-sectionheading.c-sectionheading__jp {
+    font-size: 24px;
+    font-weight: bold; }
+    /* line 16, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
+    .c-sectionheading.c-sectionheading__jp span {
+      padding-bottom: 15px;
+      color: #000;
+      border-bottom: 4px solid #000; }
 
-/* line 15, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+/* line 24, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
 .c-headinglead {
   text-align: center; }
-  /* line 17, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+  /* line 26, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
   .c-headinglead .c-heading {
     font-size: 28px;
     font-weight: bold;
     letter-spacing: .1em;
     line-height: 1.5; }
     @media screen and (max-width: 640px) {
-      /* line 17, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+      /* line 26, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
       .c-headinglead .c-heading {
         font-size: .28rem; } }
-  /* line 26, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+  /* line 35, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
   .c-headinglead .c-lead {
     font-size: 18px;
     letter-spacing: .1em;
     line-height: 2.2; }
     @media screen and (max-width: 640px) {
-      /* line 26, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+      /* line 35, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
       .c-headinglead .c-lead {
         margin-top: .38rem;
         font-size: .18rem; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
-      /* line 26, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+      /* line 35, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
       .c-headinglead .c-lead {
         margin-top: 38px; } }
     @media screen and (min-width: 1025px) {
-      /* line 26, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+      /* line 35, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
       .c-headinglead .c-lead {
         margin-top: 42px; } }
 
-/* line 44, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+/* line 53, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
 .c-morebtn a {
   display: inline-block;
   background-color: #a42629;
@@ -597,7 +628,7 @@ a:hover {
   font-size: 14px;
   color: #FFFFFF;
   letter-spacing: .2em; }
-  /* line 51, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+  /* line 60, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
   .c-morebtn a:after {
     content: '';
     display: inline-block;
@@ -606,7 +637,22 @@ a:hover {
     height: 1em;
     background: url(images/layout/arrow.svg) no-repeat center center/100% auto; }
 
-/* line 62, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+/* line 72, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
+.c-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 0;
+  border: 3px solid #a42629;
+  font-size: 16px;
+  color: #a42629;
+  font-weight: bold;
+  transition: .24s ease all; }
+  /* line 81, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
+  .c-btn:hover {
+    background: #a42629;
+    color: #fff; }
+
+/* line 86, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
 .c-visual {
   display: flex;
   flex-flow: column wrap;
@@ -615,14 +661,13 @@ a:hover {
   padding-top: 92px;
   width: 100%;
   height: 400px;
-  background: url(images/concept/visual.jpg) no-repeat center center/cover;
   text-align: center;
   color: #FFFFFF; }
   @media screen and (max-width: 640px) {
-    /* line 62, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+    /* line 86, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
     .c-visual {
       padding-top: .92rem; } }
-  /* line 76, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+  /* line 99, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
   .c-visual .c-visual-heading__en {
     display: block;
     border-bottom: 4px solid #FFFFFF;
@@ -631,7 +676,7 @@ a:hover {
     font-family: "Roboto Condensed", sans-serif;
     font-size: 29px;
     letter-spacing: .2em; }
-  /* line 85, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+  /* line 108, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
   .c-visual .c-visual-heading__jp {
     display: block;
     padding-top: .6em;
@@ -640,11 +685,11 @@ a:hover {
     font-size: 16px;
     letter-spacing: .3em; }
     @media screen and (max-width: 640px) {
-      /* line 85, /Users/motoetatsunori/works/CWF/cwf/scss/object/_component.scss */
+      /* line 108, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
       .c-visual .c-visual-heading__jp {
         font-size: .16rem; } }
 
-/* line 2, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+/* line 2, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #index .hero {
   position: relative;
   display: flex;
@@ -654,9 +699,10 @@ a:hover {
   height: 834px;
   overflow: hidden; }
   @media screen and (min-width: 1025px) {
-    /* line 2, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    /* line 2, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #index .hero {
       min-width: 1230px; } }
+
   /* line 13, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
   #index .hero:after {
     content: '';
@@ -673,6 +719,7 @@ a:hover {
     position: relative;
     z-index: 2; }
     /* line 27, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .hero .hero-copy .hero-copy_text {
       position: absolute;
       top: 50%;
@@ -681,6 +728,7 @@ a:hover {
       transform: translate(0, -50%);
       text-align: center; }
       @media screen and (max-width: 640px) {
+
         /* line 27, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #index .hero .hero-copy .hero-copy_text {
           padding: 0 .094rem; } }
@@ -690,14 +738,17 @@ a:hover {
           padding: 0 46px; } }
       @media screen and (min-width: 1025px) {
         /* line 27, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #index .hero .hero-copy .hero-copy_text {
           padding: 0 70px;
           text-align: right; } }
       @media screen and (min-width: 1025px) {
+
         /* line 44, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #index .hero .hero-copy .hero-copy_text.is-red {
           text-align: left; } }
       /* line 48, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .hero .hero-copy .hero-copy_text.is-red .en {
         display: block;
         font-weight: bold;
@@ -705,6 +756,7 @@ a:hover {
         color: #a42629;
         letter-spacing: .1em; }
         @media screen and (max-width: 640px) {
+
           /* line 48, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
           #index .hero .hero-copy .hero-copy_text.is-red .en {
             font-size: .45rem; } }
@@ -718,6 +770,7 @@ a:hover {
             letter-spacing: .2em;
             font-size: 75px; } }
       /* line 65, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .hero .hero-copy .hero-copy_text.is-red .jp {
         display: block;
         margin-top: 1em;
@@ -727,6 +780,7 @@ a:hover {
         letter-spacing: .3em;
         color: #FFFFFF; }
         @media screen and (max-width: 640px) {
+
           /* line 65, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
           #index .hero .hero-copy .hero-copy_text.is-red .jp {
             font-size: .19rem; } }
@@ -740,6 +794,7 @@ a:hover {
             font-size: 24px;
             color: #212121; } }
       /* line 85, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .hero .hero-copy .hero-copy_text .strong {
         display: block;
         font-weight: bold;
@@ -747,6 +802,7 @@ a:hover {
         letter-spacing: .2em;
         color: #FFFFFF; }
         @media screen and (max-width: 640px) {
+
           /* line 85, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
           #index .hero .hero-copy .hero-copy_text .strong {
             font-size: .45rem; } }
@@ -759,6 +815,7 @@ a:hover {
           #index .hero .hero-copy .hero-copy_text .strong {
             font-size: 75px; } }
       /* line 101, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .hero .hero-copy .hero-copy_text .small {
         display: block;
         font-family: "Roboto Condensed", sans-serif;
@@ -766,6 +823,7 @@ a:hover {
         letter-spacing: .2em;
         color: #FFFFFF; }
         @media screen and (max-width: 640px) {
+
           /* line 101, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
           #index .hero .hero-copy .hero-copy_text .small {
             font-size: .45rem; } }
@@ -778,6 +836,7 @@ a:hover {
           #index .hero .hero-copy .hero-copy_text .small {
             font-size: 75px; } }
   /* line 119, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #index .hero .hero-video {
     position: absolute;
     top: 50%;
@@ -787,12 +846,15 @@ a:hover {
     width: auto;
     transform: translate(-50%, -50%); }
     @media screen and (min-width: 1500px) {
+
       /* line 119, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .hero .hero-video {
         width: 100%;
         height: auto; } }
 
 /* line 133, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
 #index .concept {
   position: relative;
   padding-bottom: 70px;
@@ -802,6 +864,7 @@ a:hover {
     #index .concept {
       padding: 0 .6rem; } }
   @media screen and (max-width: 1024px) and (min-width: 641px) {
+
     /* line 133, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #index .concept {
       padding: 0 60px; } }
@@ -814,6 +877,7 @@ a:hover {
     #index .concept .concept-block {
       margin-top: .68rem; } }
   @media screen and (max-width: 1024px) and (min-width: 641px) {
+
     /* line 146, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #index .concept .concept-block {
       margin-top: 68px; } }
@@ -827,10 +891,12 @@ a:hover {
       align-items: flex-start;
       width: 1100px; } }
   @media screen and (min-width: 1025px) {
+
     /* line 161, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #index .concept .concept-block .concept-copy {
       width: 490px; } }
   /* line 166, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #index .concept .concept-block .concept-copy .concept-copy__heading .jp {
     display: block;
     font-weight: bold;
@@ -838,6 +904,7 @@ a:hover {
     line-height: 1.6;
     letter-spacing: .1em; }
     @media screen and (max-width: 640px) {
+
       /* line 166, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .concept .concept-block .concept-copy .concept-copy__heading .jp {
         font-size: .35rem; } }
@@ -850,6 +917,7 @@ a:hover {
       #index .concept .concept-block .concept-copy .concept-copy__heading .jp {
         font-size: 44px; } }
   /* line 182, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #index .concept .concept-block .concept-copy .concept-copy__heading .en {
     margin-top: .5em;
     display: block;
@@ -859,6 +927,7 @@ a:hover {
     color: #a42629;
     letter-spacing: .076em; }
     @media screen and (max-width: 640px) {
+
       /* line 182, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .concept .concept-block .concept-copy .concept-copy__heading .en {
         font-size: .35rem; } }
@@ -883,16 +952,19 @@ a:hover {
       #index .concept .concept-block .concept-copy .concept-copy__heading .en strong {
         font-size: 44px; } }
   /* line 212, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #index .concept .concept-block .concept-copy .concept-copy__text {
     margin-top: 2em;
     font-size: 18px;
     line-height: 2.1;
     letter-spacing: .03em; }
     @media screen and (max-width: 640px) {
+
       /* line 212, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .concept .concept-block .concept-copy .concept-copy__text {
         font-size: .18rem; } }
   /* line 222, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #index .concept .concept-block .concept-image {
     position: relative; }
     @media screen and (max-width: 640px) {
@@ -900,11 +972,14 @@ a:hover {
       #index .concept .concept-block .concept-image {
         margin-top: .74rem; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
+
       /* line 222, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .concept .concept-block .concept-image {
         margin-top: 74px;
         width: 532px; } }
     @media screen and (min-width: 1025px) {
+
       /* line 222, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .concept .concept-block .concept-image {
         margin: 20px 40px 0 38px; } }
@@ -913,6 +988,7 @@ a:hover {
       position: relative;
       z-index: 2; }
     /* line 238, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .concept .concept-block .concept-image:after {
       content: '';
       display: block;
@@ -923,6 +999,7 @@ a:hover {
       width: 100%;
       height: 100%;
       background-color: #a42629; }
+
   /* line 251, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
   #index .concept .concept-text {
     margin: 20px auto 0; }
@@ -931,6 +1008,7 @@ a:hover {
       #index .concept .concept-text {
         width: 1100px; } }
     /* line 256, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .concept .concept-text .concept-text__arrow {
       margin-left: 1.2em;
       text-indent: -1.2em;
@@ -938,6 +1016,7 @@ a:hover {
       line-height: 2;
       font-weight: bold; }
       @media screen and (max-width: 640px) {
+
         /* line 256, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #index .concept .concept-text .concept-text__arrow {
           font-size: .21rem; } }
@@ -950,6 +1029,7 @@ a:hover {
         #index .concept .concept-text .concept-text__arrow {
           font-size: 26px; } }
       /* line 271, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .concept .concept-text .concept-text__arrow:before {
         content: '';
         display: inline-block;
@@ -958,7 +1038,9 @@ a:hover {
         width: .8em;
         height: 1em;
         background: url(images/index/concept_arrow.svg) no-repeat left center/100% auto; }
+
   /* line 282, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #index .concept .concept-list {
     background-color: #a42629;
     mix-blend-mode: multiply; }
@@ -970,29 +1052,36 @@ a:hover {
         width: 90vw;
         line-height: 1.4; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
+
       /* line 282, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .concept .concept-list {
         margin: 42px 0 0 -60px;
         padding: 28px 65px 28px 65px;
         width: 90vw;
         line-height: 1.4; } }
     @media screen and (min-width: 1025px) {
+
       /* line 282, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .concept .concept-list {
         margin-top: 42px;
         padding: 28px 0 28px 65px;
         width: 750px;
         box-sizing: content-box; } }
     @media screen and (min-width: 1230px) {
+
       /* line 282, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .concept .concept-list {
         padding-left: calc( (100vw - 1100px) / 2); } }
     /* line 307, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .concept .concept-list .concept-list__items .concept-list__item {
       color: #FFFFFF;
       font-size: 17px;
       font-weight: bold;
       letter-spacing: .1em; }
+
       /* line 312, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .concept .concept-list .concept-list__items .concept-list__item:nth-child(n+2) {
         margin-top: 1.1em; }
@@ -1015,13 +1104,17 @@ a:hover {
       display: block;
       text-align: center; } }
   @media screen and (max-width: 1024px) and (min-width: 641px) {
+
     /* line 327, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .concept .concept-btn {
       margin: 54px 0 84px;
       display: block;
       text-align: center; } }
   @media screen and (min-width: 1025px) {
+
     /* line 327, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .concept .concept-btn {
       position: absolute;
       bottom: 84px;
@@ -1029,33 +1122,41 @@ a:hover {
       margin-left: 372px; } }
 
 /* line 346, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
 #index .casestudy {
   position: relative;
   overflow: hidden; }
   @media screen and (min-width: 1025px) {
+
     /* line 346, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #index .casestudy {
       background-color: #f0f0f0;
       min-width: 1230px; } }
   /* line 353, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #index .casestudy .casestudy-block {
     margin: 0 auto;
     background-color: #e3e3e3; }
     @media screen and (min-width: 1025px) {
+
       /* line 353, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .casestudy .casestudy-block {
         width: 1230px; } }
   @media screen and (max-width: 640px) {
     /* line 360, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .casestudy .casestudy-copy {
       margin-top: .58rem;
       padding-bottom: .76rem; } }
   @media screen and (max-width: 1024px) and (min-width: 641px) {
+
     /* line 360, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .casestudy .casestudy-copy {
       margin-top: 58px;
       padding-bottom: 76px; } }
   @media screen and (min-width: 1025px) {
+
     /* line 360, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #index .casestudy .casestudy-copy {
       margin-top: 72px;
@@ -1076,6 +1177,7 @@ a:hover {
       #index .casestudy .casestudy-slider {
         height: 578px; }
         /* line 384, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #index .casestudy .casestudy-slider:after {
           content: '';
           display: block;
@@ -1087,7 +1189,9 @@ a:hover {
           height: 100%;
           background-color: rgba(255, 255, 255, 0.72);
           transform: translate(-50%, 0); } }
+
     /* line 397, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .casestudy .casestudy-slider .bx-wrapper {
       position: relative;
       z-index: 2;
@@ -1096,10 +1200,12 @@ a:hover {
       width: 84.6vw;
       height: 100%; }
       @media screen and (min-width: 1025px) {
+
         /* line 397, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #index .casestudy .casestudy-slider .bx-wrapper {
           width: 1080px; } }
       /* line 407, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport {
         position: relative;
         z-index: 1;
@@ -1107,11 +1213,14 @@ a:hover {
         width: 100% !important;
         height: auto !important;
         overflow: visible !important; }
+
         /* line 414, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items {
           display: flex;
           flex-flow: row wrap; }
           @media screen and (max-width: 640px) {
+
             /* line 414, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
             #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items {
               padding: .44rem 0 .64rem; } }
@@ -1124,6 +1233,7 @@ a:hover {
             #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items {
               padding: 42px 0 72px; } }
           /* line 426, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
           #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item {
             float: none;
             opacity: .4;
@@ -1131,6 +1241,7 @@ a:hover {
             width: 84.6vw !important;
             transition: all .48s ease; }
             @media screen and (min-width: 1025px) {
+
               /* line 426, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
               #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item {
                 padding: 0 25px;
@@ -1139,24 +1250,29 @@ a:hover {
             #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item.active {
               opacity: 1; }
             /* line 439, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
             #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item .name {
               margin-top: 1.4em;
               font-size: 18px;
               font-weight: bold; }
               @media screen and (max-width: 640px) {
+
                 /* line 439, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
                 #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item .name {
                   font-size: .18rem; } }
             /* line 447, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
             #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item .text {
               margin-top: 1em;
               font-size: 15px;
               line-height: 2; }
               @media screen and (max-width: 640px) {
+
                 /* line 447, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
                 #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item .text {
                   font-size: .15rem; } }
       /* line 459, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-prev,
       #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-next {
         position: absolute;
@@ -1168,69 +1284,89 @@ a:hover {
         font-size: 0;
         transform: translate(0, -50%); }
         @media screen and (min-width: 1025px) {
+
           /* line 459, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
           #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-prev,
           #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-next {
             width: 42px;
             height: 42px;
             top: 206px; } }
+
       /* line 475, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-prev {
         position: absolute;
         left: -3.4vw; }
         @media screen and (min-width: 1025px) {
+
           /* line 475, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
           #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-prev {
             left: -50px; } }
       /* line 482, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-next {
         position: absolute;
         right: -3.4vw;
         transform: translate(0, -50%) rotate(180deg); }
         @media screen and (min-width: 1025px) {
+
           /* line 482, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
           #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-next {
             right: -50px; } }
   /* line 493, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #index .casestudy .casestudy-btn {
     text-align: center;
     padding: 76px 0 62px; }
 
+
 /* line 499, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
 #index .service {
   width: 100%;
   background-color: #f0f0f0; }
   @media screen and (min-width: 1025px) {
+
     /* line 499, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #index .service {
       min-width: 1230px; } }
   @media screen and (max-width: 640px) {
     /* line 505, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .service .service-lead {
       margin-top: .58rem;
       padding-bottom: .58rem; } }
   @media screen and (max-width: 1024px) and (min-width: 641px) {
+
     /* line 505, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .service .service-lead {
       margin-top: 58px;
       padding-bottom: 58px; } }
   @media screen and (min-width: 1025px) {
+
     /* line 505, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .service .service-lead {
       margin-top: 72px;
       padding-bottom: 56px; } }
   @media screen and (max-width: 640px) {
+
     /* line 519, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #index .service .service-block {
       padding: 0 .6rem; } }
   @media screen and (max-width: 1024px) and (min-width: 641px) {
     /* line 519, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .service .service-block {
       margin: 0 auto;
       padding-bottom: 0;
       width: 520px; } }
   @media screen and (min-width: 1025px) {
+
     /* line 519, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .service .service-block {
       display: flex;
       flex-flow: row wrap;
@@ -1238,16 +1374,20 @@ a:hover {
       align-items: stretch;
       margin: 0 auto;
       width: 1230px; } }
+
   /* line 536, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
   #index .service .service-block .service-content__item {
     box-sizing: content-box; }
     @media screen and (max-width: 640px) {
       /* line 536, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .service .service-block .service-content__item {
         border-top: 1px solid #e3e3e3;
         padding: .58rem 0 .5rem; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
+
       /* line 536, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .service .service-block .service-content__item {
         border-top: 1px solid #e3e3e3;
         padding: 58px 0 50px; } }
@@ -1266,11 +1406,13 @@ a:hover {
         #index .service .service-block .service-content__item:nth-child(n+2) {
           border-left: 1px solid #e3e3e3; } }
     /* line 559, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .service .service-block .service-content__item .title {
       font-weight: bold;
       color: #a42629;
       letter-spacing: .05em; }
       @media screen and (max-width: 640px) {
+
         /* line 559, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #index .service .service-block .service-content__item .title {
           font-size: .25rem; } }
@@ -1284,6 +1426,7 @@ a:hover {
           letter-spacing: -.04em;
           font-size: 20px; } }
     /* line 574, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .service .service-block .service-content__item .lead {
       margin-top: 1.8em;
       line-height: 2.2; }
@@ -1306,13 +1449,13 @@ a:hover {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between; }
-      /* line 593, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .service .service-block .service-content__item .list li {
         width: 50%;
         line-height: 1.8;
         font-size: 14px;
         color: #a42629; }
         @media screen and (max-width: 640px) {
+
           /* line 593, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
           #index .service .service-block .service-content__item .list li {
             font-size: .18rem; } }
@@ -1340,6 +1483,7 @@ a:hover {
           margin-top: 35px; } }
       @media screen and (min-width: 1025px) {
         /* line 612, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #index .service .service-block .service-content__item .btn {
           text-align: left;
           margin-top: 34px; } }
@@ -1368,59 +1512,65 @@ a:hover {
     align-items: flex-start;
     line-height: 1.8; }
     @media screen and (max-width: 640px) {
-      /* line 641, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .company .company-list {
         margin: .62rem auto 0;
         font-size: .17rem; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
-      /* line 641, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .company .company-list {
         margin: 62px auto 0;
         font-size: 17px; } }
     @media screen and (min-width: 1025px) {
-      /* line 641, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .company .company-list {
         margin: 72px auto 0;
         width: 780px;
         font-size: 15px;
         line-height: 1; } }
-    /* line 661, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .company .company-list .company-list_term {
       border-right: 1px solid #a42629;
       width: 8.2em; }
       @media screen and (min-width: 1025px) {
+
         /* line 661, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #index .company .company-list .company-list_term {
           width: 154px; } }
     /* line 668, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #index .company .company-list .company-list_description {
       padding-left: 1.2em;
       width: calc(100% - 8.2em); }
       @media screen and (min-width: 1025px) {
+
         /* line 668, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #index .company .company-list .company-list_description {
           width: calc(100% - 154px); } }
     /* line 675, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #index .company .company-list *:nth-child(n+3) {
       margin-top: 24px; }
-  /* line 679, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #index .company .company-btn {
     margin: 20px auto 0;
     text-align: right; }
     @media screen and (max-width: 640px) {
-      /* line 679, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .company .company-btn {
         text-align: center;
         margin-top: .68rem; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
+
       /* line 679, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #index .company .company-btn {
         margin-top: 68px; } }
     @media screen and (min-width: 1025px) {
       /* line 679, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #index .company .company-btn {
         margin: 20px auto 0;
         width: 780px; } }
+
 
 /* line 698, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 #concept .workplace {
@@ -1435,11 +1585,12 @@ a:hover {
       padding-bottom: 90px; } }
   @media screen and (min-width: 1025px) {
     /* line 698, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #concept .workplace {
       padding-bottom: 90px;
       min-width: 1230px;
       background: url(images/concept/workplace_bg.svg) no-repeat center center/1600px auto; } }
-  /* line 711, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #concept .workplace:after {
     content: '';
     display: block;
@@ -1450,6 +1601,7 @@ a:hover {
     transform: translate(-50%, 50%) rotate(45deg);
     background-color: #fff; }
     @media screen and (max-width: 640px) {
+
       /* line 711, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #concept .workplace:after {
         width: 1.15rem; } }
@@ -1469,12 +1621,14 @@ a:hover {
       #concept .workplace .intro {
         margin-top: 120px; } }
   /* line 736, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #concept .workplace .intro__copy {
     text-align: center;
     font-weight: bold;
     letter-spacing: .1em;
     line-height: 1.6; }
     @media screen and (max-width: 640px) {
+
       /* line 736, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #concept .workplace .intro__copy {
         font-size: .3rem; } }
@@ -1487,6 +1641,7 @@ a:hover {
       #concept .workplace .intro__copy {
         font-size: 28px; } }
   /* line 751, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #concept .workplace .intro__title {
     padding: .6em 0;
     background-color: #a42629;
@@ -1495,36 +1650,39 @@ a:hover {
     letter-spacing: .2em;
     color: #FFFFFF; }
     @media screen and (max-width: 640px) {
-      /* line 751, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .workplace .intro__title {
         margin: 1.2em .6rem;
         font-size: .35rem; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
-      /* line 751, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .workplace .intro__title {
         margin: .5em 60px;
         font-size: 35px; } }
     @media screen and (min-width: 1025px) {
-      /* line 751, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .workplace .intro__title {
         margin: .5em auto;
         width: 680px;
         font-size: 42px; } }
+
   /* line 772, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
   #concept .workplace .intro__text {
     line-height: 2.2; }
     @media screen and (max-width: 640px) {
       /* line 772, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .workplace .intro__text {
         text-align: left;
         padding: 0 .6rem;
         font-size: .18rem; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
-      /* line 772, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .workplace .intro__text {
         padding: 0 60px;
         font-size: 18px; } }
     @media screen and (min-width: 1025px) {
+
       /* line 772, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #concept .workplace .intro__text {
         font-size: 14px; } }
@@ -1538,25 +1696,29 @@ a:hover {
         display: block; } }
   @media screen and (max-width: 640px) {
     /* line 795, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #concept .workplace .detail {
       margin-top: .6rem;
       padding: 0 .6rem; } }
   @media screen and (max-width: 1024px) and (min-width: 641px) {
-    /* line 795, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #concept .workplace .detail {
       margin-top: 60px;
       padding: 0 60px; } }
   @media screen and (min-width: 1025px) {
+
     /* line 795, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #concept .workplace .detail {
       margin: 76px auto;
       width: 1230px; } }
   /* line 808, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #concept .workplace .detail .detail-block {
     display: flex;
     justify-content: space-between;
     align-items: center; }
     @media screen and (max-width: 640px) {
+
       /* line 808, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #concept .workplace .detail .detail-block {
         flex-flow: column wrap; } }
@@ -1585,23 +1747,27 @@ a:hover {
           margin-top: 80px; } }
     @media screen and (max-width: 640px) {
       /* line 835, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .workplace .detail .detail-block .detail-block__textbox {
         order: 2;
         margin-top: .78rem; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
-      /* line 835, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .workplace .detail .detail-block .detail-block__textbox {
         order: 2;
         margin-top: 78px; } }
     @media screen and (min-width: 1025px) {
+
       /* line 835, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #concept .workplace .detail .detail-block .detail-block__textbox {
         width: 594px; } }
     /* line 848, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #concept .workplace .detail .detail-block .heading {
       line-height: 1.7;
       font-weight: bold; }
       @media screen and (max-width: 640px) {
+
         /* line 848, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #concept .workplace .detail .detail-block .heading {
           font-size: .3rem; } }
@@ -1618,15 +1784,17 @@ a:hover {
       line-height: 2.2; }
       @media screen and (max-width: 640px) {
         /* line 861, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #concept .workplace .detail .detail-block .text {
           margin-top: 1em;
           font-size: .18rem; } }
       @media screen and (max-width: 1024px) and (min-width: 641px) {
-        /* line 861, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #concept .workplace .detail .detail-block .text {
           margin-top: 1em;
           font-size: 18px; } }
       @media screen and (min-width: 1025px) {
+
         /* line 861, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #concept .workplace .detail .detail-block .text {
           margin-top: 1.2em;
@@ -1636,20 +1804,23 @@ a:hover {
       position: relative; }
       @media screen and (max-width: 640px) {
         /* line 876, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #concept .workplace .detail .detail-block .detail-block__picture {
           width: calc(100% + .6rem);
           order: 1; } }
       @media screen and (max-width: 1024px) and (min-width: 641px) {
-        /* line 876, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #concept .workplace .detail .detail-block .detail-block__picture {
           width: calc(100% + 60px);
           order: 1; } }
       @media screen and (min-width: 1025px) {
+
         /* line 876, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #concept .workplace .detail .detail-block .detail-block__picture {
           order: 1;
           width: 476px; } }
       /* line 890, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .workplace .detail .detail-block .detail-block__picture:after {
         content: '';
         display: block;
@@ -1661,6 +1832,7 @@ a:hover {
         height: 100%;
         background-color: #a42629; }
       @media screen and (max-width: 640px) {
+
         /* line 901, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #concept .workplace .detail .detail-block .detail-block__picture.is-shadowleft {
           margin-right: -.6rem; } }
@@ -1682,16 +1854,16 @@ a:hover {
       /* line 919, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #concept .workplace .detail .detail-block .detail-block__picture.is-shadowright:after {
         margin: 3.5% 0 0 3.5%; }
-      /* line 923, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .workplace .detail .detail-block .detail-block__picture img {
         position: relative;
         z-index: 2; }
 
-/* line 931, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 #concept .approach {
   padding: 130px 0 90px;
   background-color: #e3e3e3; }
   @media screen and (max-width: 640px) {
+
     /* line 931, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #concept .approach {
       padding: 1.3rem .6rem 1.24rem; } }
@@ -1704,6 +1876,7 @@ a:hover {
     #concept .approach {
       min-width: 1230px; } }
   /* line 943, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #concept .approach .approach-heading {
     margin: 0 auto;
     padding: .9em 0;
@@ -1713,11 +1886,12 @@ a:hover {
     text-align: center;
     color: #FFFFFF; }
     @media screen and (max-width: 640px) {
-      /* line 943, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .approach .approach-heading {
         width: auto;
         font-size: .35rem; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
+
       /* line 943, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #concept .approach .approach-heading {
         font-size: 35px; } }
@@ -1739,15 +1913,18 @@ a:hover {
       margin: 50px auto 0;
       width: 900px; } }
   /* line 973, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #concept .approach .approach-list .approach-list_item {
     position: relative;
     margin-top: 50px; }
     @media screen and (max-width: 640px) {
+
       /* line 973, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #concept .approach .approach-list .approach-list_item {
         margin-top: .5rem; } }
     @media screen and (min-width: 1025px) {
       /* line 973, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .approach .approach-list .approach-list_item {
         display: flex;
         flex-flow: row wrap;
@@ -1755,7 +1932,7 @@ a:hover {
         justify-content: space-between;
         width: 100%; } }
     @media screen and (max-width: 640px) {
-      /* line 989, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .approach .approach-list .approach-list_item .image {
         position: absolute;
         top: 0;
@@ -1763,13 +1940,16 @@ a:hover {
         margin-left: -18%;
         width: 38.4%; } }
     @media screen and (max-width: 1024px) and (min-width: 641px) {
+
       /* line 989, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .approach .approach-list .approach-list_item .image {
         position: absolute;
         top: 0;
         left: -10px;
         width: 190px; } }
     @media screen and (min-width: 1025px) {
+
       /* line 989, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #concept .approach .approach-list .approach-list_item .image {
         width: 228px; } }
@@ -1778,10 +1958,12 @@ a:hover {
       #concept .approach .approach-list .approach-list_item .textbox {
         width: 604px; } }
     /* line 1011, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #concept .approach .approach-list .approach-list_item .textbox .title {
       color: #a42629;
       font-weight: bold; }
       @media screen and (max-width: 640px) {
+
         /* line 1011, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #concept .approach .approach-list .approach-list_item .textbox .title {
           margin-left: 25%; } }
@@ -1791,11 +1973,12 @@ a:hover {
           margin-left: 200px; } }
       @media screen and (min-width: 1025px) {
         /* line 1011, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #concept .approach .approach-list .approach-list_item .textbox .title {
           display: flex;
           flex-flow: row wrap;
           align-items: center; } }
-      /* line 1025, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .approach .approach-list .approach-list_item .textbox .title .num {
         width: 1.4em;
         font-family: "Roboto Condensed", sans-serif;
@@ -1803,40 +1986,45 @@ a:hover {
         line-height: .8;
         letter-spacing: .05em; }
         @media screen and (max-width: 640px) {
-          /* line 1025, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
           #concept .approach .approach-list .approach-list_item .textbox .title .num {
             border-right: none;
             font-size: .6rem; } }
         @media screen and (min-width: 1025px) {
+
           /* line 1025, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
           #concept .approach .approach-list .approach-list_item .textbox .title .num {
             border-right: 3px solid #a42629; } }
       /* line 1039, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #concept .approach .approach-list .approach-list_item .textbox .title .text {
         font-weight: bold;
         line-height: 1.2; }
         @media screen and (max-width: 640px) {
-          /* line 1039, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
           #concept .approach .approach-list .approach-list_item .textbox .title .text {
             margin-top: .4em;
             font-size: .28rem;
             line-height: 1.6; } }
         @media screen and (max-width: 1024px) and (min-width: 641px) {
-          /* line 1039, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
           #concept .approach .approach-list .approach-list_item .textbox .title .text {
             margin-top: .2em;
             font-size: 28px;
             line-height: 1.6; } }
         @media screen and (min-width: 1025px) {
+
           /* line 1039, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
           #concept .approach .approach-list .approach-list_item .textbox .title .text {
             margin-left: .8em;
             font-size: 22px; } }
     /* line 1058, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #concept .approach .approach-list .approach-list_item .textbox .lead {
       margin-top: 1.4em;
       line-height: 2.2; }
       @media screen and (max-width: 640px) {
+
         /* line 1058, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #concept .approach .approach-list .approach-list_item .textbox .lead {
           font-size: .18rem; } }
@@ -1846,34 +2034,35 @@ a:hover {
           font-size: 18px; } }
       @media screen and (min-width: 1025px) {
         /* line 1058, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #concept .approach .approach-list .approach-list_item .textbox .lead {
           font-size: 14px; } }
 
 @media screen and (max-width: 640px) {
-  /* line 1075, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #concept .office {
     margin-top: .6rem;
     padding: 0 .6rem; } }
 
 @media screen and (max-width: 1024px) and (min-width: 641px) {
-  /* line 1075, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #concept .office {
     margin-top: 60px;
     padding: 0 60px; } }
 
 @media screen and (min-width: 1025px) {
-  /* line 1075, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #concept .office {
     margin-top: 70px;
     min-width: 1230px; } }
 
-/* line 1088, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
 #concept .office .office-block1,
 #concept .office .office-block2 {
   display: block;
   margin: 0 auto; }
   @media screen and (min-width: 1025px) {
-    /* line 1088, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #concept .office .office-block1,
     #concept .office .office-block2 {
       width: 1230px; } }
@@ -1890,24 +2079,28 @@ a:hover {
 #company .profile {
   background: #eee; }
   /* line 1108, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #company .profile .profile-list {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
     align-items: stretch;
+
     max-width: 800px;
     margin: 0 auto;
     font-size: 0; }
     @media screen and (max-width: 640px) {
+
       /* line 1108, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #company .profile .profile-list {
         width: 90%; } }
     /* line 1119, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #company .profile .profile-list .profile-list__term,
     #company .profile .profile-list .profile-list__description {
       display: inline-block;
       font-size: 15px; }
-    /* line 1124, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #company .profile .profile-list .profile-list__term {
       width: 15%;
       margin-right: 5%;
@@ -1916,22 +2109,25 @@ a:hover {
       font-weight: bold;
       color: #a42629; }
       @media screen and (max-width: 640px) {
+
         /* line 1124, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #company .profile .profile-list .profile-list__term {
           width: 100%;
           margin-right: 0; } }
     /* line 1136, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #company .profile .profile-list .profile-list__description {
       width: 80%;
       border-bottom: 1px solid #777;
       padding: 20px 0;
       line-height: 1.6; }
       @media screen and (max-width: 640px) {
-        /* line 1136, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #company .profile .profile-list .profile-list__description {
           width: 100%;
           border-bottom: none;
           padding: 5% 0; } }
+
       /* line 1146, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #company .profile .profile-list .profile-list__description .heading {
         font-weight: bold;
@@ -1945,10 +2141,12 @@ a:hover {
         border-bottom: none; }
 
 /* line 1160, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
 #company .history {
   max-width: 800px;
   margin: 0 auto; }
   @media screen and (max-width: 640px) {
+
     /* line 1160, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #company .history {
       width: 90%; } }
@@ -1963,6 +2161,7 @@ a:hover {
     #company .history .history-blocks .history-block {
       margin-bottom: 50px; }
       /* line 1176, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #company .history .history-blocks .history-block .heading {
         display: inline-block;
         padding-bottom: 10px;
@@ -1970,11 +2169,12 @@ a:hover {
         font-size: 18px;
         color: #a42629;
         font-weight: bold; }
-      /* line 1184, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #company .history .history-blocks .history-block .date,
       #company .history .history-blocks .history-block .text {
         font-size: 15px;
         line-height: 1.6; }
+
       /* line 1189, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #company .history .history-blocks .history-block .date {
         margin: 20px 0 5px; }
@@ -1984,40 +2184,128 @@ a:hover {
 
 /* line 1202, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 #privacy .detail .detail-block {
+
   max-width: 1230px;
+  margin: 0 auto; }
+  @media screen and (max-width: 640px) {
+    /* line 1238, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #casestudy .projectDetail {
+      width: 90%; } }
+  /* line 1244, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #casestudy .projectDetail .projectDetail_heading {
+    margin-bottom: 60px; }
+    /* line 1246, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #casestudy .projectDetail .projectDetail_heading span {
+      color: #000;
+      border-color: #000; }
+  /* line 1251, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #casestudy .projectDetail .projectDetail-lists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between; }
+    /* line 1255, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #casestudy .projectDetail .projectDetail-lists:after {
+      content: '';
+      display: block;
+      width: 30%; }
+    /* line 1260, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #casestudy .projectDetail .projectDetail-lists .projectDetail-lists__item {
+      width: 30%;
+      margin-bottom: 50px;
+      transition: .24s ease all; }
+      @media screen and (max-width: 640px) {
+        /* line 1260, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #casestudy .projectDetail .projectDetail-lists .projectDetail-lists__item {
+          width: 48%;
+          margin-bottom: .5rem; } }
+      /* line 1268, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #casestudy .projectDetail .projectDetail-lists .projectDetail-lists__item:hover {
+        opacity: .7; }
+  /* line 1273, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #casestudy .projectDetail .projectDetail_details {
+    max-width: 580px;
+    margin: 0 auto;
+    border-top: 2px solid #dbdbdb;
+    margin-top: 30px;
+    padding-top: 60px; }
+    /* line 1279, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #casestudy .projectDetail .projectDetail_details .text {
+      font-size: 14px;
+      line-height: 2; }
+    /* line 1283, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #casestudy .projectDetail .projectDetail_details .list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      margin-top: 40px; }
+      /* line 1292, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #casestudy .projectDetail .projectDetail_details .list dt {
+        width: 80px;
+        margin-bottom: 22px;
+        padding: 3px 10px;
+        border-radius: 20px;
+        background: #dbdbdb;
+        color: #a42629;
+        text-align: center;
+        font-size: 13px; }
+      /* line 1302, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #casestudy .projectDetail .projectDetail_details .list dd {
+        width: calc(100% - 100px);
+        margin-left: 20px;
+        font-size: 15px;
+        line-height: 1.8; }
+  /* line 1310, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #casestudy .projectDetail .projectDetail_btnArea {
+    margin-top: 60px;
+    text-align: center; }
+    /* line 1313, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #casestudy .projectDetail .projectDetail_btnArea .projectDetail_btnArea__btn {
+      width: 300px; }
+
+/* line 1322, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#privacy .detail .detail-block {
+  min-width: 1230px;
   margin: 0 auto 100px; }
-  /* line 1205, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
+
   #privacy .detail .detail-block .detail-block_heading {
     margin-bottom: 50px;
     border: 1px solid #000;
     padding: 20px 40px;
     font-size: 24px;
     font-weight: bold; }
+
   /* line 1213, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #privacy .detail .detail-block .detail-block__content .text {
     margin-bottom: 50px;
     font-size: 16px;
     line-height: 1.6; }
+
     /* line 1217, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #privacy .detail .detail-block .detail-block__content .text a {
       display: inline-block;
       color: #a42629; }
   /* line 1222, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #privacy .detail .detail-block .detail-block__content .heading {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold; }
-  /* line 1227, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #privacy .detail .detail-block .detail-block__content .heading_small {
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: bold; }
-  /* line 1232, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #privacy .detail .detail-block .detail-block__content .list {
     margin-bottom: 60px;
     font-size: 14px;
     line-height: 1.8; }
+
     /* line 1236, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #privacy .detail .detail-block .detail-block__content .list a {
       margin-top: 10px;
       color: #a42629; }
@@ -2031,48 +2319,61 @@ a:hover {
     #contact .form {
       width: 90%; } }
   /* line 1253, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #contact .form .form_required {
     border: 1px solid #a42629;
     border-radius: 15px;
     padding: 1px 13px;
     font-size: 10px;
     color: #a42629; }
+
   /* line 1260, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #contact .form .intro {
     position: relative;
     margin-bottom: 50px;
     border-bottom: 1px solid #eee;
     padding-bottom: 80px; }
+
     /* line 1265, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #contact .form .intro .text {
       font-size: 14px;
       line-height: 1.6;
       text-align: center; }
+
     /* line 1270, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #contact .form .intro .caution {
       position: absolute;
       bottom: 20px;
       right: 0;
       font-size: 13px; }
+
       /* line 1275, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #contact .form .intro .caution .form_required {
         margin-right: 10px; }
   /* line 1280, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
   #contact .form .form-check {
     max-width: 400px;
     margin: 0 auto;
     border: 1px solid #eee;
     text-align: center;
     padding: 30px; }
+
     /* line 1287, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #contact .form .form-check .heading a {
       font-size: 14px;
       color: #a42629;
       margin-bottom: 20px; }
+
     /* line 1293, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #contact .form .form-check .check {
       font-size: 14px; }
       /* line 1295, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #contact .form .form-check .check input {
         display: inline-block;
         position: relative;
@@ -2080,15 +2381,19 @@ a:hover {
         margin: 0 10px;
         width: 34px;
         height: 34px;
+
         background: #dcdcdc;
+
         outline: none;
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none; }
+
         /* line 1308, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #contact .form .form-check .check input:checked:after {
           opacity: 1; }
         /* line 1312, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
         #contact .form .form-check .check input:after {
           content: '';
           display: block;
@@ -2101,6 +2406,7 @@ a:hover {
           height: 0.4em;
           transform: rotate(135deg);
           opacity: 0; }
+
   /* line 1328, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
   #contact .form .form-list {
     width: 100%; }
@@ -2108,6 +2414,7 @@ a:hover {
     #contact .form .form-list .from-list_item > th, #contact .form .form-list .from-list_item td {
       font-size: 15px; }
     /* line 1334, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #contact .form .form-list .from-list_item > th {
       font-weight: bold;
       position: relative;
@@ -2115,6 +2422,7 @@ a:hover {
       vertical-align: top;
       padding: 8px; }
       @media screen and (max-width: 640px) {
+
         /* line 1334, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #contact .form .form-list .from-list_item > th {
           width: 100%;
@@ -2123,15 +2431,18 @@ a:hover {
       #contact .form .form-list .from-list_item > th .form_required {
         margin-left: 10px; }
     /* line 1348, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
     #contact .form .form-list .from-list_item > td {
       width: calc(100% - 230px);
       padding-bottom: 30px; }
       @media screen and (max-width: 640px) {
+
         /* line 1348, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #contact .form .form-list .from-list_item > td {
           width: 100%;
           display: block; } }
       /* line 1355, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+
       #contact .form .form-list .from-list_item > td input,
       #contact .form .form-list .from-list_item > td textarea {
         width: 100%;
@@ -2144,6 +2455,7 @@ a:hover {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none; }
+
     /* line 1371, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #contact .form .form-list .from-list_item:first-of-type td input {
       width: 48%; }
@@ -2173,5 +2485,6 @@ a:hover {
     #contact .form .form-btn input:hover {
       background: #a42629;
       color: #fff; }
+
 
 /*# sourceMappingURL=style.css.map */

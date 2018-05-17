@@ -3,12 +3,12 @@
   <main id="contact">
 
   <!-- hero -->
-  <div class="visual">
-    <h2 class="visual-heading">
-      <span class="hero-title__en">CONTACT</span>
-      <span class="hero-title__en">お問い合わせ</span>
-    </h2>
-  </div>
+    <div class="visual c-visual">
+      <h2 class="visual-heading c-visual-heading">
+        <span class="visual-heading__en c-visual-heading__en">CONTACT</span>
+        <span class="visual-heading__jp c-visual-heading__jp">お問い合わせ</span>
+      </h2>
+    </div>
   <!-- /hero -->
 
 
@@ -64,7 +64,7 @@
         <div class="check"><label><span class="form_required">必須</span><input type="checkbox">上記の内容に同意する　</label></div>
       </div>
       <div class="form-btn">
-        <div class="form-btn__confirm"><input type="submit" value="送信"></div>
+        <div class="form-btn__confirm form-btn__parts"><input type="submit" value="送信"></div>
       </div>
     </div>
   </section>
