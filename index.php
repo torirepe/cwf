@@ -60,10 +60,44 @@
             </div>
           </section>
           <!-- /concept -->
+          
+          <!-- casestudy -->
+          <section>
+            <div class="casestudy">
+              <div class="casestudy-block">
+                <h2 class="casestudy-heading c-sectiontitle"><span>CASE STUDY</span></h2>
+                <div class="casestudy-copy">
+                  <div class="casestudy-copy__title">オフィスコンサルティングのプロジェクト実績</div>
+                  <div class="casestudy-copy__text">ＣＷＦのオフィスづくりは、複合的な思考で“個人＝多様な人材”と“チーム＝組織”が共に成長する環境を計り、<br>それぞれのクライアントのワークスタイルに最適なワークプレイスを実現します。</div>
+                </div>
+                <div class="casestudy-slider">
+                  <ul class="casestudy-slider__items">
+                    <li class="casestudy-slider__item">
+                      <figure class="image"><img src="" alt=""></figure>
+                      <div class="title">ＳＰＡブランド会社</div>
+                      <div class="text">執務エリアは、統合・改編などの組織変更に柔軟に対応するために、ユニバーサルプランを採用。来客エリアは、 “ファッションを通じて、お客様に「ワクワク」を提供する”という企業観を来訪者と共…>></div>
+                    </li>
+                    <li class="casestudy-slider__item">
+                      <figure class="image"><img src="" alt=""></figure>
+                      <div class="title">ＳＰＡブランド会社</div>
+                      <div class="text">執務エリアは、統合・改編などの組織変更に柔軟に対応するために、ユニバーサルプランを採用。来客エリアは、 “ファッションを通じて、お客様に「ワクワク」を提供する”という企業観を来訪者と共…>></div>
+                    </li>
+                    <li class="casestudy-slider__item">
+                      <figure class="image"><img src="" alt=""></figure>
+                      <div class="title">ＳＰＡブランド会社</div>
+                      <div class="text">執務エリアは、統合・改編などの組織変更に柔軟に対応するために、ユニバーサルプランを採用。来客エリアは、 “ファッションを通じて、お客様に「ワクワク」を提供する”という企業観を来訪者と共…>></div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- /casestudy -->
 
           <!-- service -->
           <section>
             <div class="service">
+              <div class="service-block">
               <h2 class="service-heading c-sectiontitle">SERVICE</h2>
               <div class="service-content">
                 <div class="service-content__item">
@@ -87,6 +121,7 @@
                   <figure class="image"><img src="" alt=""></figure>
                   <div class="btn morebtn"><a href="">READ MORE</a></div>
                 </div>
+              </div>
               </div>
             </div>
           </section>

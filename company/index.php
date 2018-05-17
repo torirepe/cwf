@@ -53,7 +53,6 @@
         </dd>
       </dl>
     </div>
-  </section>
   <!-- profile -->
   
   <section>

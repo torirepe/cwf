@@ -16,13 +16,14 @@
   display: inline-block;
   a {
     background-color: $color-red;
-    padding: .4em;
+    padding: .6em .8em;
     font-size: 14px;
     color: $color-white;
     letter-spacing: .2em;
     &:after {
       content: '';
       display: inline-block;
+      vertical-align: middle;
       width: 1em;
       height: 1em;
       background: url(images/layout/arrow.svg) no-repeat center center / 100% auto;

@@ -165,8 +165,34 @@
     }
     .concept-btn {
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: 84px;
+      left: 50%;
+      margin-left: 372px;
+    }
+  }
+  .casestudy {
+    background-color: $color-gray-ultralight;
+    .casestudy-block {
+      margin: 0 auto;
+      width: 1230px;
+      background-color: $color-gray-light;
+    }
+    .casestudy-copy {
+      margin-top: 72px;
+      padding-bottom: 56px;
+      text-align: center;
+      .casestudy-copy__title {
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: .1em;
+        line-height: 1;
+      }
+      .casestudy-copy__text {
+        margin-top: 42px;
+        font-size: 18px;
+        letter-spacing: .1em;
+        line-height: 2.2;
+      }
     }
   }
 }

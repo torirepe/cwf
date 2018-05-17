@@ -126,13 +126,13 @@ a:hover {
 
 /* line 34, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 ::selection {
-  background: #eee;
+  background: #e3e3e3;
   color: #212121;
   text-shadow: none; }
 
 /* line 39, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 ::-moz-selection {
-  background: #eee;
+  background: #e3e3e3;
   color: #212121;
   text-shadow: none; }
 
@@ -154,7 +154,7 @@ a:hover {
 
 /* line 58, /Applications/MAMP/htdocs/CWF/scss/foundation/_base.scss */
 .noscript {
-  background: #eee;
+  background: #e3e3e3;
   width: 100%;
   padding: 100px 0;
   position: absolute;
@@ -544,7 +544,7 @@ a:hover {
   /* line 17, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
   .c-morebtn a {
     background-color: #a42629;
-    padding: .4em;
+    padding: .6em .8em;
     font-size: 14px;
     color: #FFFFFF;
     letter-spacing: .2em; }
@@ -552,6 +552,7 @@ a:hover {
     .c-morebtn a:after {
       content: '';
       display: inline-block;
+      vertical-align: middle;
       width: 1em;
       height: 1em;
       background: url(images/layout/arrow.svg) no-repeat center center/100% auto; }
@@ -720,8 +721,35 @@ a:hover {
   /* line 166, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #index .concept .concept-btn {
     position: absolute;
-    bottom: 0;
-    left: 0; }
+    bottom: 84px;
+    left: 50%;
+    margin-left: 372px; }
+
+/* line 173, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+#index .casestudy {
+  background-color: #f0f0f0; }
+  /* line 175, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  #index .casestudy .casestudy-block {
+    margin: 0 auto;
+    width: 1230px;
+    background-color: #e3e3e3; }
+  /* line 180, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  #index .casestudy .casestudy-copy {
+    margin-top: 72px;
+    padding-bottom: 56px;
+    text-align: center; }
+    /* line 184, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    #index .casestudy .casestudy-copy .casestudy-copy__title {
+      font-size: 28px;
+      font-weight: bold;
+      letter-spacing: .1em;
+      line-height: 1; }
+    /* line 190, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    #index .casestudy .casestudy-copy .casestudy-copy__text {
+      margin-top: 42px;
+      font-size: 18px;
+      letter-spacing: .1em;
+      line-height: 2.2; }
 
 /* line 178, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #company {
