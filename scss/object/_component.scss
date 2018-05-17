@@ -58,3 +58,39 @@
     }
   }
 }
+
+.c-visual {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 92px;
+  width: 100%;
+  height: 400px;
+  background: url(images/concept/visual.jpg) no-repeat center center / cover;
+  text-align: center;
+  color: $color-white;
+  @include media(sp) {
+    padding-top: .92rem;
+  }
+  .c-visual-heading__en {
+    display: block;
+    border-bottom: 4px solid $color-white;
+    padding-bottom: .1em;
+    font-weight: bold;
+    font-family: $fontfamily-roboto-condensed;
+    font-size: 29px;
+    letter-spacing: .2em;
+  }
+  .c-visual-heading__jp {
+    display: block;
+    padding-top: .6em;
+    font-weight: bold;
+    font-family: $fontfamily-roboto-condensed;
+    font-size: 16px;
+    letter-spacing: .3em;
+    @include media(sp) {
+      font-size: .16rem;
+    }
+  }
+}
