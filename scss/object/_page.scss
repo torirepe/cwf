@@ -14,19 +14,39 @@
         position: absolute;
         top: 50%;
         left: 0;
-        padding: 0 70px;
         width: 100%;
-        transform: translate(0, -50%);
-        text-align: right;
+        transform: translate(0,-50%);
+        text-align: center;
+        @include media(sp) {
+          padding: 0 .094rem;
+        }
+        @include media(tb) {
+          padding: 0 46px;
+        }
+        @include media(pc) {
+          padding: 0 70px;
+          text-align: right;
+        }
         &.is-red {
-          text-align: left;
+          @include media(pc) {
+            text-align: left;
+          }
           .en {
             display: block;
             font-weight: bold;
             font-family: $fontfamily-roboto-condensed;
-            font-size: 75px;
-            letter-spacing: .2em;
             color: $color-red;
+            letter-spacing: .1em;
+            @include media(sp) {
+              font-size: .45rem;
+            }
+            @include media(tb) {
+              font-size: 50px;
+            }
+            @include media(pc) {
+              letter-spacing: .2em;
+              font-size: 75px;
+            }
           }
           .jp {
             display: block;
@@ -35,15 +55,34 @@
             font-family: $fontfamily-roboto-condensed;
             font-size: 24px;
             letter-spacing: .3em;
+            color: $color-white;
+            @include media(sp) {
+              font-size: .19rem;
+            }
+            @include media(tb) {
+              font-size: 16px;
+            }
+            @include media(pc) {
+              font-size: 24px;
+              color: $color-black;
+            }
           }
         }
         .strong {
           display: block;
           font-weight: bold;
           font-family: $fontfamily-roboto-condensed;
-          font-size: 75px;
           letter-spacing: .2em;
           color: $color-white;
+          @include media(sp) {
+            font-size: .45rem;
+          }
+          @include media(tb) {
+            font-size: 50px;
+          }
+          @include media(pc) {
+            font-size: 75px;
+          }
         }
         .small {
           display: block;
@@ -51,6 +90,15 @@
           font-size: 75px;
           letter-spacing: .2em;
           color: $color-white;
+          @include media(sp) {
+            font-size: .45rem;
+          }
+          @include media(tb) {
+            font-size: 50px;
+          }
+          @include media(pc) {
+            font-size: 75px;
+          }
         }
       }
     }
@@ -59,12 +107,17 @@
       top: 50%;
       left: 50%;
       z-index: 0;
+      min-height: 100%;
+      width: auto;
       transform: translate(-50%, -50%);
+      @media screen and (min-width: 1500px) {
+        width: 100%;
+        height: auto;
+      }
     }
   }
   .concept {
     position: relative;
-    min-width: 1230px;
     padding-bottom: 70px;
     background: url(images/index/concept_bg.svg) no-repeat center center;
     .concept-block {
@@ -147,9 +200,11 @@
       background-color: $color-red;
       mix-blend-mode: multiply;
       margin-top: 42px;
-      padding: 28px 0;
-      padding-left: calc( (100vw - 1100px) / 2);
+      padding: 28px 0 28px 65px;
       width: 750px;
+      @media screen and (min-width: 1230px) {
+        padding-left: calc( (100vw - 1100px) / 2);
+      }
       box-sizing: content-box;
       .concept-list__items {
         .concept-list__item {
@@ -165,8 +220,185 @@
     }
     .concept-btn {
       position: absolute;
-      bottom: 0;
-      left: 0;
+      bottom: 84px;
+      left: 50%;
+      margin-left: 372px;
+    }
+  }
+  .casestudy {
+    position: relative;
+    min-width: 1230px;
+    background-color: $color-gray-ultralight;
+    .casestudy-block {
+      margin: 0 auto;
+      width: 1230px;
+      background-color: $color-gray-light;
+    }
+    .casestudy-slider {
+      position: relative;
+      height: 578px;
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        z-index: 0;
+        width: 4000px;
+        height: 100%;
+        background-color: rgba(255,255,255,.72);
+        transform: translate(-50% , 0);
+      }
+      .bx-wrapper {
+        position: relative;
+        z-index: 2;
+        margin: 0  auto;
+        max-width: inherit !important;
+        width: 1080px;
+        height: 100%;
+        .bx-viewport {
+          position: relative;
+          z-index: 1;
+          max-width: inherit !important;
+          width: 100% !important;
+          height: 100% !important;
+          overflow: visible !important;
+          .casestudy-slider__items {
+            padding: 42px 0 72px;
+            height: 100% !important;
+            .casestudy-slider__item {
+              opacity: .4;
+              padding: 0 25px;
+              width: 540px !important;
+              transition: all .48s ease;
+              &.active {
+                opacity: 1;
+              }
+              .name {
+                margin-top: 1.4em;
+                font-size: 18px;
+                font-weight: bold;
+              }
+              .text {
+                margin-top: 1em;
+                font-size: 15px;
+                line-height: 2;
+              }
+            }
+          }
+        }
+        .bx-controls {
+          .bx-prev,
+          .bx-next {
+            position: absolute;
+            top: 185px;
+            z-index: 9;
+            width: 42px;
+            height: 42px;
+            background: url(images/index/casestudySlider_arrow.svg) no-repeat center center / cover;
+            font-size: 0;
+          }
+          .bx-prev {
+            position: absolute;
+            left: -50px;
+          }
+          .bx-next {
+            position: absolute;;
+            right: -50px;
+            transform: rotate(180deg);
+          }
+        }
+      }
+    }
+    .casestudy-btn {
+      text-align: center;
+      padding: 76px 0 62px;
+    }
+  }
+  
+  .service {
+    width: 100%;
+    background-color: $color-gray-ultralight;
+    .service-block {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      margin: 0 auto;
+      width: 1230px;
+      .service-content__item {
+        padding: 24px 35px 30px;
+        width: 362px;
+        box-sizing: content-box;
+        &:nth-child(1) {
+          padding-left: 0;
+        }
+        &:nth-child(3) {
+          padding-right: 0;
+        }
+        &:nth-child(n+2) {
+          border-left: 1px solid $color-gray-light;
+        }
+        .title {
+          font-size: 20px;
+          font-weight: bold;
+          color: $color-red;
+          letter-spacing: -.04em;
+        }
+        .lead {
+          margin-top: 1.8em;
+          font-size: 15px;
+          line-height: 1.9;
+        }
+        .list {
+          margin-top: 20px;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          li {
+            width: 50%;
+            line-height: 1.8;
+            font-size: 14px;
+            color: $color-red;
+          }
+        }
+        .image {
+          margin-top: 34px;
+        }
+        .btn {
+          margin-top: 34px;
+        }
+      }
+    }
+  }
+  
+  .company {
+    margin: 0 auto;
+    padding-bottom: 90px;
+    width: 1230px;
+    .company-list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      margin: 72px auto 0;
+      width: 780px;
+      font-size: 15px;
+      .company-list_term {
+        width: 154px;
+        border-right: 1px solid $color-red;
+      }
+      .company-list_description {
+        padding-left: 1.2em;
+        width: calc(100% - 154px);
+      }
+      *:nth-child(n+3) {
+        margin-top: 24px;
+      }
+    }
+    .company-btn {
+      margin: 20px auto 0;
+      width: 780px;
+      text-align: right;
     }
   }
 }
