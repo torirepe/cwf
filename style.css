@@ -1318,4 +1318,100 @@ a:hover {
         margin: 20px auto 0;
         width: 780px; } }
 
+/* line 666, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+#company {
+  margin-top: 300px; }
+  /* line 668, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  #company .profile {
+    background: #eee; }
+    /* line 670, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    #company .profile .profile-list {
+      width: 1000px;
+      margin: 0 auto;
+      font-size: 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: stretch; }
+      @media screen and (max-width: 640px) {
+        /* line 670, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+        #company .profile .profile-list {
+          width: 90%; } }
+      /* line 681, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__term,
+      #company .profile .profile-list .profile-list__description {
+        font-size: 15px; }
+      /* line 685, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__term {
+        width: 15%;
+        display: inline-block;
+        border-top: 2px solid #a42629;
+        color: #a42629;
+        font-weight: bold;
+        padding: 17px 0 0;
+        margin-right: 5%; }
+        @media screen and (max-width: 640px) {
+          /* line 685, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+          #company .profile .profile-list .profile-list__term {
+            width: 100%; } }
+      /* line 697, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__description {
+        width: 80%;
+        display: inline-block;
+        border-bottom: 1px solid #777;
+        padding: 20px 0;
+        line-height: 1.6; }
+        @media screen and (max-width: 640px) {
+          /* line 697, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+          #company .profile .profile-list .profile-list__description {
+            width: 100%; } }
+        /* line 706, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+        #company .profile .profile-list .profile-list__description .heading {
+          font-weight: bold;
+          margin-bottom: 5px; }
+        /* line 710, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+        #company .profile .profile-list .profile-list__description .list {
+          line-height: 1.8;
+          margiLn-bottom: 40px; }
+
+/* line 730, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+#privacy .detail .detail-block {
+  max-width: 1230px;
+  margin: 0 auto 100px; }
+  /* line 733, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  #privacy .detail .detail-block .detail-block_heading {
+    margin-bottom: 50px;
+    border: 1px solid #000;
+    padding: 20px 40px;
+    font-size: 24px;
+    font-weight: bold; }
+  /* line 741, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  #privacy .detail .detail-block .detail-block__content .text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 50px; }
+    /* line 745, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    #privacy .detail .detail-block .detail-block__content .text a {
+      color: #a42629;
+      display: inline-block; }
+  /* line 750, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  #privacy .detail .detail-block .detail-block__content .heading {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px; }
+  /* line 755, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  #privacy .detail .detail-block .detail-block__content .heading_small {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px; }
+  /* line 760, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  #privacy .detail .detail-block .detail-block__content .list {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 60px; }
+    /* line 764, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    #privacy .detail .detail-block .detail-block__content .list a {
+      color: #a42629;
+      margin-top: 10px; }
+
 /*# sourceMappingURL=style.css.map */
