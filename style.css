@@ -2114,19 +2114,42 @@ a:hover {
         #company .profile .profile-list .profile-list__term {
           width: 100%;
           margin-right: 0; } }
+<<<<<<< HEAD
+    /* line 1109, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
     /* line 1136, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
     #company .profile .profile-list .profile-list__description {
       width: 80%;
       border-bottom: 1px solid #777;
       padding: 20px 0;
       line-height: 1.6; }
       @media screen and (max-width: 640px) {
+<<<<<<< HEAD
+        /* line 1109, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
         #company .profile .profile-list .profile-list__description {
           width: 100%;
           border-bottom: none;
           padding: 5% 0; } }
+<<<<<<< HEAD
+      /* line 1119, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__description .heading {
+        font-weight: bold;
+        margin-bottom: 5px; }
+      /* line 1123, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__description .list {
+        margin-bottom: 30px;
+        line-height: 1.8; }
+      /* line 1127, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__description:last-child {
+        border-bottom: none; }
+
+/* line 1133, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
       /* line 1146, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #company .profile .profile-list .profile-list__description .heading {
@@ -2142,10 +2165,27 @@ a:hover {
 
 /* line 1160, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
 #company .history {
   max-width: 800px;
   margin: 0 auto; }
   @media screen and (max-width: 640px) {
+<<<<<<< HEAD
+    /* line 1133, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #company .history {
+      width: 90%; } }
+  /* line 1140, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #company .history .history-heading span {
+    color: #000;
+    border-color: #000; }
+  /* line 1145, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #company .history .history-blocks {
+    margin-top: 60px; }
+    /* line 1147, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #company .history .history-blocks .history-block {
+      margin-bottom: 50px; }
+      /* line 1149, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
     /* line 1160, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #company .history {
@@ -2162,6 +2202,7 @@ a:hover {
       margin-bottom: 50px; }
       /* line 1176, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
       #company .history .history-blocks .history-block .heading {
         display: inline-block;
         padding-bottom: 10px;
@@ -2169,11 +2210,96 @@ a:hover {
         font-size: 18px;
         color: #a42629;
         font-weight: bold; }
+<<<<<<< HEAD
+      /* line 1157, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
       #company .history .history-blocks .history-block .date,
       #company .history .history-blocks .history-block .text {
         font-size: 15px;
         line-height: 1.6; }
+<<<<<<< HEAD
+      /* line 1162, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .history .history-blocks .history-block .date {
+        margin: 20px 0 5px; }
+      /* line 1165, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .history .history-blocks .history-block .text {
+        font-weight: bold; }
+
+/* line 1174, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#casestudy .c-visual {
+  background: url(images/casestudy/visual.jpg) no-repeat center center/cover; }
+
+/* line 1177, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#casestudy .project {
+  max-width: 1230px;
+  margin: 0 auto; }
+  @media screen and (max-width: 640px) {
+    /* line 1177, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #casestudy .project {
+      width: 90%; } }
+  /* line 1183, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #casestudy .project .project-lists {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-top: 60px; }
+    /* line 1188, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #casestudy .project .project-lists:after {
+      content: '';
+      display: block;
+      width: 30%; }
+    /* line 1193, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #casestudy .project .project-lists .project-lists__items {
+      width: 30%;
+      margin-bottom: 50px;
+      transition: .24s ease all; }
+      @media screen and (max-width: 640px) {
+        /* line 1193, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #casestudy .project .project-lists .project-lists__items {
+          width: 48%;
+          margin-bottom: .5rem; } }
+      /* line 1201, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #casestudy .project .project-lists .project-lists__items:hover {
+        opacity: .7; }
+      /* line 1206, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #casestudy .project .project-lists .project-lists__items .heading {
+        margin-top: 20px;
+        font-size: 18px;
+        line-height: 1.4;
+        font-weight: bold; }
+        @media screen and (max-width: 640px) {
+          /* line 1206, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #casestudy .project .project-lists .project-lists__items .heading {
+            font-size: .26rem;
+            margin-top: .2rem; } }
+      /* line 1216, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #casestudy .project .project-lists .project-lists__items .text {
+        margin: 15px 0;
+        font-size: 15px; }
+        @media screen and (max-width: 640px) {
+          /* line 1216, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #casestudy .project .project-lists .project-lists__items .text {
+            font-size: .2rem; } }
+        /* line 1222, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #casestudy .project .project-lists .project-lists__items .text span {
+          margin-right: 10px;
+          padding: 5px 10px;
+          border-radius: 10px;
+          font-size: 13px;
+          color: #a42629;
+          background: #dbdbdb; }
+          @media screen and (max-width: 640px) {
+            /* line 1222, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+            #casestudy .project .project-lists .project-lists__items .text span {
+              font-size: .2rem;
+              padding: .1rem .1rem;
+              border-radius: 5px; } }
+
+/* line 1239, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#casestudy .projectDetail {
+=======
 
       /* line 1189, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #company .history .history-blocks .history-block .date {
@@ -2185,61 +2311,62 @@ a:hover {
 /* line 1202, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 #privacy .detail .detail-block {
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
   max-width: 1230px;
   margin: 0 auto; }
   @media screen and (max-width: 640px) {
-    /* line 1238, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1239, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail {
       width: 90%; } }
-  /* line 1244, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1245, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #casestudy .projectDetail .projectDetail_heading {
     margin-bottom: 60px; }
-    /* line 1246, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1247, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail_heading span {
       color: #000;
       border-color: #000; }
-  /* line 1251, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1252, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #casestudy .projectDetail .projectDetail-lists {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; }
-    /* line 1255, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1256, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail-lists:after {
       content: '';
       display: block;
       width: 30%; }
-    /* line 1260, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1261, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail-lists .projectDetail-lists__item {
       width: 30%;
       margin-bottom: 50px;
       transition: .24s ease all; }
       @media screen and (max-width: 640px) {
-        /* line 1260, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        /* line 1261, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
         #casestudy .projectDetail .projectDetail-lists .projectDetail-lists__item {
           width: 48%;
           margin-bottom: .5rem; } }
-      /* line 1268, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1269, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #casestudy .projectDetail .projectDetail-lists .projectDetail-lists__item:hover {
         opacity: .7; }
-  /* line 1273, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1274, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #casestudy .projectDetail .projectDetail_details {
     max-width: 580px;
     margin: 0 auto;
     border-top: 2px solid #dbdbdb;
     margin-top: 30px;
     padding-top: 60px; }
-    /* line 1279, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1280, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail_details .text {
       font-size: 14px;
       line-height: 2; }
-    /* line 1283, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1284, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail_details .list {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
       align-items: stretch;
       margin-top: 40px; }
-      /* line 1292, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1293, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #casestudy .projectDetail .projectDetail_details .list dt {
         width: 80px;
         margin-bottom: 22px;
@@ -2249,39 +2376,54 @@ a:hover {
         color: #a42629;
         text-align: center;
         font-size: 13px; }
-      /* line 1302, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1303, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #casestudy .projectDetail .projectDetail_details .list dd {
         width: calc(100% - 100px);
         margin-left: 20px;
         font-size: 15px;
         line-height: 1.8; }
-  /* line 1310, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1311, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #casestudy .projectDetail .projectDetail_btnArea {
     margin-top: 60px;
     text-align: center; }
-    /* line 1313, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1314, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail_btnArea .projectDetail_btnArea__btn {
       width: 300px; }
 
-/* line 1322, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+/* line 1323, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #privacy .detail .detail-block {
   min-width: 1230px;
   margin: 0 auto 100px; }
+<<<<<<< HEAD
+  /* line 1326, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
   #privacy .detail .detail-block .detail-block_heading {
     margin-bottom: 50px;
     border: 1px solid #000;
     padding: 20px 40px;
     font-size: 24px;
     font-weight: bold; }
+<<<<<<< HEAD
+  /* line 1334, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
   /* line 1213, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
   #privacy .detail .detail-block .detail-block__content .text {
     margin-bottom: 50px;
     font-size: 16px;
     line-height: 1.6; }
+<<<<<<< HEAD
+    /* line 1338, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #privacy .detail .detail-block .detail-block__content .text a {
+      display: inline-block;
+      color: #a42629; }
+  /* line 1343, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
     /* line 1217, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #privacy .detail .detail-block .detail-block__content .text a {
@@ -2289,91 +2431,149 @@ a:hover {
       color: #a42629; }
   /* line 1222, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
   #privacy .detail .detail-block .detail-block__content .heading {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold; }
+<<<<<<< HEAD
+  /* line 1348, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
   #privacy .detail .detail-block .detail-block__content .heading_small {
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: bold; }
+<<<<<<< HEAD
+  /* line 1353, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
   #privacy .detail .detail-block .detail-block__content .list {
     margin-bottom: 60px;
     font-size: 14px;
     line-height: 1.8; }
+<<<<<<< HEAD
+    /* line 1357, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
     /* line 1236, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
     #privacy .detail .detail-block .detail-block__content .list a {
       margin-top: 10px;
       color: #a42629; }
 
+<<<<<<< HEAD
+/* line 1368, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#contact .c-visual {
+  background: url(images/contact/visual.jpg) no-repeat center center/cover; }
+
+/* line 1371, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 /* line 1247, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
 #contact .form {
   width: 800px;
   margin: 0 auto; }
   @media screen and (max-width: 640px) {
+<<<<<<< HEAD
+    /* line 1371, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form {
+      width: 90%; } }
+  /* line 1377, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
     /* line 1247, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #contact .form {
       width: 90%; } }
   /* line 1253, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
   #contact .form .form_required {
     border: 1px solid #a42629;
     border-radius: 15px;
     padding: 1px 13px;
     font-size: 10px;
     color: #a42629; }
+<<<<<<< HEAD
+  /* line 1384, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
   /* line 1260, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
   #contact .form .intro {
     position: relative;
     margin-bottom: 50px;
     border-bottom: 1px solid #eee;
     padding-bottom: 80px; }
+<<<<<<< HEAD
+    /* line 1389, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
     /* line 1265, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
     #contact .form .intro .text {
       font-size: 14px;
       line-height: 1.6;
       text-align: center; }
+<<<<<<< HEAD
+    /* line 1394, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
     /* line 1270, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
     #contact .form .intro .caution {
       position: absolute;
       bottom: 20px;
       right: 0;
       font-size: 13px; }
+<<<<<<< HEAD
+      /* line 1399, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #contact .form .intro .caution .form_required {
+        margin-right: 10px; }
+  /* line 1404, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
       /* line 1275, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
       #contact .form .intro .caution .form_required {
         margin-right: 10px; }
   /* line 1280, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
   #contact .form .form-check {
     max-width: 400px;
     margin: 0 auto;
     border: 1px solid #eee;
     text-align: center;
     padding: 30px; }
+<<<<<<< HEAD
+    /* line 1411, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
     /* line 1287, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
     #contact .form .form-check .heading a {
       font-size: 14px;
       color: #a42629;
       margin-bottom: 20px; }
+<<<<<<< HEAD
+    /* line 1417, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-check .check {
+      font-size: 14px; }
+      /* line 1419, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
     /* line 1293, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #contact .form .form-check .check {
       font-size: 14px; }
       /* line 1295, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
       #contact .form .form-check .check input {
         display: inline-block;
         position: relative;
@@ -2388,12 +2588,19 @@ a:hover {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none; }
+<<<<<<< HEAD
+        /* line 1432, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #contact .form .form-check .check input:checked:after {
+          opacity: 1; }
+        /* line 1436, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
         /* line 1308, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #contact .form .form-check .check input:checked:after {
           opacity: 1; }
         /* line 1312, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
         #contact .form .form-check .check input:after {
           content: '';
           display: block;
@@ -2406,6 +2613,15 @@ a:hover {
           height: 0.4em;
           transform: rotate(135deg);
           opacity: 0; }
+<<<<<<< HEAD
+  /* line 1452, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #contact .form .form-list {
+    width: 100%; }
+    /* line 1455, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-list .from-list_item > th, #contact .form .form-list .from-list_item td {
+      font-size: 15px; }
+    /* line 1458, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
   /* line 1328, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
   #contact .form .form-list {
@@ -2415,6 +2631,7 @@ a:hover {
       font-size: 15px; }
     /* line 1334, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
     #contact .form .form-list .from-list_item > th {
       font-weight: bold;
       position: relative;
@@ -2422,6 +2639,16 @@ a:hover {
       vertical-align: top;
       padding: 8px; }
       @media screen and (max-width: 640px) {
+<<<<<<< HEAD
+        /* line 1458, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #contact .form .form-list .from-list_item > th {
+          width: 100%;
+          display: block; } }
+      /* line 1468, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #contact .form .form-list .from-list_item > th .form_required {
+        margin-left: 10px; }
+    /* line 1472, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
         /* line 1334, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #contact .form .form-list .from-list_item > th {
@@ -2432,10 +2659,18 @@ a:hover {
         margin-left: 10px; }
     /* line 1348, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
     #contact .form .form-list .from-list_item > td {
       width: calc(100% - 230px);
       padding-bottom: 30px; }
       @media screen and (max-width: 640px) {
+<<<<<<< HEAD
+        /* line 1472, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #contact .form .form-list .from-list_item > td {
+          width: 100%;
+          display: block; } }
+      /* line 1479, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
         /* line 1348, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
         #contact .form .form-list .from-list_item > td {
@@ -2443,6 +2678,7 @@ a:hover {
           display: block; } }
       /* line 1355, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
       #contact .form .form-list .from-list_item > td input,
       #contact .form .form-list .from-list_item > td textarea {
         width: 100%;
@@ -2455,6 +2691,15 @@ a:hover {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none; }
+<<<<<<< HEAD
+    /* line 1495, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-list .from-list_item:first-of-type td input {
+      width: 48%; }
+      /* line 1497, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #contact .form .form-list .from-list_item:first-of-type td input:first-child {
+        margin-right: 4%; }
+  /* line 1506, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+=======
 
     /* line 1371, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
     #contact .form .form-list .from-list_item:first-of-type td input {
@@ -2463,9 +2708,36 @@ a:hover {
       #contact .form .form-list .from-list_item:first-of-type td input:first-child {
         margin-right: 4%; }
   /* line 1382, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
   #contact .form .form-btn .form-btn__confirm {
     width: 300px;
     margin: 50px auto 0; }
+<<<<<<< HEAD
+    /* line 1508, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-btn .form-btn__confirm input {
+      width: 300px; }
+  /* line 1512, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #contact .form .form-btn .form-btn__parts {
+    text-align: center; }
+    /* line 1514, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-btn .form-btn__parts input {
+      padding: 15px 0;
+      border: 3px solid #a42629;
+      font-size: 16px;
+      color: #a42629;
+      font-weight: bold;
+      background: none;
+      border-radius: 0;
+      outline: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+      transition: .24s ease all; }
+      /* line 1527, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #contact .form .form-btn .form-btn__parts input:hover {
+        background: #a42629;
+        color: #fff; }
+=======
   /* line 1386, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
   #contact .form .form-btn input {
     width: 100%;
@@ -2486,5 +2758,6 @@ a:hover {
       background: #a42629;
       color: #fff; }
 
+>>>>>>> e4310e3a8ff330e2c0d03987d5463ec9773448c6
 
 /*# sourceMappingURL=style.css.map */
