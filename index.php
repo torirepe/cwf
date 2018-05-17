@@ -12,7 +12,7 @@
                   <span class="en">FOR WORKSTYLE SHIFT.</span>
                   <span class="jp">これからの“はたらき方”を考えたオフィスへ、CWFができること。</span>
                 </div>
-                <div class="hero-copy_text">
+                <!--<div class="hero-copy_text">
                   <span class="strong">ACROSS</span>
                   <span class="small">TEAMS AND LOCATIONS</span>
                 </div>
@@ -23,7 +23,7 @@
                 <div class="hero-copy_text">
                   <span class="strong">EXPAND</span>
                   <span class="small">POSSIBILITIES</span>
-                </div>
+                </div>-->
               </div>
               <video class="hero-video" id="heroVideo" src="video/hero.mp4" autoplay loop muted></video>
             </div>
@@ -46,8 +46,8 @@
                 <div class="concept-image"><img src="images/index/concept_image.jpg" alt="image"></div>
               </div>
               <div class="concept-text">
-                <div class="concept-text__arrow">多様な人材が活躍し企業としても成長する、<br>これからの“はたらき方”を考える</div>
-                <div class="concept-text__arrow">変化する“はたらき方”を受容する<br>ワークプレイスを計画する</div>
+                <div class="concept-text__arrow">多様な人材が活躍し企業としても成長する、<br class="is-st">これからの“はたらき方”を考える</div>
+                <div class="concept-text__arrow">変化する“はたらき方”を受容する<br class="is-st">ワークプレイスを計画する</div>
               </div>
               <div class="concept-list">
                 <ul class="concept-list__items">

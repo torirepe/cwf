@@ -1,9 +1,20 @@
 $(window).load(function(){
+  headerMenu();
   if ($('#index').length) {
     casestudySlider();
     heroVideo();
   };
 });
+
+function headerMenu() {
+  $("#menu").click(function(){
+    if($("#header").hasClass("active")) {
+      $("#header").removeClass("active");
+    } else {
+      $("#header").addClass("active");
+    }
+  });
+}
 
 function heroVideo() {
   var video = document.getElementById('heroVideo');
