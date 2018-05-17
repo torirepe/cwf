@@ -1,5 +1,5 @@
-
-<main id="concept">
+<?php require("../inc/_header.php");?>
+<main id="company">
 
   <!-- hero -->
   <div class="visual">
@@ -16,26 +16,23 @@
     <div class="profile">
       <dl class="profile-list">
         <dt class="profile-list__term">社　名</dt>
-        <dt class="profile-list__description">株式会社CWファシリティソリューション</dt>
-
+        <dd class="profile-list__description">株式会社CWファシリティソリューション</dd>
         <dt class="profile-list__term">所在地</dt>
-        <dt class="profile-list__description">〒108-8710　東京都港区港南1丁目8-35　Tel:03-3474-6530</dt>
-
+        <dd class="profile-list__description">〒108-8710　東京都港区港南1丁目8-35　Tel:03-3474-6530</dd>
         <dt class="profile-list__term">資本金</dt>
-        <dt class="profile-list__description">4億1千万円</dt>
-
+        <dd class="profile-list__description">4億1千万円</dd>
         <dt class="profile-list__term">事業開始</dt>
-        <dt class="profile-list__description">2004年（平成16年）4月</dt>
+        <dd class="profile-list__description">2004年（平成16年）4月</dd>
 
         <dt class="profile-list__term">役員</dt>
-        <dt class="profile-list__description">
+        <dd class="profile-list__description">
               代表取締役社長　堀田 巌
           <br>取締役　　　　　大田 豊
           <br>取締役　　　　　矢田 章
           <br>監査役　　　　　島田 哲也
-        </dt>
+        </dd>
         <dt class="profile-list__term">事業内容</dt>
-        <dt class="profile-list__description">
+        <dd class="profile-list__description">
           <div class="heading">オフィス構築にかかわるサービス事業</div>
           <ul class="list">
             <li>・オフィス計画コンサルティング</li>
@@ -53,7 +50,7 @@
             <li>・引越しの請負</li>
           </ul>
           <div class="heading">その他</div>
-        </dt>
+        </dd>
       </dl>
     </div>
   </section>
@@ -81,3 +78,5 @@
       </div>
     </div>
   </section>
+  
+  <?php require("../inc/_footer.php");?>

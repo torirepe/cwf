@@ -1,4 +1,5 @@
-<?php $root = "http://localhost/CWF/cwf/"  ?>
+
+<?php $root = "http://localhost/" ?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
@@ -21,13 +22,13 @@
         <nav class="gnav">
           <ul class="list">
             <li class="item is-active">
-              <a href="">
+              <a href="/">
                 <span class="en">HOME</span>
                 <span class="jp">ホーム</span>
               </a>
             </li>
             <li class="item">
-              <a href="">
+              <a href="/concept/">
                 <span class="en">CONCEPT</span>
                 <span class="jp">コンセプト</span>
               </a>
