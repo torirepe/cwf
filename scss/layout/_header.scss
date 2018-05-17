@@ -14,6 +14,9 @@
   @include media(sp) {
     padding-left: 4.6%;
   }
+  @include media(pc) {
+    min-width: 1230px;
+  }
   .sitename {
     width: 278px;
     @include media(sp) {
@@ -83,20 +86,20 @@
             font-weight: bold;
             font-size: 18px;
             letter-spacing: .2em;
-            @media screen and (max-width: 1200px) and (min-width: 1025px) {
-              font-size: 16px;
-              letter-spacing: .1em;
-            }
+            //@media screen and (max-width: 1200px) and (min-width: 1025px) {
+            //  font-size: 16px;
+            //  letter-spacing: .1em;
+            //}
           }
           .jp {
             display: block;
             margin-top: .6em;
             font-size: 13px;
             letter-spacing: .4em;
-            @media screen and (max-width: 1200px) and (min-width: 1025px) {
-              font-size: 12px;
-              letter-spacing: .2em;
-            }
+            //@media screen and (max-width: 1200px) and (min-width: 1025px) {
+            //  font-size: 12px;
+            //  letter-spacing: .2em;
+            //}
           }
         }
       }

@@ -1,3 +1,4 @@
+
 <?php $root = "http://localhost/" ?>
 <!DOCTYPE html>
 <html lang="ja">
@@ -5,7 +6,9 @@
     <meta charset="UTF-8">
     <title>test</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <script src="js"></script>
+    <script src="<?php $root ?>js/jquery-1.11.1.js"></script>
+    <script src="<?php $root ?>js/bxslider.js"></script>
+    <script src="<?php $root ?>js/script.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo $root ?>style.css">
