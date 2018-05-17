@@ -1,5 +1,5 @@
 
-<?php $root = "http://localhost/" ?>
+<?php $root = "http://localhost/CWF/cwf/" ?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
