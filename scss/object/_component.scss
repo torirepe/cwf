@@ -1,4 +1,4 @@
-.c-sectiontitle {
+.c-sectionheading {
   padding-top: 70px;
   text-align: center;
   span {
@@ -12,9 +12,27 @@
   }
 }
 
+.c-headinglead {
+  margin-top: 72px;
+  padding-bottom: 56px;
+  text-align: center;
+  .c-heading {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: .1em;
+    line-height: 1;
+  }
+  .c-lead {
+    margin-top: 42px;
+    font-size: 18px;
+    letter-spacing: .1em;
+    line-height: 2.2;
+  }
+}
+
 .c-morebtn {
-  display: inline-block;
   a {
+    display: inline-block;
     background-color: $color-red;
     padding: .6em .8em;
     font-size: 14px;
