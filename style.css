@@ -585,7 +585,7 @@ a:hover {
     height: 1em;
     background: url(images/layout/arrow.svg) no-repeat center center/100% auto; }
 
-/* line 66, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
+/* line 67, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
 .c-btn {
   display: inline-block;
   text-align: center;
@@ -595,10 +595,48 @@ a:hover {
   color: #a42629;
   font-weight: bold;
   transition: .24s ease all; }
-  /* line 75, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
+  /* line 76, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
   .c-btn:hover {
     background: #a42629;
     color: #fff; }
+
+/* line 81, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
+.c-visual {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 92px;
+  width: 100%;
+  height: 400px;
+  background: url(images/concept/visual.jpg) no-repeat center center/cover;
+  text-align: center;
+  color: #FFFFFF; }
+  @media screen and (max-width: 640px) {
+    /* line 81, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
+    .c-visual {
+      padding-top: .92rem; } }
+  /* line 95, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
+  .c-visual .c-visual-heading__en {
+    display: block;
+    border-bottom: 4px solid #FFFFFF;
+    padding-bottom: .1em;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 29px;
+    letter-spacing: .2em; }
+  /* line 104, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
+  .c-visual .c-visual-heading__jp {
+    display: block;
+    padding-top: .6em;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 16px;
+    letter-spacing: .3em; }
+    @media screen and (max-width: 640px) {
+      /* line 104, /Applications/MAMP/htdocs/CWF/scss/object/_component.scss */
+      .c-visual .c-visual-heading__jp {
+        font-size: .16rem; } }
 
 /* line 2, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #index .hero {
@@ -609,132 +647,276 @@ a:hover {
   width: 100%;
   height: 834px;
   overflow: hidden; }
-  /* line 10, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  @media screen and (min-width: 1025px) {
+    /* line 2, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .hero {
+      min-width: 1230px; } }
+  /* line 13, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #index .hero .hero-copy {
     position: relative;
     z-index: 1; }
-    /* line 13, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 16, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #index .hero .hero-copy .hero-copy_text {
       position: absolute;
       top: 50%;
       left: 0;
-      padding: 0 70px;
       width: 100%;
       transform: translate(0, -50%);
-      text-align: right; }
-      /* line 21, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-      #index .hero .hero-copy .hero-copy_text.is-red {
-        text-align: left; }
-        /* line 23, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-        #index .hero .hero-copy .hero-copy_text.is-red .en {
-          display: block;
-          font-weight: bold;
-          font-family: "Roboto Condensed", sans-serif;
-          font-size: 75px;
-          letter-spacing: .2em;
-          color: #a42629; }
-        /* line 31, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-        #index .hero .hero-copy .hero-copy_text.is-red .jp {
-          display: block;
-          margin-top: 1em;
-          font-weight: bold;
-          font-family: "Roboto Condensed", sans-serif;
-          font-size: 24px;
-          letter-spacing: .3em; }
-      /* line 40, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      text-align: center; }
+      @media screen and (max-width: 640px) {
+        /* line 16, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .hero .hero-copy .hero-copy_text {
+          padding: 0 .094rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 16, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .hero .hero-copy .hero-copy_text {
+          padding: 0 46px; } }
+      @media screen and (min-width: 1025px) {
+        /* line 16, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .hero .hero-copy .hero-copy_text {
+          padding: 0 70px;
+          text-align: right; } }
+      @media screen and (min-width: 1025px) {
+        /* line 33, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .hero .hero-copy .hero-copy_text.is-red {
+          text-align: left; } }
+      /* line 37, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .hero .hero-copy .hero-copy_text.is-red .en {
+        display: block;
+        font-weight: bold;
+        font-family: "Roboto Condensed", sans-serif;
+        color: #a42629;
+        letter-spacing: .1em; }
+        @media screen and (max-width: 640px) {
+          /* line 37, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text.is-red .en {
+            font-size: .45rem; } }
+        @media screen and (max-width: 1024px) and (min-width: 641px) {
+          /* line 37, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text.is-red .en {
+            font-size: 50px; } }
+        @media screen and (min-width: 1025px) {
+          /* line 37, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text.is-red .en {
+            letter-spacing: .2em;
+            font-size: 75px; } }
+      /* line 54, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .hero .hero-copy .hero-copy_text.is-red .jp {
+        display: block;
+        margin-top: 1em;
+        font-weight: bold;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 24px;
+        letter-spacing: .3em;
+        color: #FFFFFF; }
+        @media screen and (max-width: 640px) {
+          /* line 54, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text.is-red .jp {
+            font-size: .19rem; } }
+        @media screen and (max-width: 1024px) and (min-width: 641px) {
+          /* line 54, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text.is-red .jp {
+            font-size: 16px; } }
+        @media screen and (min-width: 1025px) {
+          /* line 54, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text.is-red .jp {
+            font-size: 24px;
+            color: #212121; } }
+      /* line 74, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #index .hero .hero-copy .hero-copy_text .strong {
         display: block;
         font-weight: bold;
         font-family: "Roboto Condensed", sans-serif;
-        font-size: 75px;
         letter-spacing: .2em;
         color: #FFFFFF; }
-      /* line 48, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        @media screen and (max-width: 640px) {
+          /* line 74, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text .strong {
+            font-size: .45rem; } }
+        @media screen and (max-width: 1024px) and (min-width: 641px) {
+          /* line 74, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text .strong {
+            font-size: 50px; } }
+        @media screen and (min-width: 1025px) {
+          /* line 74, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text .strong {
+            font-size: 75px; } }
+      /* line 90, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #index .hero .hero-copy .hero-copy_text .small {
         display: block;
         font-family: "Roboto Condensed", sans-serif;
         font-size: 75px;
         letter-spacing: .2em;
         color: #FFFFFF; }
-  /* line 57, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        @media screen and (max-width: 640px) {
+          /* line 90, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text .small {
+            font-size: .45rem; } }
+        @media screen and (max-width: 1024px) and (min-width: 641px) {
+          /* line 90, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text .small {
+            font-size: 50px; } }
+        @media screen and (min-width: 1025px) {
+          /* line 90, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .hero .hero-copy .hero-copy_text .small {
+            font-size: 75px; } }
+  /* line 108, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #index .hero .hero-video {
     position: absolute;
     top: 50%;
     left: 50%;
     z-index: 0;
+    min-height: 100%;
+    width: auto;
     transform: translate(-50%, -50%); }
+    @media screen and (min-width: 1500px) {
+      /* line 108, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .hero .hero-video {
+        width: 100%;
+        height: auto; } }
 
-/* line 65, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+/* line 122, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #index .concept {
   position: relative;
-  min-width: 1230px;
   padding-bottom: 70px;
   background: url(images/index/concept_bg.svg) no-repeat center center; }
-  /* line 70, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-  #index .concept .concept-block {
-    margin: 90px auto 0;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-items: flex-start;
-    width: 1100px; }
-    /* line 77, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  @media screen and (max-width: 1024px) and (min-width: 641px) {
+    /* line 122, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .concept {
+      padding: 0 60px; } }
+  @media screen and (min-width: 1025px) {
+    /* line 122, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .concept {
+      min-width: 1230px; } }
+  @media screen and (max-width: 1024px) and (min-width: 641px) {
+    /* line 132, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .concept .concept-block {
+      margin-top: 68px; } }
+  @media screen and (min-width: 1025px) {
+    /* line 132, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .concept .concept-block {
+      margin: 90px auto 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: flex-start;
+      width: 1100px; } }
+  @media screen and (min-width: 1025px) {
+    /* line 144, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #index .concept .concept-block .concept-copy {
-      width: 490px; }
-      /* line 80, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      width: 490px; } }
+  /* line 149, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #index .concept .concept-block .concept-copy .concept-copy__heading .jp {
+    display: block;
+    font-weight: bold;
+    font-size: 44px;
+    line-height: 1.6;
+    letter-spacing: .1em; }
+    @media screen and (max-width: 640px) {
+      /* line 149, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #index .concept .concept-block .concept-copy .concept-copy__heading .jp {
-        display: block;
-        font-weight: bold;
-        font-size: 44px;
-        line-height: 1.6;
-        letter-spacing: .1em; }
-      /* line 87, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        font-size: .35rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 149, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-block .concept-copy .concept-copy__heading .jp {
+        font-size: 35px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 149, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-block .concept-copy .concept-copy__heading .jp {
+        font-size: 44px; } }
+  /* line 165, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #index .concept .concept-block .concept-copy .concept-copy__heading .en {
+    margin-top: .5em;
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    font-size: 39px;
+    color: #a42629;
+    letter-spacing: .076em; }
+    @media screen and (max-width: 640px) {
+      /* line 165, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #index .concept .concept-block .concept-copy .concept-copy__heading .en {
-        margin-top: .5em;
-        display: block;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
-        font-size: 39px;
-        color: #a42629;
-        letter-spacing: .076em; }
-        /* line 95, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-        #index .concept .concept-block .concept-copy .concept-copy__heading .en strong {
-          font-size: 44px; }
-      /* line 100, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        font-size: .35rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 165, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-block .concept-copy .concept-copy__heading .en {
+        font-size: 35px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 165, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-block .concept-copy .concept-copy__heading .en {
+        font-size: 39px; } }
+    @media screen and (max-width: 640px) {
+      /* line 182, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-block .concept-copy .concept-copy__heading .en strong {
+        font-size: .4rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 182, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-block .concept-copy .concept-copy__heading .en strong {
+        font-size: 40px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 182, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-block .concept-copy .concept-copy__heading .en strong {
+        font-size: 44px; } }
+  /* line 195, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #index .concept .concept-block .concept-copy .concept-copy__text {
+    margin-top: 2em;
+    font-size: 18px;
+    line-height: 2.1;
+    letter-spacing: .03em; }
+    @media screen and (max-width: 640px) {
+      /* line 195, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #index .concept .concept-block .concept-copy .concept-copy__text {
-        margin-top: 2em;
-        font-size: 18px;
-        line-height: 2.1;
-        letter-spacing: .03em; }
-    /* line 107, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-    #index .concept .concept-block .concept-image {
+        font-size: .18rem; } }
+  /* line 205, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #index .concept .concept-block .concept-image {
+    position: relative; }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 205, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-block .concept-image {
+        margin-top: 74px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 205, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-block .concept-image {
+        margin: 20px 40px 0 38px; } }
+    /* line 213, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .concept .concept-block .concept-image img {
       position: relative;
-      margin: 20px 40px 0 38px; }
-      /* line 111, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-      #index .concept .concept-block .concept-image img {
-        position: relative;
-        z-index: 2; }
-      /* line 115, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-      #index .concept .concept-block .concept-image:after {
-        content: '';
-        display: block;
-        position: absolute;
-        top: -13px;
-        left: 16px;
-        z-index: 1;
-        width: 100%;
-        height: 100%;
-        background-color: #a42629; }
-  /* line 128, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      z-index: 2; }
+    /* line 217, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .concept .concept-block .concept-image:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: -13px;
+      left: 16px;
+      z-index: 1;
+      width: 100%;
+      height: 100%;
+      background-color: #a42629; }
+  /* line 230, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #index .concept .concept-text {
     margin: 20px auto 0;
     width: 1100px; }
-    /* line 131, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 233, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #index .concept .concept-text .concept-text__arrow {
+      margin-left: 1.2em;
+      text-indent: -1.2em;
       font-size: 26px;
       line-height: 2;
       font-weight: bold; }
-      /* line 135, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      @media screen and (max-width: 640px) {
+        /* line 233, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .concept .concept-text .concept-text__arrow {
+          font-size: .21rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 233, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .concept .concept-text .concept-text__arrow {
+          font-size: 21px; } }
+      @media screen and (min-width: 1025px) {
+        /* line 233, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .concept .concept-text .concept-text__arrow {
+          font-size: 26px; } }
+      /* line 248, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #index .concept .concept-text .concept-text__arrow:before {
         content: '';
         display: inline-block;
@@ -743,61 +925,924 @@ a:hover {
         width: .8em;
         height: 1em;
         background: url(images/index/concept_arrow.svg) no-repeat left center/100% auto; }
-  /* line 146, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 259, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #index .concept .concept-list {
     background-color: #a42629;
-    mix-blend-mode: multiply;
-    margin-top: 42px;
-    padding: 28px 0;
-    padding-left: calc( (100vw - 1100px) / 2);
-    width: 750px;
-    box-sizing: content-box; }
-    /* line 155, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    mix-blend-mode: multiply; }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 259, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-list {
+        margin: 42px 0 0 -60px;
+        padding: 28px 65px 28px 65px;
+        width: 90vw;
+        line-height: 1.4; } }
+    @media screen and (min-width: 1025px) {
+      /* line 259, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-list {
+        margin-top: 42px;
+        padding: 28px 0 28px 65px;
+        width: 750px;
+        box-sizing: content-box; } }
+    @media screen and (min-width: 1230px) {
+      /* line 259, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .concept .concept-list {
+        padding-left: calc( (100vw - 1100px) / 2); } }
+    /* line 278, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #index .concept .concept-list .concept-list__items .concept-list__item {
       color: #FFFFFF;
       font-size: 17px;
       font-weight: bold;
       letter-spacing: .1em; }
-      /* line 160, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 283, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #index .concept .concept-list .concept-list__items .concept-list__item:nth-child(n+2) {
         margin-top: 1.1em; }
-  /* line 166, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-  #index .concept .concept-btn {
-    position: absolute;
-    bottom: 84px;
-    left: 50%;
-    margin-left: 372px; }
+      @media screen and (max-width: 640px) {
+        /* line 278, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .concept .concept-list .concept-list__items .concept-list__item {
+          font-size: .19rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 278, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .concept .concept-list .concept-list__items .concept-list__item {
+          font-size: 19px; } }
+      @media screen and (min-width: 1025px) {
+        /* line 278, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .concept .concept-list .concept-list__items .concept-list__item {
+          font-size: 17px; } }
+  @media screen and (max-width: 1024px) and (min-width: 641px) {
+    /* line 298, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .concept .concept-btn {
+      margin: 54px 0 84px;
+      display: block;
+      text-align: center; } }
+  @media screen and (min-width: 1025px) {
+    /* line 298, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .concept .concept-btn {
+      position: absolute;
+      bottom: 84px;
+      left: 50%;
+      margin-left: 372px; } }
 
-/* line 173, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+/* line 312, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #index .casestudy {
-  background-color: #f0f0f0; }
-  /* line 175, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  position: relative; }
+  @media screen and (min-width: 1025px) {
+    /* line 312, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .casestudy {
+      background-color: #f0f0f0;
+      min-width: 1230px; } }
+  /* line 318, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #index .casestudy .casestudy-block {
     margin: 0 auto;
-    width: 1230px;
     background-color: #e3e3e3; }
-  /* line 180, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-  #index .casestudy .casestudy-copy {
-    margin-top: 72px;
-    padding-bottom: 56px;
-    text-align: center; }
-    /* line 184, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-    #index .casestudy .casestudy-copy .casestudy-copy__title {
-      font-size: 28px;
-      font-weight: bold;
-      letter-spacing: .1em;
-      line-height: 1; }
-    /* line 190, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-    #index .casestudy .casestudy-copy .casestudy-copy__text {
-      margin-top: 42px;
-      font-size: 18px;
-      letter-spacing: .1em;
-      line-height: 2.2; }
+    @media screen and (min-width: 1025px) {
+      /* line 318, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .casestudy .casestudy-block {
+        width: 1230px; } }
+  @media screen and (max-width: 640px) {
+    /* line 325, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .casestudy .casestudy-copy {
+      margin-top: .58rem;
+      padding-bottom: .76rem; } }
+  @media screen and (max-width: 1024px) and (min-width: 641px) {
+    /* line 325, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .casestudy .casestudy-copy {
+      margin-top: 58px;
+      padding-bottom: 76px; } }
+  @media screen and (min-width: 1025px) {
+    /* line 325, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .casestudy .casestudy-copy {
+      margin-top: 72px;
+      padding-bottom: 56px; } }
+  /* line 339, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #index .casestudy .casestudy-slider {
+    position: relative; }
+    @media screen and (max-width: 640px) {
+      /* line 339, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .casestudy .casestudy-slider {
+        background-color: rgba(255, 255, 255, 0.72); } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 339, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .casestudy .casestudy-slider {
+        background-color: rgba(255, 255, 255, 0.72); } }
+    @media screen and (min-width: 1025px) {
+      /* line 339, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .casestudy .casestudy-slider {
+        height: 578px; }
+        /* line 349, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .casestudy .casestudy-slider:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          z-index: 0;
+          width: 4000px;
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.72);
+          transform: translate(-50%, 0); } }
+    /* line 362, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .casestudy .casestudy-slider .bx-wrapper {
+      position: relative;
+      z-index: 2;
+      margin: 0 auto;
+      max-width: inherit !important;
+      width: 84.6vw;
+      height: 100%; }
+      @media screen and (min-width: 1025px) {
+        /* line 362, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .casestudy .casestudy-slider .bx-wrapper {
+          width: 1080px; } }
+      /* line 372, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport {
+        position: relative;
+        z-index: 1;
+        max-width: inherit !important;
+        width: 100% !important;
+        height: auto !important;
+        overflow: visible !important; }
+        /* line 379, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items {
+          display: flex;
+          flex-flow: row wrap; }
+          @media screen and (max-width: 640px) {
+            /* line 379, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+            #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items {
+              padding: .44rem 0 .64rem; } }
+          @media screen and (max-width: 1024px) and (min-width: 641px) {
+            /* line 379, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+            #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items {
+              padding: 44px 0 64px; } }
+          @media screen and (min-width: 1025px) {
+            /* line 379, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+            #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items {
+              padding: 42px 0 72px; } }
+          /* line 391, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item {
+            float: none;
+            opacity: .4;
+            padding: 0 4.2vw;
+            width: 84.6vw !important;
+            transition: all .48s ease; }
+            @media screen and (min-width: 1025px) {
+              /* line 391, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+              #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item {
+                padding: 0 25px;
+                width: 540px !important; } }
+            /* line 401, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+            #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item.active {
+              opacity: 1; }
+            /* line 404, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+            #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item .name {
+              margin-top: 1.4em;
+              font-size: 18px;
+              font-weight: bold; }
+              @media screen and (max-width: 640px) {
+                /* line 404, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+                #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item .name {
+                  font-size: .18rem; } }
+            /* line 412, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+            #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item .text {
+              margin-top: 1em;
+              font-size: 15px;
+              line-height: 2; }
+              @media screen and (max-width: 640px) {
+                /* line 412, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+                #index .casestudy .casestudy-slider .bx-wrapper .bx-viewport .casestudy-slider__items .casestudy-slider__item .text {
+                  font-size: .15rem; } }
+      /* line 424, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-prev,
+      #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-next {
+        position: absolute;
+        top: 32vw;
+        z-index: 9;
+        width: 6.5vw;
+        height: 6.5vw;
+        background: url(images/index/casestudySlider_arrow.svg) no-repeat center center/cover;
+        font-size: 0;
+        transform: translate(0, -50%); }
+        @media screen and (min-width: 1025px) {
+          /* line 424, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-prev,
+          #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-next {
+            width: 42px;
+            height: 42px;
+            top: 206px; } }
+      /* line 440, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-prev {
+        position: absolute;
+        left: -3.4vw; }
+        @media screen and (min-width: 1025px) {
+          /* line 440, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-prev {
+            left: -50px; } }
+      /* line 447, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-next {
+        position: absolute;
+        right: -3.4vw;
+        transform: translate(0, -50%) rotate(180deg); }
+        @media screen and (min-width: 1025px) {
+          /* line 447, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .casestudy .casestudy-slider .bx-wrapper .bx-controls .bx-next {
+            right: -50px; } }
+  /* line 458, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #index .casestudy .casestudy-btn {
+    text-align: center;
+    padding: 76px 0 62px; }
 
-/* line 205, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+/* line 464, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#index .service {
+  width: 100%;
+  background-color: #f0f0f0; }
+  @media screen and (min-width: 1025px) {
+    /* line 464, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service {
+      min-width: 1230px; } }
+  @media screen and (max-width: 640px) {
+    /* line 470, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service .service-lead {
+      margin-top: .58rem;
+      padding-bottom: .58rem; } }
+  @media screen and (max-width: 1024px) and (min-width: 641px) {
+    /* line 470, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service .service-lead {
+      margin-top: 58px;
+      padding-bottom: 58px; } }
+  @media screen and (min-width: 1025px) {
+    /* line 470, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service .service-lead {
+      margin-top: 72px;
+      padding-bottom: 56px; } }
+  @media screen and (max-width: 640px) {
+    /* line 484, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service .service-block {
+      padding: 0 .6rem; } }
+  @media screen and (max-width: 1024px) and (min-width: 641px) {
+    /* line 484, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service .service-block {
+      margin: 0 auto;
+      padding-bottom: 0;
+      width: 520px; } }
+  @media screen and (min-width: 1025px) {
+    /* line 484, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service .service-block {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: stretch;
+      margin: 0 auto;
+      width: 1230px; } }
+  /* line 501, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #index .service .service-block .service-content__item {
+    box-sizing: content-box; }
+    @media screen and (max-width: 640px) {
+      /* line 501, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .service .service-block .service-content__item {
+        border-top: 1px solid #e3e3e3;
+        padding: .58rem 0 .5rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 501, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .service .service-block .service-content__item {
+        border-top: 1px solid #e3e3e3;
+        padding: 58px 0 50px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 501, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .service .service-block .service-content__item {
+        padding: 24px 35px 30px;
+        width: 362px; }
+        /* line 514, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item:nth-child(1) {
+          padding-left: 0; }
+        /* line 517, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item:nth-child(3) {
+          padding-right: 0; }
+        /* line 520, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item:nth-child(n+2) {
+          border-left: 1px solid #e3e3e3; } }
+    /* line 524, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service .service-block .service-content__item .title {
+      font-weight: bold;
+      color: #a42629;
+      letter-spacing: .05em; }
+      @media screen and (max-width: 640px) {
+        /* line 524, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item .title {
+          font-size: .25rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 524, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item .title {
+          font-size: 25px; } }
+      @media screen and (min-width: 1025px) {
+        /* line 524, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item .title {
+          letter-spacing: -.04em;
+          font-size: 20px; } }
+    /* line 539, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service .service-block .service-content__item .lead {
+      margin-top: 1.8em;
+      line-height: 2.2; }
+      @media screen and (max-width: 640px) {
+        /* line 539, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item .lead {
+          font-size: .18rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 539, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item .lead {
+          font-size: 18px; } }
+      @media screen and (min-width: 1025px) {
+        /* line 539, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item .lead {
+          line-height: 1.9;
+          font-size: 15px; } }
+    /* line 553, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service .service-block .service-content__item .list {
+      margin-top: 20px;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between; }
+      /* line 558, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .service .service-block .service-content__item .list li {
+        width: 50%;
+        line-height: 1.8;
+        font-size: 14px;
+        color: #a42629; }
+        @media screen and (max-width: 640px) {
+          /* line 558, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .service .service-block .service-content__item .list li {
+            font-size: .18rem; } }
+        @media screen and (max-width: 1024px) and (min-width: 641px) {
+          /* line 558, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .service .service-block .service-content__item .list li {
+            font-size: 18px; } }
+        @media screen and (min-width: 1025px) {
+          /* line 558, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #index .service .service-block .service-content__item .list li {
+            font-size: 14px; } }
+    /* line 574, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service .service-block .service-content__item .image {
+      margin-top: 34px; }
+    /* line 577, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .service .service-block .service-content__item .btn {
+      text-align: center; }
+      @media screen and (max-width: 640px) {
+        /* line 577, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item .btn {
+          margin-top: .35rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 577, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item .btn {
+          margin-top: 35px; } }
+      @media screen and (min-width: 1025px) {
+        /* line 577, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .service .service-block .service-content__item .btn {
+          text-align: left;
+          margin-top: 34px; } }
+
+/* line 594, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#index .company {
+  margin: 0 auto; }
+  @media screen and (max-width: 640px) {
+    /* line 594, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .company {
+      padding: 0 .6rem; } }
+  @media screen and (max-width: 1024px) and (min-width: 641px) {
+    /* line 594, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .company {
+      padding: 0 60px; } }
+  @media screen and (min-width: 1025px) {
+    /* line 594, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .company {
+      padding-bottom: 90px;
+      width: 1230px; } }
+  /* line 606, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #index .company .company-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 1.8; }
+    @media screen and (max-width: 640px) {
+      /* line 606, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .company .company-list {
+        margin: .62rem auto 0;
+        font-size: .17rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 606, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .company .company-list {
+        margin: 62px auto 0;
+        font-size: 17px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 606, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .company .company-list {
+        margin: 72px auto 0;
+        width: 780px;
+        font-size: 15px;
+        line-height: 1; } }
+    /* line 626, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .company .company-list .company-list_term {
+      border-right: 1px solid #a42629;
+      width: 8.2em; }
+      @media screen and (min-width: 1025px) {
+        /* line 626, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .company .company-list .company-list_term {
+          width: 154px; } }
+    /* line 633, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .company .company-list .company-list_description {
+      padding-left: 1.2em;
+      width: calc(100% - 8.2em); }
+      @media screen and (min-width: 1025px) {
+        /* line 633, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #index .company .company-list .company-list_description {
+          width: calc(100% - 154px); } }
+    /* line 640, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #index .company .company-list *:nth-child(n+3) {
+      margin-top: 24px; }
+  /* line 644, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #index .company .company-btn {
+    margin: 20px auto 0;
+    text-align: right; }
+    @media screen and (max-width: 640px) {
+      /* line 644, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .company .company-btn {
+        text-align: center;
+        margin-top: .68rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 644, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .company .company-btn {
+        margin-top: 68px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 644, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #index .company .company-btn {
+        margin: 20px auto 0;
+        width: 780px; } }
+
+/* line 663, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#concept .workplace {
+  position: relative; }
+  @media screen and (max-width: 640px) {
+    /* line 663, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .workplace {
+      padding-bottom: .9rem; } }
+  @media screen and (max-width: 1024px) and (min-width: 641px) {
+    /* line 663, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .workplace {
+      padding-bottom: 90px; } }
+  @media screen and (min-width: 1025px) {
+    /* line 663, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .workplace {
+      padding-bottom: 90px;
+      min-width: 1230px;
+      background: url(images/concept/workplace_bg.svg) no-repeat center center/1600px auto; } }
+  /* line 676, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #concept .workplace:after {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: 115px;
+    transform: translate(-50%, 50%) rotate(45deg);
+    background-color: #fff; }
+    @media screen and (max-width: 640px) {
+      /* line 676, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace:after {
+        width: 1.15rem; } }
+  /* line 689, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #concept .workplace .intro {
+    text-align: center; }
+    @media screen and (max-width: 640px) {
+      /* line 689, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro {
+        margin-top: .6rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 689, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro {
+        margin-top: 60px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 689, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro {
+        margin-top: 120px; } }
+  /* line 701, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #concept .workplace .intro__copy {
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: .1em;
+    line-height: 1.6; }
+    @media screen and (max-width: 640px) {
+      /* line 701, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro__copy {
+        font-size: .3rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 701, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro__copy {
+        font-size: 30px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 701, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro__copy {
+        font-size: 28px; } }
+  /* line 716, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #concept .workplace .intro__title {
+    padding: .6em 0;
+    background-color: #a42629;
+    font-weight: bold;
+    font-family: "Roboto Condensed", sans-serif;
+    letter-spacing: .2em;
+    color: #FFFFFF; }
+    @media screen and (max-width: 640px) {
+      /* line 716, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro__title {
+        margin: 1.2em .6rem;
+        font-size: .35rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 716, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro__title {
+        margin: .5em 60px;
+        font-size: 35px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 716, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro__title {
+        margin: .5em auto;
+        width: 680px;
+        font-size: 42px; } }
+  /* line 737, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #concept .workplace .intro__text {
+    line-height: 2.2; }
+    @media screen and (max-width: 640px) {
+      /* line 737, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro__text {
+        text-align: left;
+        padding: 0 .6rem;
+        font-size: .18rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 737, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro__text {
+        padding: 0 60px;
+        font-size: 18px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 737, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro__text {
+        font-size: 14px; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 751, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro__text br {
+        display: none; } }
+    @media screen and (min-width: 1025px) {
+      /* line 751, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .intro__text br {
+        display: block; } }
+  @media screen and (max-width: 640px) {
+    /* line 760, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .workplace .detail {
+      margin-top: .6rem;
+      padding: 0 .6rem; } }
+  @media screen and (max-width: 1024px) and (min-width: 641px) {
+    /* line 760, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .workplace .detail {
+      margin-top: 60px;
+      padding: 0 60px; } }
+  @media screen and (min-width: 1025px) {
+    /* line 760, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .workplace .detail {
+      margin: 76px auto;
+      width: 1230px; } }
+  /* line 773, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #concept .workplace .detail .detail-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    @media screen and (max-width: 640px) {
+      /* line 773, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .detail .detail-block {
+        flex-flow: column wrap; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 773, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .detail .detail-block {
+        flex-flow: column wrap; } }
+    @media screen and (min-width: 1025px) {
+      /* line 783, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .detail .detail-block.order {
+        flex-flow: row-reverse wrap; } }
+    /* line 788, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .workplace .detail .detail-block:nth-child(n+2) {
+      margin-top: 80px; }
+      @media screen and (max-width: 640px) {
+        /* line 788, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block:nth-child(n+2) {
+          margin-top: .54rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 788, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block:nth-child(n+2) {
+          margin-top: 54px; } }
+      @media screen and (min-width: 1025px) {
+        /* line 788, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block:nth-child(n+2) {
+          margin-top: 80px; } }
+    @media screen and (max-width: 640px) {
+      /* line 800, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .detail .detail-block .detail-block__textbox {
+        order: 2;
+        margin-top: .78rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 800, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .detail .detail-block .detail-block__textbox {
+        order: 2;
+        margin-top: 78px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 800, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .detail .detail-block .detail-block__textbox {
+        width: 594px; } }
+    /* line 813, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .workplace .detail .detail-block .heading {
+      line-height: 1.7;
+      font-weight: bold; }
+      @media screen and (max-width: 640px) {
+        /* line 813, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .heading {
+          font-size: .3rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 813, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .heading {
+          font-size: 30px; } }
+      @media screen and (min-width: 1025px) {
+        /* line 813, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .heading {
+          font-size: 28px; } }
+    /* line 826, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .workplace .detail .detail-block .text {
+      line-height: 2.2; }
+      @media screen and (max-width: 640px) {
+        /* line 826, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .text {
+          margin-top: 1em;
+          font-size: .18rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 826, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .text {
+          margin-top: 1em;
+          font-size: 18px; } }
+      @media screen and (min-width: 1025px) {
+        /* line 826, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .text {
+          margin-top: 1.2em;
+          font-size: 14px; } }
+    /* line 841, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .workplace .detail .detail-block .detail-block__picture {
+      position: relative; }
+      @media screen and (max-width: 640px) {
+        /* line 841, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .detail-block__picture {
+          width: calc(100% + .6rem);
+          order: 1; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 841, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .detail-block__picture {
+          width: calc(100% + 60px);
+          order: 1; } }
+      @media screen and (min-width: 1025px) {
+        /* line 841, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .detail-block__picture {
+          order: 1;
+          width: 476px; } }
+      /* line 855, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .detail .detail-block .detail-block__picture:after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        width: 100%;
+        height: 100%;
+        background-color: #a42629; }
+      @media screen and (max-width: 640px) {
+        /* line 866, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .detail-block__picture.is-shadowleft {
+          margin-right: -.6rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 866, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .detail-block__picture.is-shadowleft {
+          margin-right: -60px; } }
+      /* line 873, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .detail .detail-block .detail-block__picture.is-shadowleft:after {
+        margin: 3.5% 0 0 -3.5%; }
+      @media screen and (max-width: 640px) {
+        /* line 877, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .detail-block__picture.is-shadowright {
+          margin-right: .6rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 877, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .workplace .detail .detail-block .detail-block__picture.is-shadowright {
+          margin-right: 60px; } }
+      /* line 884, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .detail .detail-block .detail-block__picture.is-shadowright:after {
+        margin: 3.5% 0 0 3.5%; }
+      /* line 888, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .workplace .detail .detail-block .detail-block__picture img {
+        position: relative;
+        z-index: 2; }
+
+/* line 896, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#concept .approach {
+  padding: 130px 0 90px;
+  background-color: #e3e3e3; }
+  @media screen and (max-width: 640px) {
+    /* line 896, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .approach {
+      padding: 1.3rem .6rem 1.24rem; } }
+  @media screen and (max-width: 1024px) and (min-width: 641px) {
+    /* line 896, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .approach {
+      padding: 130px 60px; } }
+  @media screen and (min-width: 1025px) {
+    /* line 896, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .approach {
+      min-width: 1230px; } }
+  /* line 908, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #concept .approach .approach-heading {
+    margin: 0 auto;
+    padding: .9em 0;
+    width: 408px;
+    background-color: #a42629;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF; }
+    @media screen and (max-width: 640px) {
+      /* line 908, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .approach .approach-heading {
+        width: auto;
+        font-size: .35rem; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 908, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .approach .approach-heading {
+        font-size: 35px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 908, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .approach .approach-heading {
+        font-size: 28px; } }
+  @media screen and (max-width: 640px) {
+    /* line 927, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .approach .approach-list {
+      margin: 0 auto; } }
+  @media screen and (max-width: 1024px) and (min-width: 641px) {
+    /* line 927, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .approach .approach-list {
+      margin: 0 auto; } }
+  @media screen and (min-width: 1025px) {
+    /* line 927, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .approach .approach-list {
+      margin: 50px auto 0;
+      width: 900px; } }
+  /* line 938, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #concept .approach .approach-list .approach-list_item {
+    position: relative;
+    margin-top: 50px; }
+    @media screen and (max-width: 640px) {
+      /* line 938, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .approach .approach-list .approach-list_item {
+        margin-top: .5rem; } }
+    @media screen and (min-width: 1025px) {
+      /* line 938, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .approach .approach-list .approach-list_item {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%; } }
+    @media screen and (max-width: 640px) {
+      /* line 954, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .approach .approach-list .approach-list_item .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-left: -18%;
+        width: 38.4%; } }
+    @media screen and (max-width: 1024px) and (min-width: 641px) {
+      /* line 954, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .approach .approach-list .approach-list_item .image {
+        position: absolute;
+        top: 0;
+        left: -10px;
+        width: 190px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 954, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .approach .approach-list .approach-list_item .image {
+        width: 228px; } }
+    @media screen and (min-width: 1025px) {
+      /* line 972, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .approach .approach-list .approach-list_item .textbox {
+        width: 604px; } }
+    /* line 976, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .approach .approach-list .approach-list_item .textbox .title {
+      color: #a42629;
+      font-weight: bold; }
+      @media screen and (max-width: 640px) {
+        /* line 976, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .approach .approach-list .approach-list_item .textbox .title {
+          margin-left: 25%; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 976, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .approach .approach-list .approach-list_item .textbox .title {
+          margin-left: 200px; } }
+      @media screen and (min-width: 1025px) {
+        /* line 976, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .approach .approach-list .approach-list_item .textbox .title {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center; } }
+      /* line 990, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .approach .approach-list .approach-list_item .textbox .title .num {
+        width: 1.4em;
+        font-family: "Roboto Condensed", sans-serif;
+        font-size: 60px;
+        line-height: .8;
+        letter-spacing: .05em; }
+        @media screen and (max-width: 640px) {
+          /* line 990, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #concept .approach .approach-list .approach-list_item .textbox .title .num {
+            border-right: none;
+            font-size: .6rem; } }
+        @media screen and (min-width: 1025px) {
+          /* line 990, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #concept .approach .approach-list .approach-list_item .textbox .title .num {
+            border-right: 3px solid #a42629; } }
+      /* line 1004, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #concept .approach .approach-list .approach-list_item .textbox .title .text {
+        font-weight: bold;
+        line-height: 1.2; }
+        @media screen and (max-width: 640px) {
+          /* line 1004, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #concept .approach .approach-list .approach-list_item .textbox .title .text {
+            margin-top: .4em;
+            font-size: .28rem;
+            line-height: 1.6; } }
+        @media screen and (max-width: 1024px) and (min-width: 641px) {
+          /* line 1004, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #concept .approach .approach-list .approach-list_item .textbox .title .text {
+            margin-top: .2em;
+            font-size: 28px;
+            line-height: 1.6; } }
+        @media screen and (min-width: 1025px) {
+          /* line 1004, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          #concept .approach .approach-list .approach-list_item .textbox .title .text {
+            margin-left: .8em;
+            font-size: 22px; } }
+    /* line 1023, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .approach .approach-list .approach-list_item .textbox .lead {
+      margin-top: 1.4em;
+      line-height: 2.2; }
+      @media screen and (max-width: 640px) {
+        /* line 1023, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .approach .approach-list .approach-list_item .textbox .lead {
+          font-size: .18rem; } }
+      @media screen and (max-width: 1024px) and (min-width: 641px) {
+        /* line 1023, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .approach .approach-list .approach-list_item .textbox .lead {
+          font-size: 18px; } }
+      @media screen and (min-width: 1025px) {
+        /* line 1023, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #concept .approach .approach-list .approach-list_item .textbox .lead {
+          font-size: 14px; } }
+
+@media screen and (max-width: 640px) {
+  /* line 1040, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #concept .office {
+    margin-top: .6rem;
+    padding: 0 .6rem; } }
+
+@media screen and (max-width: 1024px) and (min-width: 641px) {
+  /* line 1040, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #concept .office {
+    margin-top: 60px;
+    padding: 0 60px; } }
+
+@media screen and (min-width: 1025px) {
+  /* line 1040, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #concept .office {
+    margin-top: 70px;
+    min-width: 1230px; } }
+
+/* line 1053, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#concept .office .office-block1,
+#concept .office .office-block2 {
+  display: block;
+  margin: 0 auto; }
+  @media screen and (min-width: 1025px) {
+    /* line 1053, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .office .office-block1,
+    #concept .office .office-block2 {
+      width: 1230px; } }
+
+/* line 1061, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#concept .office .office-block2 {
+  margin-top: 60px; }
+  @media screen and (max-width: 640px) {
+    /* line 1061, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #concept .office .office-block2 {
+      margin-top: .6rem; } }
+
+/* line 1071, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #company .profile {
   background: #eee; }
-  /* line 207, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1073, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #company .profile .profile-list {
     display: flex;
     flex-flow: row wrap;
@@ -807,15 +1852,15 @@ a:hover {
     margin: 0 auto;
     font-size: 0; }
     @media screen and (max-width: 640px) {
-      /* line 207, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1073, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #company .profile .profile-list {
         width: 90%; } }
-    /* line 218, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1084, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #company .profile .profile-list .profile-list__term,
     #company .profile .profile-list .profile-list__description {
       display: inline-block;
       font-size: 15px; }
-    /* line 223, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1089, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #company .profile .profile-list .profile-list__term {
       width: 15%;
       margin-right: 5%;
@@ -824,53 +1869,53 @@ a:hover {
       font-weight: bold;
       color: #a42629; }
       @media screen and (max-width: 640px) {
-        /* line 223, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        /* line 1089, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
         #company .profile .profile-list .profile-list__term {
           width: 100%;
           margin-right: 0; } }
-    /* line 235, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1101, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #company .profile .profile-list .profile-list__description {
       width: 80%;
       border-bottom: 1px solid #777;
       padding: 20px 0;
       line-height: 1.6; }
       @media screen and (max-width: 640px) {
-        /* line 235, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        /* line 1101, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
         #company .profile .profile-list .profile-list__description {
           width: 100%;
           border-bottom: none;
           padding: 5% 0; } }
-      /* line 245, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1111, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #company .profile .profile-list .profile-list__description .heading {
         font-weight: bold;
         margin-bottom: 5px; }
-      /* line 249, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1115, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #company .profile .profile-list .profile-list__description .list {
         margin-bottom: 30px;
         line-height: 1.8; }
-      /* line 253, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1119, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #company .profile .profile-list .profile-list__description:last-child {
         border-bottom: none; }
 
-/* line 259, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+/* line 1125, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #company .history {
   max-width: 800px;
   margin: 0 auto; }
   @media screen and (max-width: 640px) {
-    /* line 259, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1125, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #company .history {
       width: 90%; } }
-  /* line 266, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1132, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #company .history .history-heading span {
     color: #000;
     border-color: #000; }
-  /* line 271, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1137, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #company .history .history-blocks {
     margin-top: 60px; }
-    /* line 273, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1139, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #company .history .history-blocks .history-block {
       margin-bottom: 50px; }
-      /* line 275, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1141, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #company .history .history-blocks .history-block .heading {
         display: inline-block;
         padding-bottom: 10px;
@@ -878,69 +1923,69 @@ a:hover {
         font-size: 18px;
         color: #a42629;
         font-weight: bold; }
-      /* line 283, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1149, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #company .history .history-blocks .history-block .date,
       #company .history .history-blocks .history-block .text {
         font-size: 15px;
         line-height: 1.6; }
-      /* line 288, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1154, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #company .history .history-blocks .history-block .date {
         margin: 20px 0 5px; }
-      /* line 291, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1157, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #company .history .history-blocks .history-block .text {
         font-weight: bold; }
 
-/* line 300, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+/* line 1166, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #casestudy .project {
   max-width: 1230px;
   margin: 0 auto; }
   @media screen and (max-width: 640px) {
-    /* line 300, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1166, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .project {
       width: 90%; } }
-  /* line 306, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1172, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #casestudy .project .project-lists {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; }
-    /* line 310, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1176, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .project .project-lists:after {
       content: '';
       display: block;
       width: 30%; }
-    /* line 315, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1181, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .project .project-lists .project-lists__items {
       width: 30%;
       margin-bottom: 50px;
       transition: .24s ease all; }
       @media screen and (max-width: 640px) {
-        /* line 315, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        /* line 1181, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
         #casestudy .project .project-lists .project-lists__items {
           width: 48%;
           margin-bottom: .5rem; } }
-      /* line 323, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1189, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #casestudy .project .project-lists .project-lists__items:hover {
         opacity: .7; }
-      /* line 328, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1194, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #casestudy .project .project-lists .project-lists__items .heading {
         margin-top: 20px;
         font-size: 18px;
         line-height: 1.4;
         font-weight: bold; }
         @media screen and (max-width: 640px) {
-          /* line 328, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          /* line 1194, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
           #casestudy .project .project-lists .project-lists__items .heading {
             font-size: .26rem;
             margin-top: .2rem; } }
-      /* line 338, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1204, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #casestudy .project .project-lists .project-lists__items .text {
         margin: 15px 0;
         font-size: 15px; }
         @media screen and (max-width: 640px) {
-          /* line 338, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+          /* line 1204, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
           #casestudy .project .project-lists .project-lists__items .text {
             font-size: .2rem; } }
-        /* line 344, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        /* line 1210, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
         #casestudy .project .project-lists .project-lists__items .text span {
           margin-right: 10px;
           padding: 5px 10px;
@@ -949,69 +1994,69 @@ a:hover {
           color: #a42629;
           background: #dbdbdb; }
           @media screen and (max-width: 640px) {
-            /* line 344, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+            /* line 1210, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
             #casestudy .project .project-lists .project-lists__items .text span {
               font-size: .2rem;
               padding: .1rem .1rem;
               border-radius: 5px; } }
 
-/* line 361, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+/* line 1227, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #casestudy .projectDetail {
   max-width: 1230px;
   margin: 0 auto; }
   @media screen and (max-width: 640px) {
-    /* line 361, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1227, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail {
       width: 90%; } }
-  /* line 367, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1233, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #casestudy .projectDetail .projectDetail_heading {
     margin-bottom: 60px; }
-    /* line 369, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1235, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail_heading span {
       color: #000;
       border-color: #000; }
-  /* line 374, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1240, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #casestudy .projectDetail .projectDetail-lists {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between; }
-    /* line 378, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1244, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail-lists:after {
       content: '';
       display: block;
       width: 30%; }
-    /* line 383, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1249, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail-lists .projectDetail-lists__item {
       width: 30%;
       margin-bottom: 50px;
       transition: .24s ease all; }
       @media screen and (max-width: 640px) {
-        /* line 383, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        /* line 1249, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
         #casestudy .projectDetail .projectDetail-lists .projectDetail-lists__item {
           width: 48%;
           margin-bottom: .5rem; } }
-      /* line 391, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1257, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #casestudy .projectDetail .projectDetail-lists .projectDetail-lists__item:hover {
         opacity: .7; }
-  /* line 396, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1262, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #casestudy .projectDetail .projectDetail_details {
     max-width: 580px;
     margin: 0 auto;
     border-top: 2px solid #dbdbdb;
     margin-top: 30px;
     padding-top: 60px; }
-    /* line 402, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1268, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail_details .text {
       font-size: 14px;
       line-height: 2; }
-    /* line 406, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1272, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail_details .list {
       display: flex;
       flex-flow: row wrap;
       justify-content: space-between;
       align-items: stretch;
       margin-top: 40px; }
-      /* line 415, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1281, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #casestudy .projectDetail .projectDetail_details .list dt {
         width: 80px;
         margin-bottom: 22px;
@@ -1021,111 +2066,111 @@ a:hover {
         color: #a42629;
         text-align: center;
         font-size: 13px; }
-      /* line 425, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1291, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #casestudy .projectDetail .projectDetail_details .list dd {
         width: calc(100% - 100px);
         margin-left: 20px;
         font-size: 15px;
         line-height: 1.8; }
-  /* line 433, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1299, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #casestudy .projectDetail .projectDetail_btnArea {
     margin-top: 60px;
     text-align: center; }
-    /* line 436, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1302, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #casestudy .projectDetail .projectDetail_btnArea .projectDetail_btnArea__btn {
       width: 300px; }
 
-/* line 445, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+/* line 1311, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #privacy .detail .detail-block {
   min-width: 1230px;
   margin: 0 auto 100px; }
-  /* line 448, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1314, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block_heading {
     margin-bottom: 50px;
     border: 1px solid #000;
     padding: 20px 40px;
     font-size: 24px;
     font-weight: bold; }
-  /* line 456, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1322, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .text {
     margin-bottom: 50px;
     font-size: 16px;
     line-height: 1.6; }
-    /* line 460, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1326, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #privacy .detail .detail-block .detail-block__content .text a {
       display: inline-block;
       color: #a42629; }
-  /* line 465, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1331, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .heading {
     margin-bottom: 20px;
     font-size: 20px;
     font-weight: bold; }
-  /* line 470, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1336, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .heading_small {
     margin-bottom: 10px;
     font-size: 14px;
     font-weight: bold; }
-  /* line 475, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1341, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .list {
     margin-bottom: 60px;
     font-size: 14px;
     line-height: 1.8; }
-    /* line 479, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1345, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #privacy .detail .detail-block .detail-block__content .list a {
       margin-top: 10px;
       color: #a42629; }
 
-/* line 490, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+/* line 1356, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #contact .form {
   width: 800px;
   margin: 0 auto; }
   @media screen and (max-width: 640px) {
-    /* line 490, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1356, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #contact .form {
       width: 90%; } }
-  /* line 496, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1362, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #contact .form .form_required {
     border: 1px solid #a42629;
     border-radius: 15px;
     padding: 1px 13px;
     font-size: 10px;
     color: #a42629; }
-  /* line 503, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1369, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #contact .form .intro {
     position: relative;
     margin-bottom: 50px;
     border-bottom: 1px solid #eee;
     padding-bottom: 80px; }
-    /* line 508, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1374, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #contact .form .intro .text {
       font-size: 14px;
       line-height: 1.6;
       text-align: center; }
-    /* line 513, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1379, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #contact .form .intro .caution {
       position: absolute;
       bottom: 20px;
       right: 0;
       font-size: 13px; }
-      /* line 518, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1384, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #contact .form .intro .caution .form_required {
         margin-right: 10px; }
-  /* line 523, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1389, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #contact .form .form-check {
     max-width: 400px;
     margin: 0 auto;
     border: 1px solid #eee;
     text-align: center;
     padding: 30px; }
-    /* line 530, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1396, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #contact .form .form-check .heading a {
       font-size: 14px;
       color: #a42629;
       margin-bottom: 20px; }
-    /* line 536, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1402, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #contact .form .form-check .check {
       font-size: 14px; }
-      /* line 538, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1404, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #contact .form .form-check .check input {
         display: inline-block;
         position: relative;
@@ -1138,10 +2183,10 @@ a:hover {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none; }
-        /* line 551, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        /* line 1417, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
         #contact .form .form-check .check input:checked:after {
           opacity: 1; }
-        /* line 555, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        /* line 1421, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
         #contact .form .form-check .check input:after {
           content: '';
           display: block;
@@ -1154,13 +2199,13 @@ a:hover {
           height: 0.4em;
           transform: rotate(135deg);
           opacity: 0; }
-  /* line 571, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1437, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #contact .form .form-list {
     width: 100%; }
-    /* line 574, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1440, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #contact .form .form-list .from-list_item > th, #contact .form .form-list .from-list_item td {
       font-size: 15px; }
-    /* line 577, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1443, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #contact .form .form-list .from-list_item > th {
       font-weight: bold;
       position: relative;
@@ -1168,23 +2213,23 @@ a:hover {
       vertical-align: top;
       padding: 8px; }
       @media screen and (max-width: 640px) {
-        /* line 577, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        /* line 1443, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
         #contact .form .form-list .from-list_item > th {
           width: 100%;
           display: block; } }
-      /* line 587, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1453, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #contact .form .form-list .from-list_item > th .form_required {
         margin-left: 10px; }
-    /* line 591, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1457, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #contact .form .form-list .from-list_item > td {
       width: calc(100% - 230px);
       padding-bottom: 30px; }
       @media screen and (max-width: 640px) {
-        /* line 591, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        /* line 1457, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
         #contact .form .form-list .from-list_item > td {
           width: 100%;
           display: block; } }
-      /* line 598, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1464, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #contact .form .form-list .from-list_item > td input,
       #contact .form .form-list .from-list_item > td textarea {
         width: 100%;
@@ -1197,22 +2242,22 @@ a:hover {
         -webkit-appearance: none;
         -moz-appearance: none;
         appearance: none; }
-    /* line 614, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1480, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #contact .form .form-list .from-list_item:first-of-type td input {
       width: 48%; }
-      /* line 616, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1482, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #contact .form .form-list .from-list_item:first-of-type td input:first-child {
         margin-right: 4%; }
-  /* line 625, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1491, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #contact .form .form-btn .form-btn__confirm {
     margin: 50px auto 0; }
-    /* line 627, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1493, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #contact .form .form-btn .form-btn__confirm input {
       width: 300px; }
-  /* line 631, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 1497, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #contact .form .form-btn .form-btn__parts {
     text-align: center; }
-    /* line 633, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    /* line 1499, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #contact .form .form-btn .form-btn__parts input {
       padding: 15px 0;
       border: 3px solid #a42629;
@@ -1226,7 +2271,7 @@ a:hover {
       -moz-appearance: none;
       appearance: none;
       transition: .24s ease all; }
-      /* line 646, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      /* line 1512, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
       #contact .form .form-btn .form-btn__parts input:hover {
         background: #a42629;
         color: #fff; }

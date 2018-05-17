@@ -7,6 +7,9 @@
     width: 100%;
     height: 834px;
     overflow: hidden;
+    @include media(pc) {
+      min-width: 1230px;
+    }
     .hero-copy {
       position: relative;
       z-index: 1;
@@ -14,19 +17,39 @@
         position: absolute;
         top: 50%;
         left: 0;
-        padding: 0 70px;
         width: 100%;
         transform: translate(0, -50%);
-        text-align: right;
+        text-align: center;
+        @include media(sp) {
+          padding: 0 .094rem;
+        }
+        @include media(tb) {
+          padding: 0 46px;
+        }
+        @include media(pc) {
+          padding: 0 70px;
+          text-align: right;
+        }
         &.is-red {
-          text-align: left;
+          @include media(pc) {
+            text-align: left;
+          }
           .en {
             display: block;
             font-weight: bold;
             font-family: $fontfamily-roboto-condensed;
-            font-size: 75px;
-            letter-spacing: .2em;
             color: $color-red;
+            letter-spacing: .1em;
+            @include media(sp) {
+              font-size: .45rem;
+            }
+            @include media(tb) {
+              font-size: 50px;
+            }
+            @include media(pc) {
+              letter-spacing: .2em;
+              font-size: 75px;
+            }
           }
           .jp {
             display: block;
@@ -35,15 +58,34 @@
             font-family: $fontfamily-roboto-condensed;
             font-size: 24px;
             letter-spacing: .3em;
+            color: $color-white;
+            @include media(sp) {
+              font-size: .19rem;
+            }
+            @include media(tb) {
+              font-size: 16px;
+            }
+            @include media(pc) {
+              font-size: 24px;
+              color: $color-black;
+            }
           }
         }
         .strong {
           display: block;
           font-weight: bold;
           font-family: $fontfamily-roboto-condensed;
-          font-size: 75px;
           letter-spacing: .2em;
           color: $color-white;
+          @include media(sp) {
+            font-size: .45rem;
+          }
+          @include media(tb) {
+            font-size: 50px;
+          }
+          @include media(pc) {
+            font-size: 75px;
+          }
         }
         .small {
           display: block;
@@ -51,6 +93,15 @@
           font-size: 75px;
           letter-spacing: .2em;
           color: $color-white;
+          @include media(sp) {
+            font-size: .45rem;
+          }
+          @include media(tb) {
+            font-size: 50px;
+          }
+          @include media(pc) {
+            font-size: 75px;
+          }
         }
       }
     }
@@ -59,23 +110,41 @@
       top: 50%;
       left: 50%;
       z-index: 0;
+      min-height: 100%;
+      width: auto;
       transform: translate(-50%, -50%);
+      @media screen and (min-width: 1500px) {
+        width: 100%;
+        height: auto;
+      }
     }
   }
   .concept {
     position: relative;
-    min-width: 1230px;
     padding-bottom: 70px;
     background: url(images/index/concept_bg.svg) no-repeat center center;
+    @include media(tb) {
+      padding: 0 60px;
+    }
+    @include media(pc) {
+      min-width: 1230px;
+    }
     .concept-block {
-      margin: 90px auto 0;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-      align-items: flex-start;
-      width: 1100px;
+      @include media(tb) {
+        margin-top: 68px;
+      }
+      @include media(pc) {
+        margin: 90px auto 0;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        width: 1100px;
+      }
       .concept-copy {
-        width: 490px;
+        @include media(pc) {
+          width: 490px;
+        }
         .concept-copy__heading {
           .jp {
             display: block;
@@ -83,6 +152,15 @@
             font-size: 44px;
             line-height: 1.6;
             letter-spacing: .1em;
+            @include media(sp) {
+              font-size: .35rem;
+            }
+            @include media(tb) {
+              font-size: 35px;
+            }
+            @include media(pc) {
+              font-size: 44px;
+            }
           }
           .en {
             margin-top: .5em;
@@ -92,8 +170,25 @@
             font-size: 39px;
             color: $color-red;
             letter-spacing: .076em;
+            @include media(sp) {
+              font-size: .35rem;
+            }
+            @include media(tb) {
+              font-size: 35px;
+            }
+            @include media(pc) {
+              font-size: 39px;
+            }
             strong {
-              font-size: 44px;
+              @include media(sp) {
+                font-size: .4rem;
+              }
+              @include media(tb) {
+                font-size: 40px;
+              }
+              @include media(pc) {
+                font-size: 44px;
+              }
             }
           }
         }
@@ -102,12 +197,19 @@
           font-size: 18px;
           line-height: 2.1;
           letter-spacing: .03em;
+          @include media(sp) {
+            font-size: .18rem;
+          }
         }
       }
       .concept-image {
         position: relative;
-        margin: 20px 40px 0 38px;
-
+        @include media(tb) {
+          margin-top: 74px;
+        }
+        @include media(pc) {
+          margin: 20px 40px 0 38px;
+        }
         img {
           position: relative;
           z-index: 2;
@@ -129,9 +231,20 @@
       margin: 20px auto 0;
       width: 1100px;
       .concept-text__arrow {
+        margin-left: 1.2em;
+        text-indent: -1.2em;
         font-size: 26px;
         line-height: 2;
         font-weight: bold;
+        @include media(sp) {
+          font-size: .21rem;
+        }
+        @include media(tb) {
+          font-size: 21px;
+        }
+        @include media(pc) {
+          font-size: 26px;
+        }
         &:before {
           content: '';
           display: inline-block;
@@ -146,11 +259,21 @@
     .concept-list {
       background-color: $color-red;
       mix-blend-mode: multiply;
-      margin-top: 42px;
-      padding: 28px 0;
-      padding-left: calc( (100vw - 1100px) / 2);
-      width: 750px;
-      box-sizing: content-box;
+      @include media(tb) {
+        margin: 42px 0 0 -60px;
+        padding: 28px 65px 28px 65px;
+        width: 90vw;
+        line-height: 1.4;
+      }
+      @include media(pc) {
+        margin-top: 42px;
+        padding: 28px 0 28px 65px;
+        width: 750px;
+        box-sizing: content-box;
+      }
+      @media screen and (min-width: 1230px) {
+        padding-left: calc( (100vw - 1100px) / 2);
+      }
       .concept-list__items {
         .concept-list__item {
           color: $color-white;
@@ -160,45 +283,788 @@
           &:nth-child(n+2) {
             margin-top: 1.1em;
           }
+          @include media(sp) {
+            font-size: .19rem;
+          }
+          @include media(tb) {
+            font-size: 19px;
+          }
+          @include media(pc) {
+            font-size: 17px;
+          }
         }
       }
     }
     .concept-btn {
-      position: absolute;
-      bottom: 84px;
-      left: 50%;
-      margin-left: 372px;
+      @include media(tb) {
+        margin: 54px 0 84px;
+        display: block;
+        text-align: center;
+      }
+      @include media(pc) {
+        position: absolute;
+        bottom: 84px;
+        left: 50%;
+        margin-left: 372px;
+      }
     }
   }
   .casestudy {
-    background-color: $color-gray-ultralight;
+    position: relative;
+    @include media(pc) {
+      background-color: $color-gray-ultralight;
+      min-width: 1230px;
+    }
     .casestudy-block {
       margin: 0 auto;
-      width: 1230px;
       background-color: $color-gray-light;
+      @include media(pc) {
+        width: 1230px;
+      }
     }
     .casestudy-copy {
-      margin-top: 72px;
-      padding-bottom: 56px;
+      @include media(sp) {
+        margin-top: .58rem;
+        padding-bottom: .76rem;
+      }
+      @include media(tb) {
+        margin-top: 58px;
+        padding-bottom: 76px;
+      }
+      @include media(pc) {
+        margin-top: 72px;
+        padding-bottom: 56px;
+      }
+    }
+    .casestudy-slider {
+      position: relative;
+      @include media(sp) {
+        background-color: rgba(255, 255, 255, .72);
+      }
+      @include media(tb) {
+        background-color: rgba(255, 255, 255, .72);
+      }
+      @include media(pc) {
+        height: 578px;
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          z-index: 0;
+          width: 4000px;
+          height: 100%;
+          background-color: rgba(255, 255, 255, .72);
+          transform: translate(-50%, 0);
+        }
+      }
+      .bx-wrapper {
+        position: relative;
+        z-index: 2;
+        margin: 0 auto;
+        max-width: inherit !important;
+        width: 84.6vw;
+        height: 100%;
+        @include media(pc) {
+          width: 1080px;
+        }
+        .bx-viewport {
+          position: relative;
+          z-index: 1;
+          max-width: inherit !important;
+          width: 100% !important;
+          height: auto !important;
+          overflow: visible !important;
+          .casestudy-slider__items {
+            display: flex;
+            flex-flow: row wrap;
+            @include media(sp) {
+              padding: .44rem 0 .64rem;
+            }
+            @include media(tb) {
+              padding: 44px 0 64px;
+            }
+            @include media(pc) {
+              padding: 42px 0 72px;
+            }
+            .casestudy-slider__item {
+              float: none;
+              opacity: .4;
+              padding: 0 4.2vw;
+              width: 84.6vw !important;
+              transition: all .48s ease;
+              @include media(pc) {
+                padding: 0 25px;
+                width: 540px !important;
+              }
+              &.active {
+                opacity: 1;
+              }
+              .name {
+                margin-top: 1.4em;
+                font-size: 18px;
+                font-weight: bold;
+                @include media(sp) {
+                  font-size: .18rem;
+                }
+              }
+              .text {
+                margin-top: 1em;
+                font-size: 15px;
+                line-height: 2;
+                @include media(sp) {
+                  font-size: .15rem;
+                }
+              }
+            }
+          }
+        }
+        .bx-controls {
+          .bx-prev,
+          .bx-next {
+            position: absolute;
+            top: 32vw;
+            z-index: 9;
+            width: 6.5vw;
+            height: 6.5vw;
+            background: url(images/index/casestudySlider_arrow.svg) no-repeat center center / cover;
+            font-size: 0;
+            transform: translate(0, -50%);
+            @include media(pc) {
+              width: 42px;
+              height: 42px;
+              top: 206px;
+            }
+          }
+          .bx-prev {
+            position: absolute;
+            left: -3.4vw;
+            @include media(pc) {
+              left: -50px;
+            }
+          }
+          .bx-next {
+            position: absolute;
+            right: -3.4vw;
+            transform: translate(0, -50%) rotate(180deg);
+            @include media(pc) {
+              right: -50px;
+            }
+          }
+        }
+      }
+    }
+    .casestudy-btn {
       text-align: center;
-      .casestudy-copy__title {
-        font-size: 28px;
-        font-weight: bold;
-        letter-spacing: .1em;
+      padding: 76px 0 62px;
+    }
+  }
+
+  .service {
+    width: 100%;
+    background-color: $color-gray-ultralight;
+    @include media(pc) {
+      min-width: 1230px;
+    }
+    .service-lead {
+      @include media(sp) {
+        margin-top: .58rem;
+        padding-bottom: .58rem;
+      }
+      @include media(tb) {
+        margin-top: 58px;
+        padding-bottom: 58px;
+      }
+      @include media(pc) {
+        margin-top: 72px;
+        padding-bottom: 56px;
+      }
+    }
+    .service-block {
+      @include media(sp) {
+        padding: 0 .6rem;
+      }
+      @include media(tb) {
+        margin: 0 auto;
+        padding-bottom: 0;
+        width: 520px;
+      }
+      @include media(pc) {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin: 0 auto;
+        width: 1230px;
+      }
+      .service-content__item {
+        box-sizing: content-box;
+        @include media(sp) {
+          border-top: 1px solid $color-gray-light;
+          padding: .58rem 0 .5rem;
+        }
+        @include media(tb) {
+          border-top: 1px solid $color-gray-light;
+          padding: 58px 0 50px;
+        }
+        @include media(pc) {
+          padding: 24px 35px 30px;
+          width: 362px;
+          &:nth-child(1) {
+            padding-left: 0;
+          }
+          &:nth-child(3) {
+            padding-right: 0;
+          }
+          &:nth-child(n+2) {
+            border-left: 1px solid $color-gray-light;
+          }
+        }
+        .title {
+          font-weight: bold;
+          color: $color-red;
+          letter-spacing: .05em;
+          @include media(sp) {
+            font-size: .25rem;
+          }
+          @include media(tb) {
+            font-size: 25px;
+          }
+          @include media(pc) {
+            letter-spacing: -.04em;
+            font-size: 20px;
+          }
+        }
+        .lead {
+          margin-top: 1.8em;
+          line-height: 2.2;
+          @include media(sp) {
+            font-size: .18rem;
+          }
+          @include media(tb) {
+            font-size: 18px;
+          }
+          @include media(pc) {
+            line-height: 1.9;
+            font-size: 15px;
+          }
+        }
+        .list {
+          margin-top: 20px;
+          display: flex;
+          flex-flow: row wrap;
+          justify-content: space-between;
+          li {
+            width: 50%;
+            line-height: 1.8;
+            font-size: 14px;
+            color: $color-red;
+            @include media(sp) {
+              font-size: .18rem;
+            }
+            @include media(tb) {
+              font-size: 18px;
+            }
+            @include media(pc) {
+              font-size: 14px;
+            }
+          }
+        }
+        .image {
+          margin-top: 34px;
+        }
+        .btn {
+          text-align: center;
+          @include media(sp) {
+            margin-top: .35rem;
+          }
+          @include media(tb) {
+            margin-top: 35px;
+          }
+          @include media(pc) {
+            text-align: left;
+            margin-top: 34px;
+          }
+        }
+      }
+    }
+  }
+
+  .company {
+    margin: 0 auto;
+    @include media(sp) {
+      padding: 0 .6rem;
+    }
+    @include media(tb) {
+      padding: 0 60px;
+    }
+    @include media(pc) {
+      padding-bottom: 90px;
+      width: 1230px;
+    }
+    .company-list {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      line-height: 1.8;
+      @include media(sp) {
+        margin: .62rem auto 0;
+        font-size: .17rem;
+      }
+      @include media(tb) {
+        margin: 62px auto 0;
+        font-size: 17px;
+      }
+      @include media(pc) {
+        margin: 72px auto 0;
+        width: 780px;
+        font-size: 15px;
         line-height: 1;
       }
-      .casestudy-copy__text {
-        margin-top: 42px;
-        font-size: 18px;
-        letter-spacing: .1em;
-        line-height: 2.2;
+      .company-list_term {
+        border-right: 1px solid $color-red;
+        width: 8.2em;
+        @include media(pc) {
+          width: 154px;
+        }
+      }
+      .company-list_description {
+        padding-left: 1.2em;
+        width: calc(100% - 8.2em);
+        @include media(pc) {
+          width: calc(100% - 154px);
+        }
+      }
+      *:nth-child(n+3) {
+        margin-top: 24px;
+      }
+    }
+    .company-btn {
+      margin: 20px auto 0;
+      text-align: right;
+      @include media(sp) {
+        text-align: center;
+        margin-top: .68rem;
+      }
+      @include media(tb) {
+        margin-top: 68px;
+      }
+      @include media(pc) {
+        margin: 20px auto 0;
+        width: 780px;
       }
     }
   }
 }
 
-#about {
-  .intro {}
+#concept {
+  .workplace {
+    position: relative;
+    @include media(sp) {
+      padding-bottom: .9rem;
+    }
+    @include media(tb) {
+      padding-bottom: 90px;
+    }
+    @include media(pc) {
+      padding-bottom: 90px;
+      min-width: 1230px;
+      background: url(images/concept/workplace_bg.svg) no-repeat center center / 1600px auto;
+    }
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      width: 115px;
+      transform: translate(-50%, 50%) rotate(45deg);
+      background-color: #fff;
+      @include media(sp) {
+        width: 1.15rem;
+      }
+    }
+    .intro {
+      text-align: center;
+      @include media(sp) {
+        margin-top: .6rem;
+      }
+      @include media(tb) {
+        margin-top: 60px;
+      }
+      @include media(pc) {
+        margin-top: 120px;
+      }
+    }
+    .intro__copy {
+      text-align: center;
+      font-weight: bold;
+      letter-spacing: .1em;
+      line-height: 1.6;
+      @include media(sp) {
+        font-size: .3rem;
+      }
+      @include media(tb) {
+        font-size: 30px;
+      }
+      @include media(pc) {
+        font-size: 28px;
+      }
+    }
+    .intro__title {
+      padding: .6em 0;
+      background-color: $color-red;
+      font-weight: bold;
+      font-family: $fontfamily-roboto-condensed;
+      letter-spacing: .2em;
+      color: $color-white;
+      @include media(sp) {
+        margin: 1.2em .6rem;
+        font-size: .35rem;
+      }
+      @include media(tb) {
+        margin: .5em 60px;
+        font-size: 35px;
+      }
+      @include media(pc) {
+        margin: .5em auto;
+        width: 680px;
+        font-size: 42px;
+      }
+    }
+    .intro__text {
+      line-height: 2.2;
+      @include media(sp) {
+        text-align: left;
+        padding: 0 .6rem;
+        font-size: .18rem;
+      }
+      @include media(tb) {
+        padding: 0 60px;
+        font-size: 18px;
+      }
+      @include media(pc) {
+        font-size: 14px;
+      }
+      br {
+        @include media(tb) {
+          display: none;
+        }
+        @include media(pc) {
+          display: block;
+        }
+      }
+    }
+    .detail {
+      @include media(sp) {
+        margin-top: .6rem;
+        padding: 0 .6rem;
+      }
+      @include media(tb) {
+        margin-top: 60px;
+        padding: 0 60px;
+      }
+      @include media(pc) {
+        margin: 76px auto;
+        width: 1230px;
+      }
+      .detail-block {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include media(sp) {
+          flex-flow: column wrap;
+        }
+        @include media(tb) {
+          flex-flow: column wrap;
+        }
+        &.order {
+          @include media(pc) {
+            flex-flow: row-reverse wrap;
+          }
+        }
+        &:nth-child(n+2) {
+          margin-top: 80px;
+          @include media(sp) {
+            margin-top: .54rem;
+          }
+          @include media(tb) {
+            margin-top: 54px;
+          }
+          @include media(pc) {
+            margin-top: 80px;
+          }
+        }
+        .detail-block__textbox {
+          @include media(sp) {
+            order: 2;
+            margin-top: .78rem;
+          }
+          @include media(tb) {
+            order: 2;
+            margin-top: 78px;
+          }
+          @include media(pc) {
+            width: 594px;
+          }
+        }
+        .heading {
+          line-height: 1.7;
+          font-weight: bold;
+          @include media(sp) {
+            font-size: .3rem;
+          }
+          @include media(tb) {
+            font-size: 30px;
+          }
+          @include media(pc) {
+            font-size: 28px;
+          }
+        }
+        .text {
+          line-height: 2.2;
+          @include media(sp) {
+            margin-top: 1em;
+            font-size: .18rem;
+          }
+          @include media(tb) {
+            margin-top: 1em;
+            font-size: 18px;
+          }
+          @include media(pc) {
+            margin-top: 1.2em;
+            font-size: 14px;
+          }
+        }
+        .detail-block__picture {
+          position: relative;
+          @include media(sp) {
+            width: calc(100% + .6rem);
+            order: 1;
+          }
+          @include media(tb) {
+            width: calc(100% + 60px);
+            order: 1;
+          }
+          @include media(pc) {
+            order: 1;
+            width: 476px;
+          }
+          &:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            background-color: $color-red;
+          }
+          &.is-shadowleft {
+            @include media(sp) {
+              margin-right: -.6rem;
+            }
+            @include media(tb) {
+              margin-right: -60px;
+            }
+            &:after {
+              margin: 3.5% 0 0 -3.5%;
+            }
+          }
+          &.is-shadowright {
+            @include media(sp) {
+              margin-right: .6rem;
+            }
+            @include media(tb) {
+              margin-right: 60px;
+            }
+            &:after {
+              margin: 3.5% 0 0 3.5%;
+            }
+          }
+          img {
+            position: relative;
+            z-index: 2;
+          }
+        }
+      }
+    }
+  }
+  .approach {
+    padding: 130px 0 90px;
+    background-color: $color-gray-light;
+    @include media(sp) {
+      padding: 1.3rem .6rem 1.24rem;
+    }
+    @include media(tb) {
+      padding: 130px 60px;
+    }
+    @include media(pc) {
+      min-width: 1230px;
+    }
+    .approach-heading {
+      margin: 0 auto;
+      padding: .9em 0;
+      width: 408px;
+      background-color: $color-red;
+      font-weight: bold;
+      text-align: center;
+      color: $color-white;
+      @include media(sp) {
+        width: auto;
+        font-size: .35rem;
+      }
+      @include media(tb) {
+        font-size: 35px;
+      }
+      @include media(pc) {
+        font-size: 28px;
+      }
+    }
+    .approach-list {
+      @include media(sp) {
+        margin: 0 auto;
+      }
+      @include media(tb) {
+        margin: 0 auto;
+      }
+      @include media(pc) {
+        margin: 50px auto 0;
+        width: 900px;
+      }
+      .approach-list_item {
+        position: relative;
+        margin-top: 50px;
+        @include media(sp) {
+          margin-top: .5rem;
+        }
+        @include media(pc) {
+
+        }
+        @include media(pc) {
+          display: flex;
+          flex-flow: row wrap;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+        }
+        .image {
+          @include media(sp) {
+            position: absolute;
+            top: 0;
+            left: 0;
+            margin-left: -18%;
+            width: 38.4%;
+          }
+          @include media(tb) {
+            position: absolute;
+            top: 0;
+            left: -10px;
+            width: 190px;
+          }
+          @include media(pc) {
+            width: 228px;
+          }
+        }
+        .textbox {
+          @include media(pc) {
+            width: 604px;
+          }
+          .title {
+            @include media(sp) {
+              margin-left: 25%;
+            }
+            @include media(tb) {
+              margin-left: 200px;
+            }
+            @include media(pc) {
+              display: flex;
+              flex-flow: row wrap;
+              align-items: center;
+            }
+            color: $color-red;
+            font-weight: bold;
+            .num {
+              width: 1.4em;
+              font-family: $fontfamily-roboto-condensed;
+              font-size: 60px;
+              line-height: .8;
+              letter-spacing: .05em;
+              @include media(sp) {
+                border-right: none;
+                font-size: .6rem;
+              }
+              @include media(pc) {
+                border-right: 3px solid $color-red;
+              }
+            }
+            .text {
+              font-weight: bold;
+              line-height: 1.2;
+              @include media(sp) {
+                margin-top: .4em;
+                font-size: .28rem;
+                line-height: 1.6;
+              }
+              @include media(tb) {
+                margin-top: .2em;
+                font-size: 28px;
+                line-height: 1.6;
+              }
+              @include media(pc) {
+                margin-left: .8em;
+                font-size: 22px;
+              }
+            }
+          }
+          .lead {
+            margin-top: 1.4em;
+            line-height: 2.2;
+            @include media(sp) {
+              font-size: .18rem;
+            }
+            @include media(tb) {
+              font-size: 18px;
+            }
+            @include media(pc) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .office {
+    @include media(sp) {
+      margin-top: .6rem;
+      padding: 0 .6rem;
+    }
+    @include media(tb) {
+      margin-top: 60px;
+      padding: 0 60px;
+    }
+    @include media(pc) {
+      margin-top: 70px;
+      min-width: 1230px;
+    }
+    .office-block1,
+    .office-block2 {
+      display: block;
+      margin: 0 auto;
+      @include media(pc) {
+        width: 1230px;
+      }
+    }
+    .office-block2 {
+      margin-top: 60px;
+      @include media(sp) {
+        margin-top: .6rem;
+      }
+    }
+  }
 }
 
 #company {
