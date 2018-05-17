@@ -46,8 +46,8 @@
                 <div class="concept-image"><img src="images/index/concept_image.jpg" alt="image"></div>
               </div>
               <div class="concept-text">
-                <div class="concept-text__arrow">多様な人材が活躍し企業としても成長する、これからの“はたらき方”を考える</div>
-                <div class="concept-text__arrow">変化する“はたらき方”を受容するワークプレイスを計画する</div>
+                <div class="concept-text__arrow">多様な人材が活躍し企業としても成長する、<br>これからの“はたらき方”を考える</div>
+                <div class="concept-text__arrow">変化する“はたらき方”を受容する<br>ワークプレイスを計画する</div>
               </div>
               <div class="concept-list">
                 <ul class="concept-list__items">
@@ -67,8 +67,8 @@
               <div class="casestudy-block">
                 <h2 class="casestudy-heading c-sectionheading"><span>CASE STUDY</span></h2>
                 <div class="casestudy-copy c-headinglead">
-                  <div class="casestudy-copy__heading c-heading">オフィスコンサルティングのプロジェクト実績</div>
-                  <div class="casestudy-copy__text c-lead">ＣＷＦのオフィスづくりは、複合的な思考で“個人＝多様な人材”と“チーム＝組織”が共に成長する環境を計り、<br>それぞれのクライアントのワークスタイルに最適なワークプレイスを実現します。</div>
+                  <div class="casestudy-copy__heading c-heading">オフィスコンサルティングの<br class="is-st">プロジェクト実績</div>
+                  <div class="casestudy-copy__text c-lead">ＣＷＦのオフィスづくりは、複合的な思考で<br class="is-st">“個人＝多様な人材”と“チーム＝組織”が共に成長する<br class="is-st">環境を計り、<br class="is-pc">それぞれのクライアントのワークスタイルに<br class="is-st">最適なワークプレイスを実現します。</div>
                 </div>
                 <div class="casestudy-slider">
                   <ul id="casestudySlider" class="casestudy-slider__items">
@@ -106,7 +106,7 @@
               <h2 class="service-heading c-sectionheading"><span>SERVICE</span></h2>
               <div class="service-lead c-headinglead">
                 <div class="heading c-heading">ＣＷＦのコンサルティングサービス</div>
-                <div class="lead c-lead">事業再編やテレワーク導入に合せたオフィスの見直しなど、経営レベルでの検討が必要なオフィス課題が<br>顕在化しています。事例やデータに基づく計画立案からプロジェクトの実行まで一貫したサービスを提供致します。</div>
+                <div class="lead c-lead">事業再編やテレワーク導入に合せたオフィスの見直しなど、<br class="is-st">経営レベルでの検討が必要なオフィス課題が<br>顕在化しています。事例やデータに基づく計画立案から<br class="is-st">プロジェクトの実行まで一貫したサービスを提供致します。</div>
               </div>
               <div class="service-block">
                 <div class="service-content__item">
