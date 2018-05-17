@@ -2,10 +2,10 @@
 <main id="casestudy">
 
   <!-- hero -->
-  <div class="visual">
-    <h2 class="visual-heading">
-      <span class="hero-title__en">CASE STUDY</span>
-      <span class="hero-title__en">ケーススタディ</span>
+  <div class="visual c-visual">
+    <h2 class="visual-heading c-visual-heading">
+      <span class="visual-heading__en c-visual-heading__en">CASE STUDY</span>
+      <span class="visual-heading__jp c-visual-heading__jp">ケーススタディ</span>
     </h2>
   </div>
   <!-- /hero -->
@@ -14,7 +14,7 @@
   <!-- project -->
   <section>
     <div class="project">
-      <div class="project_heading c-sectionheading">プロジェクト実績の一覧</div>
+      <div class="project_heading c-sectionheading c-sectionheading__jp"><span>プロジェクト実績の一覧</span></div>
      <ul class="project-lists">
        <li class="project-lists__items">
         <a href="../casestudy/01/">

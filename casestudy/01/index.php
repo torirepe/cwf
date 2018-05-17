@@ -2,10 +2,10 @@
 <main id="casestudy">
 
   <!-- hero -->
-  <div class="visual">
-    <h2 class="visual-heading">
-      <span class="hero-title__en">CASE STUDY</span>
-      <span class="hero-title__en">ケーススタディ</span>
+  <div class="visual c-visual">
+    <h2 class="visual-heading c-visual-heading">
+      <span class="visual-heading__en c-visual-heading__en">CASE STUDY</span>
+      <span class="visual-heading__jp c-visual-heading__jp">ケーススタディ</span>
     </h2>
   </div>
   <!-- /hero -->

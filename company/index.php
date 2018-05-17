@@ -2,10 +2,10 @@
 <main id="company">
 
   <!-- hero -->
-  <div class="visual">
-    <h2 class="visual-heading">
-      <span class="hero-title__en">COMPANY</span>
-      <span class="hero-title__en">会社概要</span>
+  <div class="visual c-visual">
+    <h2 class="visual-heading c-visual-heading">
+      <span class="visual-heading__en c-visual-heading__en">COMPANY</span>
+      <span class="visual-heading__jp c-visual-heading__jp">会社概要</span>
     </h2>
   </div>
   <!-- /hero -->
