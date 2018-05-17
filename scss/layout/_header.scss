@@ -24,21 +24,14 @@
     }
   }
   .gnav {
-    @include media(sp) {
+    @include media(st) {
       position: absolute;
       top: 100%;
       left: 0;
       width: 100%;
       opacity: 0;
       pointer-events: none;
-    }
-    @include media(tb) {
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      opacity: 0;
-      pointer-events: none;
+      background-color: rgba(255,255,255,.6);
     }
     @include media(pc) {
       max-width: 900px;
@@ -126,30 +119,71 @@
     }
   }
   .menu {
-    a {
-      display: flex;
-      flex-flow: column wrap;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    cursor: pointer;
+    @include media(sp) {
+      width: .82rem;
+      height: .82rem;
+    }
+    @include media(tb) {
+      width: 92px;
+      height: 92px;
+    }
+    div {
+      width: 50%;
+      background-color: $color-red;
       @include media(sp) {
-        width: .82rem;
-        height: .82rem;
+        height: .02rem;
       }
       @include media(tb) {
-        width: 92px;
-        height: 92px;
+        height: 5px;
       }
-      div {
-        width: 50%;
-        background-color: $color-red;
+      &:nth-child(n+2) {
         @include media(sp) {
-          height: .04rem;
+          margin-top: 14%;
         }
         @include media(tb) {
-          height: 6px;
+          margin-top: 12%;
         }
-        &:nth-child(n+2) {
-          margin-top: 10%;
+      }
+    }
+  }
+  @include media(st) {
+    .gnav {
+      transition: all .24s ease;
+    }
+    #menu {
+      div {
+        transition: all .24s ease;
+        &:nth-child(1) {
+          transform-origin: left center;
+        }
+        &:nth-child(3) {
+          transform-origin: left center;
+        }
+      }
+    }
+    &.active {
+      .gnav {
+        opacity: 1;
+        pointer-events: all;
+      }
+      #menu {
+        div {
+          &:nth-child(1) {
+            transform: translate(12%, 0) rotate(45deg);
+          }
+          &:nth-child(2) {
+            opacity: 0;
+            //transform: translate(100%, 0);
+          }
+          &:nth-child(3) {
+            transform: translate(12%, 0) rotate(-45deg);
+          }
         }
       }
     }

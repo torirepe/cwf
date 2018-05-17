@@ -64,11 +64,9 @@
         <div class="contact is-st">
           <a href="/contact/"><img src="<?php echo $root ?>images/layout/icon_mail.svg" alt="contact"></a>
         </div>
-        <div class="menu is-st">
-          <a href="">
-            <div></div>
-            <div></div>
-            <div></div>
-          </a>
+        <div id="menu" class="menu is-st">
+          <div></div>
+          <div></div>
+          <div></div>
         </div>
       </header>
