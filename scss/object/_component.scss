@@ -10,6 +10,10 @@
     letter-spacing: .2em;
     color: $color-red;
   }
+  &.c-sectionheading__jp {
+    font-size: 24px;
+    font-weight: bold;
+  }
 }
 
 .c-headinglead {
@@ -56,5 +60,20 @@
       height: 1em;
       background: url(images/layout/arrow.svg) no-repeat center center / 100% auto;
     }
+  }
+}
+
+.c-btn {
+  display: inline-block;
+  text-align: center;
+  padding: 15px 0;
+  border: 3px solid $color-red;
+  font-size: 16px;
+  color: $color-red;
+  font-weight: bold;
+  transition: .24s ease all;
+  &:hover {
+    background: $color-red;
+    color: #fff;
   }
 }

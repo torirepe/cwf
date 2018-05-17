@@ -109,3 +109,13 @@ function casestudySlider() {
     }, 200);
   });
 };
+
+$(function(){
+  $('.projectDetail-lists').magnificPopup({
+    delegate: 'a', 
+    type: 'image',
+    gallery: {
+      enabled:true
+    }
+  });
+});

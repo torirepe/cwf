@@ -64,7 +64,7 @@
         <div class="check"><label><span class="form_required">必須</span><input type="checkbox">上記の内容に同意する　</label></div>
       </div>
       <div class="form-btn">
-        <div class="form-btn__confirm"><input type="submit" value="送信"></div>
+        <div class="form-btn__confirm form-btn__parts"><input type="submit" value="送信"></div>
       </div>
     </div>
   </section>

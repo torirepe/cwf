@@ -7,9 +7,6 @@
     width: 100%;
     height: 834px;
     overflow: hidden;
-    @include media(pc) {
-      min-width: 1230px;
-    }
     .hero-copy {
       position: relative;
       z-index: 1;
@@ -17,39 +14,19 @@
         position: absolute;
         top: 50%;
         left: 0;
+        padding: 0 70px;
         width: 100%;
-        transform: translate(0,-50%);
-        text-align: center;
-        @include media(sp) {
-          padding: 0 .094rem;
-        }
-        @include media(tb) {
-          padding: 0 46px;
-        }
-        @include media(pc) {
-          padding: 0 70px;
-          text-align: right;
-        }
+        transform: translate(0, -50%);
+        text-align: right;
         &.is-red {
-          @include media(pc) {
-            text-align: left;
-          }
+          text-align: left;
           .en {
             display: block;
             font-weight: bold;
             font-family: $fontfamily-roboto-condensed;
+            font-size: 75px;
+            letter-spacing: .2em;
             color: $color-red;
-            letter-spacing: .1em;
-            @include media(sp) {
-              font-size: .45rem;
-            }
-            @include media(tb) {
-              font-size: 50px;
-            }
-            @include media(pc) {
-              letter-spacing: .2em;
-              font-size: 75px;
-            }
           }
           .jp {
             display: block;
@@ -58,34 +35,15 @@
             font-family: $fontfamily-roboto-condensed;
             font-size: 24px;
             letter-spacing: .3em;
-            color: $color-white;
-            @include media(sp) {
-              font-size: .19rem;
-            }
-            @include media(tb) {
-              font-size: 16px;
-            }
-            @include media(pc) {
-              font-size: 24px;
-              color: $color-black;
-            }
           }
         }
         .strong {
           display: block;
           font-weight: bold;
           font-family: $fontfamily-roboto-condensed;
+          font-size: 75px;
           letter-spacing: .2em;
           color: $color-white;
-          @include media(sp) {
-            font-size: .45rem;
-          }
-          @include media(tb) {
-            font-size: 50px;
-          }
-          @include media(pc) {
-            font-size: 75px;
-          }
         }
         .small {
           display: block;
@@ -93,15 +51,6 @@
           font-size: 75px;
           letter-spacing: .2em;
           color: $color-white;
-          @include media(sp) {
-            font-size: .45rem;
-          }
-          @include media(tb) {
-            font-size: 50px;
-          }
-          @include media(pc) {
-            font-size: 75px;
-          }
         }
       }
     }
@@ -110,41 +59,23 @@
       top: 50%;
       left: 50%;
       z-index: 0;
-      min-height: 100%;
-      width: auto;
       transform: translate(-50%, -50%);
-      @media screen and (min-width: 1500px) {
-        width: 100%;
-        height: auto;
-      }
     }
   }
   .concept {
     position: relative;
+    min-width: 1230px;
     padding-bottom: 70px;
     background: url(images/index/concept_bg.svg) no-repeat center center;
-    @include media(tb) {
-      padding: 0 60px;
-    }
-    @include media(pc) {
-      min-width: 1230px;
-    }
     .concept-block {
-      @include media(tb) {
-        margin-top: 68px;
-      }
-      @include media(pc) {
-        margin: 90px auto 0;
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: center;
-        align-items: flex-start;
-        width: 1100px;
-      }
+      margin: 90px auto 0;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: flex-start;
+      width: 1100px;
       .concept-copy {
-        @include media(pc) {
-          width: 490px;
-        }
+        width: 490px;
         .concept-copy__heading {
           .jp {
             display: block;
@@ -152,15 +83,6 @@
             font-size: 44px;
             line-height: 1.6;
             letter-spacing: .1em;
-            @include media(sp) {
-              font-size: .35rem;
-            }
-            @include media(tb) {
-              font-size: 35px;
-            }
-            @include media(pc) {
-              font-size: 44px;
-            }
           }
           .en {
             margin-top: .5em;
@@ -170,25 +92,8 @@
             font-size: 39px;
             color: $color-red;
             letter-spacing: .076em;
-            @include media(sp) {
-              font-size: .35rem;
-            }
-            @include media(tb) {
-              font-size: 35px;
-            }
-            @include media(pc) {
-              font-size: 39px;
-            }
             strong {
-              @include media(sp) {
-                font-size: .4rem;
-              }
-              @include media(tb) {
-                font-size: 40px;
-              }
-              @include media(pc) {
-                font-size: 44px;
-              }
+              font-size: 44px;
             }
           }
         }
@@ -197,19 +102,12 @@
           font-size: 18px;
           line-height: 2.1;
           letter-spacing: .03em;
-          @include media(sp) {
-            font-size: .18rem;
-          }
         }
       }
       .concept-image {
         position: relative;
-        @include media(tb) {
-          margin-top: 74px;
-        }
-        @include media(pc) {
-          margin: 20px 40px 0 38px;
-        }
+        margin: 20px 40px 0 38px;
+
         img {
           position: relative;
           z-index: 2;
@@ -231,20 +129,9 @@
       margin: 20px auto 0;
       width: 1100px;
       .concept-text__arrow {
-        margin-left: 1.2em;
-        text-indent: -1.2em;
         font-size: 26px;
         line-height: 2;
         font-weight: bold;
-        @include media(sp) {
-          font-size: .21rem;
-        }
-        @include media(tb) {
-          font-size: 21px;
-        }
-        @include media(pc) {
-          font-size: 26px;
-        }
         &:before {
           content: '';
           display: inline-block;
@@ -259,21 +146,11 @@
     .concept-list {
       background-color: $color-red;
       mix-blend-mode: multiply;
-      @include media(tb) {
-        margin: 42px 0 0 -60px;
-        padding: 28px 65px 28px 65px;
-        width: 90vw;
-        line-height: 1.4;
-      }
-      @include media(pc) {
-        margin-top: 42px;
-        padding: 28px 0 28px 65px;
-        width: 750px;
-        box-sizing: content-box;
-      }
-      @media screen and (min-width: 1230px) {
-        padding-left: calc( (100vw - 1100px) / 2);
-      }
+      margin-top: 42px;
+      padding: 28px 0;
+      padding-left: calc( (100vw - 1100px) / 2);
+      width: 750px;
+      box-sizing: content-box;
       .concept-list__items {
         .concept-list__item {
           color: $color-white;
@@ -283,377 +160,38 @@
           &:nth-child(n+2) {
             margin-top: 1.1em;
           }
-          @include media(sp) {
-            font-size: .19rem;
-          }
-          @include media(tb) {
-            font-size: 19px;
-          }
-          @include media(pc) {
-            font-size: 17px;
-          }
         }
       }
     }
     .concept-btn {
-      @include media(tb) {
-        margin: 54px 0 84px;
-        display: block;
-        text-align: center;
-      }
-      @include media(pc) {
-        position: absolute;
-        bottom: 84px;
-        left: 50%;
-        margin-left: 372px;
-      }
+      position: absolute;
+      bottom: 84px;
+      left: 50%;
+      margin-left: 372px;
     }
   }
   .casestudy {
-    position: relative;
-    @include media(pc) {
-      background-color: $color-gray-ultralight;
-      min-width: 1230px;
-    }
+    background-color: $color-gray-ultralight;
     .casestudy-block {
       margin: 0 auto;
+      width: 1230px;
       background-color: $color-gray-light;
-      @include media(pc) {
-        width: 1230px;
-      }
     }
     .casestudy-copy {
-      @include media(sp) {
-        margin-top: .58rem;
-        padding-bottom: .76rem;
-      }
-      @include media(tb) {
-        margin-top: 58px;
-        padding-bottom: 76px;
-      }
-      @include media(pc) {
-        margin-top: 72px;
-        padding-bottom: 56px;
-      }
-    }
-    .casestudy-slider {
-      position: relative;
-      @include media(sp) {
-        background-color: rgba(255,255,255,.72);
-      }
-      @include media(tb) {
-        background-color: rgba(255,255,255,.72);
-      }
-      @include media(pc) {
-        height: 578px;
-        &:after {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 50%;
-          z-index: 0;
-          width: 4000px;
-          height: 100%;
-          background-color: rgba(255,255,255,.72);
-          transform: translate(-50% , 0);
-        }
-      }
-      .bx-wrapper {
-        position: relative;
-        z-index: 2;
-        margin: 0  auto;
-        max-width: inherit !important;
-        width: 84.6vw;
-        height: 100%;
-        @include media(pc) {
-          width: 1080px;
-        }
-        .bx-viewport {
-          position: relative;
-          z-index: 1;
-          max-width: inherit !important;
-          width: 100% !important;
-          height: auto !important;
-          overflow: visible !important;
-          .casestudy-slider__items {
-            display: flex;
-            flex-flow: row wrap;
-            @include media(sp) {
-              padding: .44rem 0 .64rem;
-            }
-            @include media(tb) {
-              padding: 44px 0 64px;
-            }
-            @include media(pc) {
-              padding: 42px 0 72px;
-            }
-            .casestudy-slider__item {
-              float: none;
-              opacity: .4;
-              padding: 0 4.2vw;
-              width: 84.6vw !important;
-              transition: all .48s ease;
-              @include media(pc) {
-                padding: 0 25px;
-                width: 540px !important;
-              }
-              &.active {
-                opacity: 1;
-              }
-              .name {
-                margin-top: 1.4em;
-                font-size: 18px;
-                font-weight: bold;
-                @include media(sp) {
-                  font-size: .18rem;
-                }
-              }
-              .text {
-                margin-top: 1em;
-                font-size: 15px;
-                line-height: 2;
-                @include media(sp) {
-                  font-size: .15rem;
-                }
-              }
-            }
-          }
-        }
-        .bx-controls {
-          .bx-prev,
-          .bx-next {
-            position: absolute;
-            top: 32vw;
-            z-index: 9;
-            width: 6.5vw;
-            height:  6.5vw;
-            background: url(images/index/casestudySlider_arrow.svg) no-repeat center center / cover;
-            font-size: 0;
-            transform: translate(0, -50%);
-            @include media(pc) {
-              width: 42px;
-              height: 42px;
-              top: 206px;
-            }
-          }
-          .bx-prev {
-            position: absolute;
-            left: -3.4vw;
-            @include media(pc) {
-              left: -50px;
-            }
-          }
-          .bx-next {
-            position: absolute;
-            right: -3.4vw;
-            transform: translate(0, -50%) rotate(180deg);
-            @include media(pc) {
-              right: -50px;
-            }
-          }
-        }
-      }
-    }
-    .casestudy-btn {
+      margin-top: 72px;
+      padding-bottom: 56px;
       text-align: center;
-      padding: 76px 0 62px;
-    }
-  }
-  
-  .service {
-    width: 100%;
-    background-color: $color-gray-ultralight;
-    @include media(pc) {
-      min-width: 1230px;
-    }
-    .service-lead {
-      @include media(sp) {
-        margin-top: .58rem;
-        padding-bottom: .58rem;
-      }
-      @include media(tb) {
-        margin-top: 58px;
-        padding-bottom: 58px;
-      }
-      @include media(pc) {
-        margin-top: 72px;
-        padding-bottom: 56px;
-      }
-    }
-    .service-block {
-      @include media(sp) {
-        padding: 0 .6rem;
-      }
-      @include media(tb) {
-        margin: 0 auto;
-        padding-bottom: 0;
-        width: 520px;
-      }
-      @include media(pc) {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-        align-items: stretch;
-        margin: 0 auto;
-        width: 1230px;
-      }
-      .service-content__item {
-        box-sizing: content-box;
-        @include media(sp) {
-          border-top: 1px solid $color-gray-light;
-          padding: .58rem 0 .5rem;
-        }
-        @include media(tb) {
-          border-top: 1px solid $color-gray-light;
-          padding: 58px 0 50px;
-        }
-        @include media(pc) {
-          padding: 24px 35px 30px;
-          width: 362px;
-          &:nth-child(1) {
-            padding-left: 0;
-          }
-          &:nth-child(3) {
-            padding-right: 0;
-          }
-          &:nth-child(n+2) {
-            border-left: 1px solid $color-gray-light;
-          }
-        }
-        .title {
-          font-weight: bold;
-          color: $color-red;
-          letter-spacing: .05em;
-          @include media(sp) {
-            font-size: .25rem;
-          }
-          @include media(tb) {
-            font-size: 25px;
-          }
-          @include media(pc) {
-            letter-spacing: -.04em;
-            font-size: 20px;
-          }
-        }
-        .lead {
-          margin-top: 1.8em;
-          line-height: 2.2;
-          @include media(sp) {
-            font-size: .18rem;
-          }
-          @include media(tb) {
-            font-size: 18px;
-          }
-          @include media(pc) {
-            line-height: 1.9;
-            font-size: 15px;
-          }
-        }
-        .list {
-          margin-top: 20px;
-          display: flex;
-          flex-flow: row wrap;
-          justify-content: space-between;
-          li {
-            width: 50%;
-            line-height: 1.8;
-            font-size: 14px;
-            color: $color-red;
-            @include media(sp) {
-              font-size: .18rem;
-            }
-            @include media(tb) {
-              font-size: 18px;
-            }
-            @include media(pc) {
-              font-size: 14px;
-            }
-          }
-        }
-        .image {
-          margin-top: 34px;
-        }
-        .btn {
-          text-align: center;
-          @include media(sp) {
-            margin-top: .35rem;
-          }
-          @include media(tb) {
-            margin-top: 35px;
-          }
-          @include media(pc) {
-            text-align: left;
-            margin-top: 34px;
-          }
-        }
-      }
-    }
-  }
-  
-  .company {
-    margin: 0 auto;
-    @include media(sp) {
-      padding: 0 .6rem;
-    }
-    @include media(tb) {
-      padding: 0 60px;
-    }
-    @include media(pc) {
-      padding-bottom: 90px;
-      width: 1230px;
-    }
-    .company-list {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-items: flex-start;
-      line-height: 1.8;
-      @include media(sp) {
-        margin: .62rem auto 0;
-        font-size: .17rem;
-      }
-      @include media(tb) {
-        margin: 62px auto 0;
-        font-size: 17px;
-      }
-      @include media(pc) {
-        margin: 72px auto 0;
-        width: 780px;
-        font-size: 15px;
+      .casestudy-copy__title {
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: .1em;
         line-height: 1;
       }
-      .company-list_term {
-        border-right: 1px solid $color-red;
-        width: 8.2em;
-        @include media(pc) {
-          width: 154px;
-        }
-      }
-      .company-list_description {
-        padding-left: 1.2em;
-        width: calc(100% - 8.2em);
-        @include media(pc) {
-          width: calc(100% - 154px);
-        }
-      }
-      *:nth-child(n+3) {
-        margin-top: 24px;
-      }
-    }
-    .company-btn {
-      margin: 20px auto 0;
-      text-align: right;
-      @include media(sp) {
-        text-align: center;
-        margin-top: .68rem;
-      }
-      @include media(tb) {
-        margin-top: 68px;
-      }
-      @include media(pc) {
-        margin: 20px auto 0;
-        width: 780px;
+      .casestudy-copy__text {
+        margin-top: 42px;
+        font-size: 18px;
+        letter-spacing: .1em;
+        line-height: 2.2;
       }
     }
   }
@@ -758,10 +296,154 @@
   }
 }
 
+#casestudy {
+  .project {
+    max-width: 1230px;
+    margin: 0 auto;
+    @include media(sp) {
+      width: 90%;
+    }
+    .project-lists {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      &:after {
+        content: '';
+        display: block;
+        width: 30%;
+      }
+      .project-lists__items {
+        width: 30%;
+        margin-bottom: 50px;
+        transition: .24s ease all;
+        @include media(sp) {
+          width: 48%;
+          margin-bottom: .5rem;
+        }
+        &:hover {
+          opacity: .7;
+        }
+        .thumb {
+        }
+        .heading {
+          margin-top: 20px;
+          font-size: 18px;
+          line-height: 1.4;
+          font-weight: bold;
+          @include media(sp) {
+            font-size: .26rem;
+            margin-top: .2rem;
+          }
+        }
+        .text {
+          margin: 15px 0;
+          font-size: 15px;
+          @include media(sp) {
+            font-size: .2rem;
+          }
+          span {
+            margin-right: 10px;
+            padding: 5px 10px;
+            border-radius: 10px;
+            font-size: 13px;
+            color: $color-red;
+            background: #dbdbdb;
+            @include media(sp) {
+              font-size: .2rem;
+              padding: .1rem .1rem;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .projectDetail {
+    max-width: 1230px;
+    margin: 0 auto;
+    @include media(sp) {
+      width: 90%;
+    }
+    .projectDetail_heading {
+      margin-bottom: 60px;
+      span {
+        color: #000;
+        border-color: #000;
+      }
+    }
+    .projectDetail-lists {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      &:after {
+        content: '';
+        display: block;
+        width: 30%;
+      }
+      .projectDetail-lists__item {
+        width: 30%;
+        margin-bottom: 50px;
+        transition: .24s ease all;
+        @include media(sp) {
+          width: 48%;
+          margin-bottom: .5rem;
+        }
+        &:hover {
+          opacity: .7;
+        }
+      }
+    }
+    .projectDetail_details {
+      max-width: 580px;
+      margin: 0 auto;
+      border-top: 2px solid #dbdbdb;
+      margin-top: 30px;
+      padding-top: 60px;
+      .text {
+        font-size: 14px;
+        line-height: 2;
+      }
+      .list {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: stretch;
+        margin-top: 40px;
+        dt,dd {
+          
+        }
+        dt {
+          width: 80px;
+          margin-bottom: 22px;
+          padding: 3px 10px;
+          border-radius: 20px;
+          background: #dbdbdb;
+          color: $color-red;
+          text-align: center;
+          font-size: 13px;
+        }
+        dd {
+          width: calc(100% - 100px);
+          margin-left: 20px;
+          font-size: 15px;
+          line-height: 1.8;
+        }
+      }
+    }
+    .projectDetail_btnArea {
+      margin-top: 60px;
+      text-align: center;
+      .projectDetail_btnArea__btn {
+        width: 300px;
+      }
+    }
+  }
+}
+
 #privacy {
   .detail {
     .detail-block {
-      max-width: 1230px;
+      min-width: 1230px;
       margin: 0 auto 100px;
       .detail-block_heading {
         margin-bottom: 50px;
@@ -860,7 +542,7 @@
           margin: 0 10px;
           width: 34px;
           height: 34px;
-          background: #dcdcdc;
+          background: #f6f6f6;
           outline: none;
           -webkit-appearance: none;
           -moz-appearance: none;
@@ -941,26 +623,30 @@
     }
     .form-btn {
       .form-btn__confirm {
-        width: 300px;
         margin: 50px auto 0;
+        input {
+          width: 300px;
+        }
       }
-      input {
-        width: 100%;
-        padding: 15px 0;
-        border: 3px solid $color-red;
-        font-size: 16px;
-        color: $color-red;
-        font-weight: bold;
-        background: none;
-        border-radius: 0;
-        outline: none;
-        -webkit-appearance: none;
-        -moz-appearance: none;
-        appearance: none;
-        transition: .24s ease all;
-        &:hover {
-          background: $color-red;
-          color: #fff;
+      .form-btn__parts {
+        text-align: center;
+        input {
+          padding: 15px 0;
+          border: 3px solid $color-red;
+          font-size: 16px;
+          color: $color-red;
+          font-weight: bold;
+          background: none;
+          border-radius: 0;
+          outline: none;
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          appearance: none;
+          transition: .24s ease all;
+          &:hover {
+            background: $color-red;
+            color: #fff;
+          }
         }
       }
     }
