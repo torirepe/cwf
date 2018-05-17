@@ -725,126 +725,318 @@ a:hover {
     left: 50%;
     margin-left: 372px; }
 
-/* line 173, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+/* line 173, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #index .casestudy {
   background-color: #f0f0f0; }
-  /* line 175, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  /* line 175, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #index .casestudy .casestudy-block {
     margin: 0 auto;
     width: 1230px;
     background-color: #e3e3e3; }
-  /* line 180, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+  /* line 180, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #index .casestudy .casestudy-copy {
     margin-top: 72px;
     padding-bottom: 56px;
     text-align: center; }
-    /* line 184, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    /* line 184, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #index .casestudy .casestudy-copy .casestudy-copy__title {
       font-size: 28px;
       font-weight: bold;
       letter-spacing: .1em;
       line-height: 1; }
-    /* line 190, /Users/motoetatsunori/works/CWF/cwf/scss/object/_page.scss */
+    /* line 190, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #index .casestudy .casestudy-copy .casestudy-copy__text {
       margin-top: 42px;
       font-size: 18px;
       letter-spacing: .1em;
       line-height: 2.2; }
 
-/* line 178, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-#company {
-  margin-top: 300px; }
-  /* line 180, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-  #company .profile {
-    background: #eee; }
-    /* line 182, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-    #company .profile .profile-list {
-      width: 1000px;
-      margin: 0 auto;
-      font-size: 0;
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: space-between;
-      align-items: stretch; }
+/* line 205, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#company .profile {
+  background: #eee; }
+  /* line 207, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #company .profile .profile-list {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 0; }
+    @media screen and (max-width: 640px) {
+      /* line 207, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .profile .profile-list {
+        width: 90%; } }
+    /* line 218, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #company .profile .profile-list .profile-list__term,
+    #company .profile .profile-list .profile-list__description {
+      display: inline-block;
+      font-size: 15px; }
+    /* line 223, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #company .profile .profile-list .profile-list__term {
+      width: 15%;
+      margin-right: 5%;
+      border-top: 2px solid #a42629;
+      padding: 17px 0 0;
+      font-weight: bold;
+      color: #a42629; }
       @media screen and (max-width: 640px) {
-        /* line 182, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-        #company .profile .profile-list {
-          width: 90%; } }
-      /* line 193, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-      #company .profile .profile-list .profile-list__term,
-      #company .profile .profile-list .profile-list__description {
-        font-size: 15px; }
-      /* line 197, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-      #company .profile .profile-list .profile-list__term {
-        width: 15%;
-        display: inline-block;
-        border-top: 2px solid #a42629;
-        color: #a42629;
+        /* line 223, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #company .profile .profile-list .profile-list__term {
+          width: 100%;
+          margin-right: 0; } }
+    /* line 235, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #company .profile .profile-list .profile-list__description {
+      width: 80%;
+      border-bottom: 1px solid #777;
+      padding: 20px 0;
+      line-height: 1.6; }
+      @media screen and (max-width: 640px) {
+        /* line 235, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #company .profile .profile-list .profile-list__description {
+          width: 100%;
+          border-bottom: none;
+          padding: 5% 0; } }
+      /* line 245, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__description .heading {
         font-weight: bold;
-        padding: 17px 0 0;
-        margin-right: 5%; }
-        @media screen and (max-width: 640px) {
-          /* line 197, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-          #company .profile .profile-list .profile-list__term {
-            width: 100%; } }
-      /* line 209, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-      #company .profile .profile-list .profile-list__description {
-        width: 80%;
-        display: inline-block;
-        border-bottom: 1px solid #777;
-        padding: 20px 0;
-        line-height: 1.6; }
-        @media screen and (max-width: 640px) {
-          /* line 209, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-          #company .profile .profile-list .profile-list__description {
-            width: 100%; } }
-        /* line 218, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-        #company .profile .profile-list .profile-list__description .heading {
-          font-weight: bold;
-          margin-bottom: 5px; }
-        /* line 222, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
-        #company .profile .profile-list .profile-list__description .list {
-          line-height: 1.8;
-          margiLn-bottom: 40px; }
+        margin-bottom: 5px; }
+      /* line 249, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__description .list {
+        margin-bottom: 30px;
+        line-height: 1.8; }
+      /* line 253, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .profile .profile-list .profile-list__description:last-child {
+        border-bottom: none; }
 
-/* line 242, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+/* line 259, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#company .history {
+  max-width: 800px;
+  margin: 0 auto; }
+  @media screen and (max-width: 640px) {
+    /* line 259, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #company .history {
+      width: 90%; } }
+  /* line 266, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #company .history .history-heading span {
+    color: #000;
+    border-color: #000; }
+  /* line 271, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #company .history .history-blocks {
+    margin-top: 60px; }
+    /* line 273, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #company .history .history-blocks .history-block {
+      margin-bottom: 50px; }
+      /* line 275, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .history .history-blocks .history-block .heading {
+        display: inline-block;
+        padding-bottom: 10px;
+        border-bottom: 2px solid #a42629;
+        font-size: 18px;
+        color: #a42629;
+        font-weight: bold; }
+      /* line 283, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .history .history-blocks .history-block .date,
+      #company .history .history-blocks .history-block .text {
+        font-size: 15px;
+        line-height: 1.6; }
+      /* line 288, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .history .history-blocks .history-block .date {
+        margin: 20px 0 5px; }
+      /* line 291, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #company .history .history-blocks .history-block .text {
+        font-weight: bold; }
+
+/* line 301, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
 #privacy .detail .detail-block {
   max-width: 1230px;
   margin: 0 auto 100px; }
-  /* line 245, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 304, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block_heading {
     margin-bottom: 50px;
     border: 1px solid #000;
     padding: 20px 40px;
     font-size: 24px;
     font-weight: bold; }
-  /* line 253, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  /* line 312, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .text {
+    margin-bottom: 50px;
     font-size: 16px;
-    line-height: 1.6;
-    margin-bottom: 50px; }
-    /* line 257, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    line-height: 1.6; }
+    /* line 316, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #privacy .detail .detail-block .detail-block__content .text a {
-      color: #a42629;
-      display: inline-block; }
-  /* line 262, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      display: inline-block;
+      color: #a42629; }
+  /* line 321, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .heading {
+    margin-bottom: 20px;
     font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 20px; }
-  /* line 267, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    font-weight: bold; }
+  /* line 326, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .heading_small {
+    margin-bottom: 10px;
     font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 10px; }
-  /* line 272, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    font-weight: bold; }
+  /* line 331, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
   #privacy .detail .detail-block .detail-block__content .list {
+    margin-bottom: 60px;
     font-size: 14px;
-    line-height: 1.8;
-    margin-bottom: 60px; }
-    /* line 276, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    line-height: 1.8; }
+    /* line 335, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
     #privacy .detail .detail-block .detail-block__content .list a {
+      margin-top: 10px;
+      color: #a42629; }
+
+/* line 346, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+#contact .form {
+  width: 800px;
+  margin: 0 auto; }
+  @media screen and (max-width: 640px) {
+    /* line 346, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form {
+      width: 90%; } }
+  /* line 352, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #contact .form .form_required {
+    border: 1px solid #a42629;
+    border-radius: 15px;
+    padding: 1px 13px;
+    font-size: 10px;
+    color: #a42629; }
+  /* line 359, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #contact .form .intro {
+    position: relative;
+    margin-bottom: 50px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 80px; }
+    /* line 364, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .intro .text {
+      font-size: 14px;
+      line-height: 1.6;
+      text-align: center; }
+    /* line 369, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .intro .caution {
+      position: absolute;
+      bottom: 20px;
+      right: 0;
+      font-size: 13px; }
+      /* line 374, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #contact .form .intro .caution .form_required {
+        margin-right: 10px; }
+  /* line 379, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #contact .form .form-check {
+    max-width: 400px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    text-align: center;
+    padding: 30px; }
+    /* line 386, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-check .heading a {
+      font-size: 14px;
       color: #a42629;
-      margin-top: 10px; }
+      margin-bottom: 20px; }
+    /* line 392, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-check .check {
+      font-size: 14px; }
+      /* line 394, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #contact .form .form-check .check input {
+        display: inline-block;
+        position: relative;
+        vertical-align: middle;
+        margin: 0 10px;
+        width: 34px;
+        height: 34px;
+        background: #dcdcdc;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; }
+        /* line 407, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #contact .form .form-check .check input:checked:after {
+          opacity: 1; }
+        /* line 411, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #contact .form .form-check .check input:after {
+          content: '';
+          display: block;
+          position: absolute;
+          top: 12px;
+          left: 11px;
+          border-top: 2px solid #a42629;
+          border-right: 2px solid #a42629;
+          width: 0.7em;
+          height: 0.4em;
+          transform: rotate(135deg);
+          opacity: 0; }
+  /* line 427, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #contact .form .form-list {
+    width: 100%; }
+    /* line 430, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-list .from-list_item > th, #contact .form .form-list .from-list_item td {
+      font-size: 15px; }
+    /* line 433, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-list .from-list_item > th {
+      font-weight: bold;
+      position: relative;
+      width: 230px;
+      vertical-align: top;
+      padding: 8px; }
+      @media screen and (max-width: 640px) {
+        /* line 433, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #contact .form .form-list .from-list_item > th {
+          width: 100%;
+          display: block; } }
+      /* line 443, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #contact .form .form-list .from-list_item > th .form_required {
+        margin-left: 10px; }
+    /* line 447, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-list .from-list_item > td {
+      width: calc(100% - 230px);
+      padding-bottom: 30px; }
+      @media screen and (max-width: 640px) {
+        /* line 447, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+        #contact .form .form-list .from-list_item > td {
+          width: 100%;
+          display: block; } }
+      /* line 454, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #contact .form .form-list .from-list_item > td input,
+      #contact .form .form-list .from-list_item > td textarea {
+        width: 100%;
+        padding: 8px;
+        background-color: #f6f6f6;
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none; }
+    /* line 470, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-list .from-list_item:first-of-type td input {
+      width: 48%; }
+      /* line 472, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+      #contact .form .form-list .from-list_item:first-of-type td input:first-child {
+        margin-right: 4%; }
+  /* line 481, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #contact .form .form-btn .form-btn__confirm {
+    width: 300px;
+    margin: 50px auto 0; }
+  /* line 485, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+  #contact .form .form-btn input {
+    width: 100%;
+    padding: 15px 0;
+    border: 3px solid #a42629;
+    font-size: 16px;
+    color: #a42629;
+    font-weight: bold;
+    background: none;
+    border-radius: 0;
+    outline: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    transition: .24s ease all; }
+    /* line 499, /Applications/MAMP/htdocs/CWF/scss/object/_page.scss */
+    #contact .form .form-btn input:hover {
+      background: #a42629;
+      color: #fff; }
 
 /*# sourceMappingURL=style.css.map */
