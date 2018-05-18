@@ -12,7 +12,7 @@
                   <span class="en">FOR WORKSTYLE SHIFT.</span>
                   <span class="jp">これからの“はたらき方”を考えたオフィスへ、CWFができること。</span>
                 </div>
-                <!--<div class="hero-copy_text">
+                <div class="hero-copy_text">
                   <span class="strong">ACROSS</span>
                   <span class="small">TEAMS AND LOCATIONS</span>
                 </div>
@@ -23,7 +23,7 @@
                 <div class="hero-copy_text">
                   <span class="strong">EXPAND</span>
                   <span class="small">POSSIBILITIES</span>
-                </div>-->
+                </div>
               </div>
               <video class="hero-video" id="heroVideo" src="video/hero.mp4" autoplay loop muted></video>
             </div>
@@ -43,7 +43,7 @@
                   </div>
                   <div class="concept-copy__text">すべての人が多様な個性を発揮して活き活きとはたらき、活躍している。会社の方向性と社員のはたらき方がフィットして、個人やチームの力が会社の力になり、共に成長していく。そんな個人と企業/組織のＷＩＮ-ＷＩＮなはたらき方を、ワークプレイスづくりを通して支えていくことが、我々ＣＷＦがクライアントに提供する価値です。</div>
                 </div>
-                <div class="concept-image"><img src="images/index/concept_image.jpg" alt="image"></div>
+                <div class="concept-image"><img src="images/index/concept_image.jpg" alt="イメージ"></div>
               </div>
               <div class="concept-text">
                 <div class="concept-text__arrow">多様な人材が活躍し企業としても成長する、<br class="is-st">これからの“はたらき方”を考える</div>
@@ -73,22 +73,22 @@
                 <div class="casestudy-slider">
                   <ul id="casestudySlider" class="casestudy-slider__items">
                     <li data-num="1" class="casestudy-slider__item">
-                      <figure class="image"><img src="images/index/casestudySlider_pic_01.jpg" alt=""></figure>
+                      <figure class="image"><img src="images/index/casestudySlider_pic_01.jpg" alt="ＳＰＡブランド会社"></figure>
                       <div class="name">ＳＰＡブランド会社</div>
                       <div class="text">執務エリアは、統合・改編などの組織変更に柔軟に対応するために、ユニバーサルプランを採用。来客エリアは、 “ファッションを通じて、お客様に「ワクワク」を提供する”という企業観を来訪者と共…>></div>
                     </li>
                     <li data-num="2" class="casestudy-slider__item">
-                      <figure class="image"><img src="images/index/casestudySlider_pic_02.jpg" alt=""></figure>
+                      <figure class="image"><img src="images/index/casestudySlider_pic_02.jpg" alt="事業創造型総合商社"></figure>
                       <div class="name">事業創造型総合商社</div>
                       <div class="text">移転により16フロアに分散していたオフィスを1.25フロアに集約し、組織間のコミュニケーションロスを改善。執務エリアは、効率を重視したレイアウトプラン。イベント開催や組織を越えたコ…>></div>
                     </li>
                     <li data-num="3" class="casestudy-slider__item">
-                      <figure class="image"><img src="images/index/casestudySlider_pic_03.jpg" alt=""></figure>
+                      <figure class="image"><img src="images/index/casestudySlider_pic_03.jpg" alt="オフィスレントサービスの実現"></figure>
                       <div class="name">オフィスレントサービスの実現</div>
                       <div class="text">ＣＷＦの「拠点総合評価サービス」は、賃料、立地、ビルスペック、スペース効率の４つの観点から総合的に戦略の構築が可能になります。</div>
                     </li>
                     <li data-num="4" class="casestudy-slider__item">
-                      <figure class="image"><img src="images/index/casestudySlider_pic_04.jpg" alt=""></figure>
+                      <figure class="image"><img src="images/index/casestudySlider_pic_04.jpg" alt="#"></figure>
                       <div class="name">#</div>
                       <div class="text">ＣＷＦの「拠点総合評価サービス」は、賃料、立地、ビルスペック、スペース効率の４つの観点から総合的に戦略の構築が可能になります。賃料、立地、ビルスペック、スペース効率の４つの観    …>></div>
                     </li>
@@ -120,7 +120,7 @@
                     <li>・ビル選定サポート</li>
                     <li>・コストシミュレーション</li>
                   </ul>
-                  <figure class="image"><img src="images/index/service_pic_01.jpg" alt=""></figure>
+                  <figure class="image"><img src="images/index/service_pic_01.jpg" alt="拠点最適化コンサルティング"></figure>
                   <div class="btn c-morebtn"><a href="">READ MORE</a></div>
                 </div>
                 <div class="service-content__item">
@@ -134,7 +134,7 @@
                     <li>・設計／設計監理</li>
                     <li>・運用マニュアル策定</li>
                   </ul>
-                  <figure class="image"><img src="images/index/service_pic_02.jpg" alt=""></figure>
+                  <figure class="image"><img src="images/index/service_pic_02.jpg" alt="オフィスコンサルティング/オフィス設計"></figure>
                   <div class="btn c-morebtn"><a href="">READ MORE</a></div>
                 </div>
                 <div class="service-content__item">
@@ -148,7 +148,7 @@
                     <li>・調達サポート、見積査定</li>
                     <li>・工事監理／移転監理</li>
                   </ul>
-                  <figure class="image"><img src="images/index/service_pic_03.jpg" alt=""></figure>
+                  <figure class="image"><img src="images/index/service_pic_03.jpg" alt="プロジェクトマネジメント"></figure>
                   <div class="btn c-morebtn"><a href="">READ MORE</a></div>
                 </div>
               </div>
