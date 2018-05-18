@@ -39,7 +39,7 @@
   
   <!-- consul -->
   <section>
-    <div class="consul case1">
+    <div id="a1" class="consul case1">
       <div class="consul-topBlock case1">
         <h3 class="consul-block__heading case1">拠点最適化<br class="is-sp">コンサルティング</h3>
         <div class="consul-block__textbox">
@@ -117,11 +117,11 @@
       </div>
     </div>
   </section>
-  <!-- consul -->
+  <!-- /.consul -->
   
   <!-- consul -->
   <section>
-    <div class="consul case2">
+    <div id="a2" class="consul case2">
       <div class="consul-topBlock case2">
         <h3 class="consul-block__heading case2">オフィスコンサルティング<br class="is-sp">／オフィス設計</h3>
         <div class="consul-block__textbox">
@@ -199,11 +199,11 @@
       </div>
     </div>
   </section>
-  <!-- consul -->
+  <!-- /.consul -->
   
   <!-- consul -->
   <section>
-    <div class="consul case1">
+    <div id="a3" class="consul case1">
       <div class="consul-topBlock case1">
         <h3 class="consul-block__heading case3">プロジェクトマネジメント</h3>
         <div class="consul-block__textbox">
@@ -281,6 +281,21 @@
       </div>
     </div>
   </section>
+  <!-- /.consul -->
+  
   <!-- consul -->
+  <section>
+    <div class="map">
+      <h2 class="map__title c-sectionheading c-sectionheading__jp"><span>サービスマップ</span></h2>
+      <div class="map-block1">
+        <img src="../images/service/service_servicemap_pc.jpg" class="is-pc">
+      </div>
+      <div class="map-block2">
+        <img src="../images/service/service_servicemap_sp.jpg" class="is-sp">
+      </div>
+    </div>
+  </section>
+  <!-- /.map -->
+  
 
 <?php require("../inc/_footer.php");?>
