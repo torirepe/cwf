@@ -1,5 +1,5 @@
 
-<?php $root = "http://dev1.preview-site.click/" ?>
+<?php $root = "http://localhost/" ?>
 <!DOCTYPE html>
 <html lang="ja">
   <head>
