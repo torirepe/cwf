@@ -2,10 +2,10 @@
 <main id="privacy">
 
   <!-- visual -->
-  <div class="visual">
-    <h2 class="visual-heading">
-      <span class="hero-title__en">PRIVACY POLYCY</span>
-      <span class="hero-title__en">個人情報保護方針</span>
+  <div class="visual c-visual">
+    <h2 class="visual-heading c-visual-heading">
+      <span class="visual-heading__en c-visual-heading__en">PRIVACY POLYCY</span>
+      <span class="visual-heading__jp c-visual-heading__jp">個人情報保護方針</span>
     </h2>
   </div>
   <!-- /visual -->
@@ -45,7 +45,7 @@
           </ul>
           <div class="heading">個人情報の開示、訂正、利用停止などについて</div>
           <ul class="list">
-            <li>・自己の個人情報について、開示、訂正、利用停止などの要請があった場合には、ご本人であることを確認の上で対応いたします。<br>なお、個人情報に関する質問及び苦情処理を含むお問合せは「コクヨお客様相談室」でお受けいたします。<a href="">個人情報に関するお問い合わせ</a></li>
+            <li>・自己の個人情報について、開示、訂正、利用停止などの要請があった場合には、ご本人であることを確認の上で対応いたします。<br>なお、個人情報に関する質問及び苦情処理を含むお問合せは「コクヨお客様相談室」でお受けいたします。<a href="/contact/">個人情報に関するお問い合わせ</a></li>
           </ul>
           <div class="heading">法令等の遵守</div>
           <ul class="list">

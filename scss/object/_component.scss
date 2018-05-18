@@ -19,8 +19,12 @@
     font-weight: bold;
     span {
       padding-bottom: 15px;
-      color: #000;
       border-bottom: 4px solid #000;
+      color: #000;
+      font-size: 26px;
+      @include media(sp) {
+        font-size: .38rem;
+      }
     }
   }
 }

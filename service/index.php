@@ -1,17 +1,54 @@
 
 <?php require("../inc/_header.php");?>
-  <main id="concept">
+<main id="service">
 
   <!-- hero -->
-  <div class="visual">
-    <h2 class="visual-heading">
-      <span class="hero-title__en">CONCEPT</span>
-      <span class="hero-title__en">コンセプト</span>
-    </h2>
-  </div>
+    <div class="visual c-visual">
+      <h2 class="visual-heading c-visual-heading">
+        <span class="visual-heading__en c-visual-heading__en">SERVICE</span>
+        <span class="visual-heading__jp c-visual-heading__jp">サービス</span>
+      </h2>
+    </div>
   <!-- /hero -->
 
-
+  <!-- intro -->
+  <section>
+    <div class="lead">
+      <div class="intro">
+        <h2 class="intro__title">ＣＷＦのコンサルティングサービス</h2>
+        <div class="intro__text">
+          業容の拡大に伴う組織変更に対応しているうちに、利用中のオフィスの機能やスペースに過不足やバラツキが発生しているケースがよく見られます。新規事業・新サービスの展開により、オフィスのロケーションや複数拠点でのリレーションにミスマッチが起きている場合もあります。また、昨今の働き方改革の流れを受けてテレワークの導入に合せて、メインとなるオフィスの役割や機能の見直しも必要になってきています。このように担当部門だけではなく企業全体の視点で検討すべき課題について、数多くのプロジェクト経験に裏付けられたワークプレイスづくりの専門家の立場から最適な解決策を提供し、その実行をサポート致します。
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- intro -->
+  
+  <!-- anker -->
+  <section>
+    <div class="anker">
+      <ul class="anker-lists">
+        <li class="anker-lists_item"><a href="#a1">拠点最適化コンサルティング</a></li>
+        <li class="anker-lists_item"><a href="#a2">オフィスコンサルティング/オフィス設計</a></li>
+        <li class="anker-lists_item"><a href="#a3">プロジェクトマネジメント</a></li>
+        <li class="anker-lists_item"><a href="#a4">サービスマップ</a></li>
+      </ul>
+    </div>
+  </section>
+  <!-- anker -->
+  
+  <section>
+    <div class="consul">
+      <div class="cousul-block">
+        <h3 class="cousul-block__heading"></h3>
+        <div class="cousul-block__textbox">
+          <div class="heading"></div>
+          <ul class="list"></ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  
   <!-- Workplace -->
   <section>
     <div class="workplace">

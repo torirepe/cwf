@@ -55,9 +55,10 @@
     </div>
   <!-- profile -->
   
+  <!-- history -->
   <section>
     <div class="history">
-      <h2 class="history-heading c-sectionheading"><span>沿革</span></h2>
+      <h2 class="history-heading c-sectionheading c-sectionheading__jp"><span>沿革</span></h2>
       <div class="history-blocks">
         <div class="history-block">
           <div class="heading">開業</div>
@@ -79,5 +80,6 @@
       </div>
     </div>
   </section>
+  <!-- history -->
   
   <?php require("../inc/_footer.php");?>
