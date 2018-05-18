@@ -702,6 +702,7 @@
     position: relative;
     @include media(sp) {
       padding-bottom: .9rem;
+      
     }
     @include media(tb) {
       padding-bottom: 90px;

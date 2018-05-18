@@ -24,14 +24,17 @@
     }
   }
   .gnav {
+    @include media(sp) {
+      padding: .6rem 0 !important;
+    }
     @include media(st) {
       position: absolute;
       top: 100%;
       left: 0;
+      padding: 60px 0;
       width: 100%;
-      opacity: 0;
       pointer-events: none;
-      background-color: rgba(255,255,255,.6);
+      background-color: $color-red;
     }
     @include media(pc) {
       max-width: 900px;
@@ -40,13 +43,26 @@
     .list {
       display: flex;
       justify-content: space-between;
-      @include media(tb) {
+      @include media(st) {
         flex-flow: column wrap;
       }
       @include media(pc) {
         flex-flow: row wrap;
       }
       .item {
+        @include media(sp) {
+          padding: 0 .6rem;
+        }
+        @include media(tb) {
+          padding: 0 60px;
+        }
+        @include media(st) {
+          &:first-child {
+            a {
+              border-top: 1px solid $color-white;
+            }
+          }
+        }
         &.is-red {
           width: 28%;
           background-color: $color-red;
@@ -67,18 +83,37 @@
           }
         }
         a {
-          padding-top: 30px;
-          height: 92px;
           text-align: center;
-          &:hover {
-            color: $color-red;
+          @include media(sp) {
+            padding: .3rem 0 !important;
+          }
+          @include media(st) {
+            padding: 30px 0;
+            border-bottom: 1px solid $color-white;
+            color: $color-white;
+          }
+          @include media(pc) {
+            padding-top: 30px;
+            height: 92px;
+            &:hover {
+              color: $color-red;
+            }
           }
           .en {
             display: block;
             font-family: $fontfamily-roboto;
             font-weight: bold;
-            font-size: 18px;
             letter-spacing: .2em;
+            text-indent: -.2em;
+            @include media(sp) {
+              font-size: .3rem;
+            }
+            @include media(tb) {
+              font-size: 30px;
+            }
+            @include media(pc) {
+              font-size: 18px;
+            }
             //@media screen and (max-width: 1200px) and (min-width: 1025px) {
             //  font-size: 16px;
             //  letter-spacing: .1em;
@@ -89,6 +124,12 @@
             margin-top: .6em;
             font-size: 13px;
             letter-spacing: .4em;
+            @include media(st) {
+              display: none;
+            }
+            @include media(st) {
+              font-size: 13px;
+            }
             //@media screen and (max-width: 1200px) and (min-width: 1025px) {
             //  font-size: 12px;
             //  letter-spacing: .2em;
@@ -137,7 +178,7 @@
       width: 50%;
       background-color: $color-red;
       @include media(sp) {
-        height: .02rem;
+        height: .05rem;
       }
       @include media(tb) {
         height: 5px;
@@ -154,7 +195,14 @@
   }
   @include media(st) {
     .gnav {
-      transition: all .24s ease;
+      transform-origin: center top;
+      transform: scaleY(0);
+      transition: all .24s ease .24s;
+      pointer-events: none;
+      .list {
+        opacity: 0;
+        transition: all .24s ease;
+      }
     }
     #menu {
       div {
@@ -169,8 +217,13 @@
     }
     &.active {
       .gnav {
-        opacity: 1;
+        transform: scaleY(1);
         pointer-events: all;
+        transition: all .24s ease;
+        .list {
+          opacity: 1;
+          transition: all .24s ease .24s;
+        }
       }
       #menu {
         div {
