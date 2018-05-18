@@ -1679,6 +1679,19 @@
       }
     }
   }
+  .map {
+    max-width: 1230px;
+    margin: 0 auto;
+    @include  media(sp) {
+      width: 90%;
+    }
+    .map__title {
+      margin-bottom: 50px;
+      @include media(sp) {
+        margin-bottom: .5rem;
+      }
+    }
+  }
   .consul {
     padding: 80px 0;
     &.case1 {
@@ -1716,7 +1729,8 @@
           background: url('../../images/service/section_visual_3.jpg') no-repeat center/cover;
         }
         @include media(sp) {
-          padding: 1.5rem 0;
+          padding: 1.2rem 0;
+          font-size: .36rem;
         }
       }
       .consul-block__textbox {
