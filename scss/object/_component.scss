@@ -20,8 +20,10 @@
     span {
       padding-bottom: 15px;
       border-bottom: 4px solid #000;
-      color: #000;
+      line-height: 1.26;
       font-size: 26px;
+      letter-spacing: .16em;
+      color: #000;
       @include media(sp) {
         font-size: .38rem;
       }
