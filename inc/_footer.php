@@ -1,7 +1,7 @@
 
 <footer id="footer">
   <div class="redarea">
-    <a href="">
+    <a href="/contact/">
       <div class="icon"><img src="<?php echo $root ?>images/layout/icon_mail.svg" alt=""></div>
       <div class="text">
         <span class="en">CONTACT</span>
@@ -11,13 +11,13 @@
   </div>
   <nav class="gnav">
     <ul>
-      <li><a href="">ホーム</a></li>
-      <li><a href="">コンセプト</a></li>
-      <li><a href="">ケーススタディ</a></li>
-      <li><a href="">サービス</a></li>
-      <li><a href="">会社概要</a></li>
-      <li><a href="">お問い合わせ</a></li>
-      <li><a href="">個人情報保護方針</a></li>
+      <li><a href="/">ホーム</a></li>
+      <li><a href="/concept/">コンセプト</a></li>
+      <li><a href="/casestudy/">ケーススタディ</a></li>
+      <li><a href="/service/">サービス</a></li>
+      <li><a href="/company/">会社概要</a></li>
+      <li><a href="/contact/">お問い合わせ</a></li>
+      <li><a href="/privacyporicy/">個人情報保護方針</a></li>
     </ul>　　　
   </nav>
   <div class="logo"><img src="<?php echo $root ?>images/layout/footer_logo.svg" alt="CW Facility Solution Inc."></div>

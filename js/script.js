@@ -130,3 +130,13 @@ $(function(){
     }
   });
 });
+
+$(document).ready(function() {
+  $('nav ul li a').each(function() {
+    var activeUrl = location.pathname.split("/")[1];
+    var $href = $(this).attr('href').split("/")[1];
+    if ($href == activeUrl ) {
+      $(this).parent().addClass("is-active");
+    }
+  });
+});
