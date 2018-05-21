@@ -1428,17 +1428,17 @@
         }
       }
     }
-    .projectDetail-details {
+    .projectDetail_details {
       max-width: 580px;
       margin: 0 auto;
       border-top: 2px solid #dbdbdb;
       margin-top: 30px;
       padding-top: 60px;
-      .projectDetail-details__text {
+      .text {
         font-size: 14px;
         line-height: 2;
       }
-      .projectDetail-details__list {
+      .list {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
@@ -1743,7 +1743,17 @@
     }
   }
   .anker {
+    position: relative;
+    width: 100%;
     background: $color-red;
+    &.fix {
+        @include media(pc) {
+        position: fixed;
+        top: 92px;
+        left: 0;
+        z-index: 2;
+      }
+    }
     .anker-lists {
       max-width: 1230px;
       margin: 0 auto;

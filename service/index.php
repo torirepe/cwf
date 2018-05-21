@@ -285,7 +285,7 @@
   
   <!-- consul -->
   <section>
-    <div class="map">
+    <div id="a4" class="map">
       <h2 class="map__title c-sectionheading c-sectionheading__jp"><span>サービスマップ</span></h2>
       <div class="map-block1">
         <img src="../images/service/service_servicemap_pc.jpg" class="is-pc">

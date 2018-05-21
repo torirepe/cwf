@@ -72,6 +72,7 @@
             text-align: left;
             color: $color-white;
             &:after {
+              transition: all .24s ease;
               content: '';
               position: absolute;
               top: 0;
@@ -79,6 +80,12 @@
               width: 18px;
               height: 100%;
               background: url(images/layout/arrow.svg) no-repeat center center / 100% auto;
+            }
+            &:hover {
+              color: $color-white;
+              &:after {
+                transform: translate(50%,0);
+              }
             }
           }
         }
