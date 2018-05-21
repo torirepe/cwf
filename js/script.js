@@ -140,3 +140,30 @@ $(document).ready(function() {
     }
   });
 });
+
+$(window).on('load', function(){
+  var bt = $(".anker").offset().top;
+  var ds = 0;
+  $(document).scroll(function(){
+    ds = $(this).scrollTop();
+
+    if (bt-92 <= ds) {
+      $(".anker").addClass('fix');
+    } else if (bt+92 >= ds) {
+      $(".anker").removeClass('fix');
+    }
+  });
+});
+
+
+$(function(){
+  var headerHight = 100;
+  $('a[href^=#]').click(function() {    
+    var speed = 400;
+    var href= $(this).attr("href");
+    var target = $(href == "#" || href == "" ? 'html' : href);
+    var position = target.offset().top-headerHight; // ※　-headerHightでズレの処理
+    $('body,html').animate({scrollTop:position}, speed, 'swing');
+    return false;
+  });
+});
