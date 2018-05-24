@@ -1428,24 +1428,23 @@
         }
       }
     }
-    .projectDetail_details {
+    .projectDetail-details {
       max-width: 580px;
       margin: 0 auto;
       border-top: 2px solid #dbdbdb;
       margin-top: 30px;
       padding-top: 60px;
-      .text {
+      .projectDetail-details__text {
         font-size: 14px;
         line-height: 2;
       }
-      .list {
+      .projectDetail-details__list {
         display: flex;
         flex-flow: row wrap;
         justify-content: space-between;
         align-items: stretch;
         margin-top: 40px;
         dt,dd {
-          
         }
         dt {
           width: 80px;
